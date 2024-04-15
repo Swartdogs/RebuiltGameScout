@@ -31,6 +31,17 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.AutoAmpAttempt + "," +
             data_Collection_sandstorm.AutoSpeakerScore + "," +
             data_Collection_sandstorm.AutoSpeakerAttempt + "," +
+            data_Collection_sandstorm.CenterOneAttempt + "," +
+            data_Collection_sandstorm.CenterTwoAttempt + "," +
+            data_Collection_sandstorm.CenterThreeAttempt + "," +
+            data_Collection_sandstorm.CenterFourAttempt + "," +
+            data_Collection_sandstorm.CenterFiveAttempt + "," +
+            data_Collection_sandstorm.RedOneAttempt + "," +
+            data_Collection_sandstorm.RedTwoAttempt + "," +
+            data_Collection_sandstorm.RedThreeAttempt + "," +
+            data_Collection_sandstorm.BlueOneAttempt + "," +
+            data_Collection_sandstorm.BlueTwoAttempt + "," +
+            data_Collection_sandstorm.BlueThreeAttempt + "," +
             data_collection_TeleOP.TeleAmpScore + "," +
             data_collection_TeleOP.TeleAmpMiss + "," +
             data_collection_TeleOP.TeleSpeakerScore + "," +
@@ -46,7 +57,6 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_TeleOP.Fouls + "," +
             data_collection_TeleOP.RobotTip + "," +
             data_collection_TeleOP.RobotStall + "," +
-
             Data_Collection_Page_1.Initials + "," +
             Data_Collection_Page_1.NoShow + "," +
             Save_Page.comment;

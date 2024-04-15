@@ -8,7 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Save_Page extends AppCompatActivity {
-    public static String comment = "No Comment";
+    public static int comment;
+    // public static String comment = "No Comment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class Save_Page extends AppCompatActivity {
         Button Submit_Data = (Button) findViewById(R.id.Submit_To_Store_B);
         Button Delete_Data = (Button) findViewById(R.id.Delete_Data_B);
 
-        final EditText commenttxt = (EditText) findViewById(R.id.comment_txt);
+        //final EditText commenttxt = (EditText) findViewById(R.id.comment_txt);
 
 
         //Takes you to the page in order to delete the data and confirm the decision
@@ -36,7 +37,7 @@ public class Save_Page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
                 startActivity(startintent);
-                comment = commenttxt.getText().toString();
+                //comment = commenttxt.getText().toString();
             }
         });
 

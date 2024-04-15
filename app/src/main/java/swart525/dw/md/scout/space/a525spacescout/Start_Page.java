@@ -22,6 +22,17 @@ public class Start_Page extends AppCompatActivity {
             public void onClick(View v) {
 
                 Data_Collection_Page_1.NoShow = "False";
+                data_Collection_sandstorm.CenterOneAttempt = 0;
+                data_Collection_sandstorm.CenterTwoAttempt = 0;
+                data_Collection_sandstorm.CenterThreeAttempt = 0;
+                data_Collection_sandstorm.CenterFourAttempt = 0;
+                data_Collection_sandstorm.CenterFiveAttempt = 0;
+                data_Collection_sandstorm.RedOneAttempt = 0;
+                data_Collection_sandstorm.RedTwoAttempt = 0;
+                data_Collection_sandstorm.RedThreeAttempt = 0;
+                data_Collection_sandstorm.BlueOneAttempt = 0;
+                data_Collection_sandstorm.BlueTwoAttempt = 0;
+                data_Collection_sandstorm.BlueThreeAttempt = 0;
                 data_Collection_sandstorm.AutoAmpAttempt = "0";
                 data_Collection_sandstorm.AutoAmpScore = "0";
                 data_Collection_sandstorm.AutoSpeakerAttempt = "0";

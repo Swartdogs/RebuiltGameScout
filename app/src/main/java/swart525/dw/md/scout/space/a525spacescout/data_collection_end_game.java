@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class data_collection_end_game extends AppCompatActivity {
 
@@ -29,6 +30,10 @@ public class data_collection_end_game extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collection_end_game);
 
+        TextView TeamNumEndgame = (TextView) findViewById(R.id.TeamNumEndgameTV);
+        Intent intent3 = getIntent();
+        String endgameteamnumstring = intent3.getStringExtra(data_collection_TeleOP.Team_Num_Display);
+        TeamNumEndgame.setText(endgameteamnumstring);
         //Defines Page Elements
         //Defines All Radio Buttons
         final RadioButton SoloHangRB = (RadioButton) findViewById(R.id.End_SoloHang_RB);

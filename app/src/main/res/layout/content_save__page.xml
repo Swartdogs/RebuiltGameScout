@@ -9,41 +9,76 @@
     tools:context=".Save_Page"
     tools:showIn="@layout/activity_save__page">
 
-    <EditText
-        android:id="@+id/comment_txt"
-        android:layout_width="672dp"
-        android:layout_height="347dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/comment"
-        android:importantForAutofill="no"
-        android:inputType="textLongMessage"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/To_Submission_B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
-
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_width="751dp"
+        android:layout_height="159dp"
         android:layout_marginStart="177dp"
         android:layout_marginEnd="176dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="Anything Else?"
+        android:text="Any RELEVANT info can be put in the 7 Rivers Scouting channel on slack."
+        android:textAlignment="center"
         android:textColor="#000"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="750dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="- Team number"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="742dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="Information should include:"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="750dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="- Relevant info from match"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
     <TextView
         android:id="@+id/textView19"
@@ -74,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <Button
         android:id="@+id/Delete_Data_B"

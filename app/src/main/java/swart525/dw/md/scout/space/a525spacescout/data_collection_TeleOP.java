@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 
@@ -37,11 +38,16 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String Add_TeleSpeakerScore = "0";
     public static String Add_TeleAmpMiss = "0";
     public static String Add_TeleSpeakerMiss = "0";
-
+    public static String Team_Num_Display = "NA";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collection__tele_op);
+
+        TextView TeamNumTeleop = (TextView) findViewById(R.id.TeamNumTeleopTV);
+        Intent intent2 = getIntent();
+        String teleopteamnumstring = intent2.getStringExtra(data_collection_TeleOP.Team_Num_Display);
+        TeamNumTeleop.setText(teleopteamnumstring);
 
         //Defines all checkboxes
         final CheckBox RobotTipCB = (CheckBox) findViewById(R.id.tipped_CB);
@@ -86,8 +92,12 @@ public class data_collection_TeleOP extends AppCompatActivity {
                    RobotTip = "True";
                 }
 
-
-
+                   // Intent intent4 = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
+                   // intent4.putExtra(Team_Num_Display_3,teleopteamnumstring);
+                   // startActivity(intent4);
+                    Intent intent3 = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
+                    intent3.putExtra(Team_Num_Display, teleopteamnumstring);
+                    startActivity(intent3);
                     Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                     startActivity(startintent);
                 }

@@ -25,6 +25,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -217,8 +218,8 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\Student\Downloads\Diesel.png" />
-                                                <entry key="scalingPercent" value="101" />
+                                                <entry key="imagePath" value="C:\Users\Student\Downloads\Untitled design (1).png" />
+                                                <entry key="scalingPercent" value="97" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -230,6 +231,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="scalingPercent" value="0" />
                                                 <entry key="text" value="" />
                                               </map>
                                             </option>
@@ -240,7 +242,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="diesel" />
+                                      <entry key="backgroundAssetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="ff6300" />
+                                      <entry key="outputName" value="fieldmap" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -313,6 +317,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

@@ -11,6 +11,18 @@
     tools:showIn="@layout/activity_data__collection_sandstorm">
 
 
+    <Button
+        android:id="@+id/Center_Ring_One_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
     <View
         android:id="@+id/divider125"
         android:layout_width="708dp"
@@ -20,10 +32,10 @@
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <View
         android:id="@+id/divider112"
@@ -34,69 +46,24 @@
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.553" />
 
     <View
-        android:id="@+id/divider114"
-        android:layout_width="709dp"
+        android:id="@+id/divider2"
+        android:layout_width="720dp"
         android:layout_height="5dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
-
-    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-        android:id="@+id/Auto_Speaker_Attempted_EB"
-        android:layout_width="193dp"
-        android:layout_height="wrap_content"
-        app:backGroundColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Auto_Speaker_TB"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider111"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
-        app:textColor="@color/button_no"
-        app:textSize="50dp">
-
-    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
-
-    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-        android:id="@+id/Auto_Speaker_Scored_EB"
-        android:layout_width="193dp"
-        android:layout_height="wrap_content"
-        app:backGroundColor="#FF6E00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/divider109"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Auto_Speaker_TB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402"
-        app:textColor="@color/button_no"
-        app:textSize="50dp">
-
-    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
-
-    <View
-        android:id="@+id/divider109"
-        android:layout_width="5dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="702dp"
-        android:background="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
-        app:layout_constraintStart_toEndOf="@+id/divider111"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33999997" />
+        app:layout_constraintVertical_bias="0.462" />
 
     <TextView
         android:id="@+id/Auto_Amp_TB"
@@ -113,37 +80,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Auto_Amp_Attempted_EB"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.592" />
 
     <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-        android:id="@+id/Auto_Amp_Attempted_EB"
+        android:id="@+id/Auto_Speaker_Scored_EB"
         android:layout_width="193dp"
         android:layout_height="wrap_content"
-        app:backGroundColor="@color/colorAccent"
-        app:chainUseRtl="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Auto_Amp_TB"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider111"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311"
-        app:textColor="@color/button_no"
-        app:textSize="50dp">
-
-    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
-
-    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-        android:id="@+id/Auto_Amp_Scored_EB"
-        android:layout_width="193dp"
-        android:layout_height="wrap_content"
-        app:backGroundColor="@color/colorAccent"
-        app:chainUseRtl="true"
+        app:backGroundColor="#FF6E00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/divider109"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Auto_Amp_TB"
+        app:layout_constraintStart_toEndOf="@+id/Auto_Speaker_TB"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311"
+        app:layout_constraintVertical_bias="0.688"
         app:textColor="@color/button_no"
         app:textSize="50dp">
 
@@ -158,10 +107,37 @@
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.728" />
+
+    <View
+        android:id="@+id/divider109"
+        android:layout_width="5dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="702dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/divider111"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/Auto_Scored_TB"
+        android:layout_width="147dp"
+        android:layout_height="60dp"
+        android:text="Scored"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
 
     <View
         android:id="@+id/divider111"
@@ -170,10 +146,131 @@
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33999997" />
+        app:layout_constraintVertical_bias="0.666" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="10dp"
+        android:layout_height="370dp"
+        android:background="#002AFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="10dp"
+        android:layout_height="370dp"
+        android:background="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="5dp"
+        android:layout_height="375dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="5dp"
+        android:layout_height="375dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="5dp"
+        android:layout_height="214dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="720dp"
+        android:layout_height="5dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1478" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/Auto_Amp_Attempted_EB"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        app:backGroundColor="@color/colorAccent"
+        app:chainUseRtl="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Auto_Amp_TB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider111"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598"
+        app:textColor="@color/button_no"
+        app:textSize="50dp">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    <View
+        android:id="@+id/divider114"
+        android:layout_width="709dp"
+        android:layout_height="5dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/Auto_Speaker_Attempted_EB"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        app:backGroundColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Auto_Speaker_TB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider111"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689"
+        app:textColor="@color/button_no"
+        app:textSize="50dp">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
     <TextView
         android:id="@+id/Auto_Speaker_TB"
@@ -189,22 +286,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Auto_Speaker_Attempted_EB"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.681" />
 
-    <TextView
-        android:id="@+id/Auto_Scored_TB"
-        android:layout_width="147dp"
-        android:layout_height="60dp"
-        android:text="Scored"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/Auto_Amp_Scored_EB"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        app:backGroundColor="@color/colorAccent"
+        app:chainUseRtl="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider109"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Auto_Amp_TB"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.598"
+        app:textColor="@color/button_no"
+        app:textSize="50dp">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
     <TextView
         android:id="@+id/Auto_Attempted_TB"
@@ -216,49 +315,189 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241" />
+        app:layout_constraintVertical_bias="0.524" />
 
     <TextView
         android:id="@+id/Autonomous_TV"
-        android:layout_width="793dp"
-        android:layout_height="68dp"
+        android:layout_width="627dp"
+        android:layout_height="70dp"
         android:background="#00F44336"
         android:fontFamily="@font/bolt_regular"
         android:foregroundTint="#F44336"
         android:gravity="center_horizontal"
-        android:text="@string/autonomous"
+        android:text="Autonomous:"
         android:textColor="#111"
         android:textSize="72sp"
         app:layout_constraintBottom_toTopOf="@+id/To_Teleop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <android.support.constraint.Barrier
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="left"
-        tools:layout_editor_absoluteX="800dp" />
+        app:barrierDirection="left" />
 
     <Button
         android:id="@+id/To_Teleop"
-        android:layout_width="600dp"
-        android:layout_height="285dp"
+        android:layout_width="594dp"
+        android:layout_height="161dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/bolt_regular"
-        android:text="To            Teleop"
-        android:textSize="96sp"
+        android:text="To Teleop"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.911" />
+
+    <Button
+        android:id="@+id/Center_Ring_Five_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <Button
+        android:id="@+id/Center_Ring_Two_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <Button
+        android:id="@+id/Center_Ring_Three_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/Center_Ring_Four_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <Button
+        android:id="@+id/Red_Ring_One_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/Red_Ring_Three_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <Button
+        android:id="@+id/Red_Ring_Two_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <Button
+        android:id="@+id/Blue_Ring_One_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/Blue_Ring_Two_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <Button
+        android:id="@+id/Blue_Ring_Three_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="No Attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <TextView
+        android:id="@+id/TeamNumSandyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="0000"
+        android:textColor="#000000"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
 
 </android.support.constraint.ConstraintLayout>
