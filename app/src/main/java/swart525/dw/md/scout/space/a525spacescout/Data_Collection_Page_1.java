@@ -25,7 +25,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
     //Defines Variables for Match/Team Number
     public static int Team_Num = 0;
-    public static int Team_Num_Test =0;
     public static int Match_Num = 0;
     public static int Match_Num_Real = 0;
     public static String Team_Num_Display = "NA";
