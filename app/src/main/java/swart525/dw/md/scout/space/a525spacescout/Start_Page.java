@@ -55,8 +55,8 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_TeleOP.TeleSpeakerScore = "0";
 
 
-                Intent startintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
-                startActivity(startintent);
+                Intent teamnumintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
+                startActivity(teamnumintent);
             }
         });
         //----------------------------------------------------------------------------------------------------------------

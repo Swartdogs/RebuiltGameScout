@@ -22,7 +22,8 @@ import java.io.PrintWriter;
 public class Actual_Submit extends AppCompatActivity {
 
     //Names the file it will be saved to
-    public String fileName = "Red_3_Data.csv";
+
+    public String fileName = "Blue_1_Data.csv";
     public String filePath = "/ScoutData/";
     //Compiles string for CSV file
     public String Final_String = Data_Collection_Page_1.Team_Num + "," +

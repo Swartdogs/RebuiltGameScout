@@ -8,8 +8,8 @@
     <!--Red Stuff-->
     <!--<color name="colorLabel">#FF4444</color>-->
 
-    <color name="colorLabel">#FF4444</color>
 
+    <color name="colorLabel">#3F51B5</color>
     <color name="button_yes_blue">#3F51B5</color>
     <color name="button_yes_red">#FF4444</color>
     <color name="colorPrimary">#FF6E00</color>

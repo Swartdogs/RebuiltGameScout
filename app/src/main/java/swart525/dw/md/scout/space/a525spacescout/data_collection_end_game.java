@@ -31,8 +31,8 @@ public class data_collection_end_game extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection_end_game);
 
         TextView TeamNumEndgame = (TextView) findViewById(R.id.TeamNumEndgameTV);
-        Intent intent3 = getIntent();
-        String endgameteamnumstring = intent3.getStringExtra(data_collection_TeleOP.Team_Num_Display);
+        Intent teamnumintent = getIntent();
+        String endgameteamnumstring = teamnumintent.getStringExtra(data_collection_TeleOP.Team_Num_Display);
         TeamNumEndgame.setText(endgameteamnumstring);
         //Defines Page Elements
         //Defines All Radio Buttons
@@ -86,8 +86,8 @@ public class data_collection_end_game extends AppCompatActivity {
                     SoloHang = "True";
                 }
 
-                Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
-                startActivity(startintent);
+                Intent teamnumintent = new Intent(getApplicationContext(), Save_Page.class);
+                startActivity(teamnumintent);
             }
         });
 

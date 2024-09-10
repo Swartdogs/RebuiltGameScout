@@ -1,6 +1,7 @@
 <resources>
-    <string name="robot_name">Red 3 Robot</string>
-    <string name="robot_color">#3f51b5</string>
+    <string name="robot_name">Blue 1 Robot</string>
+    <string name="robot_color">#3F51B5</string>
+
 
     <!--These are the changes that will needed to change between red and blue-->
     <!--Blue Stuff-->

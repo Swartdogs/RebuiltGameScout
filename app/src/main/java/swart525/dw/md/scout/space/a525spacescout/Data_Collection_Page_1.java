@@ -58,7 +58,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection__page_1);
 
         //Sets up comparison numbers
-        final int Compare_Match_Num = 10; //Match must be less than 150
+        final int Compare_Match_Num = 125; //Match must be less than 150
         final int Compare_Team_Num = 1; //Team must be greater than 1
 
         //Defines text boxes for Match/Team Number
@@ -78,16 +78,133 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         tv.setVisibility(View.VISIBLE);
 
         MatchSchedule = new ArrayList<>();
-        MatchSchedule.add("1");
-        MatchSchedule.add("2");
-        MatchSchedule.add("3");
-        MatchSchedule.add("4");
-        MatchSchedule.add("5");
-        MatchSchedule.add("6");
-        MatchSchedule.add("7");
+        MatchSchedule.add("3136");
+        MatchSchedule.add("2875");
+        MatchSchedule.add("4020");
+        MatchSchedule.add("4766");
+        MatchSchedule.add("2642");
+        MatchSchedule.add("5126");
+        MatchSchedule.add("2959");
+        MatchSchedule.add("3647");
+        MatchSchedule.add("2375");
+        MatchSchedule.add("7419");
+        MatchSchedule.add("494");
+        MatchSchedule.add("3637");
+        MatchSchedule.add("201");
+        MatchSchedule.add("4405");
+        MatchSchedule.add("8738");
+        MatchSchedule.add("1683");
         MatchSchedule.add("8");
-        MatchSchedule.add("9");
-        MatchSchedule.add("10");
+        MatchSchedule.add("4112");
+        MatchSchedule.add("589");
+        MatchSchedule.add("3061");
+        MatchSchedule.add("4342");
+        MatchSchedule.add("5584");
+        MatchSchedule.add("5010");
+        MatchSchedule.add("4381");
+        MatchSchedule.add("1899");
+        MatchSchedule.add("1683");
+        MatchSchedule.add("9579");
+        MatchSchedule.add("1701");
+        MatchSchedule.add("201");
+        MatchSchedule.add("5587");
+        MatchSchedule.add("2642");
+        MatchSchedule.add("4381");
+        MatchSchedule.add("1816");
+        MatchSchedule.add("7419");
+        MatchSchedule.add("801");
+        MatchSchedule.add("7021");
+        MatchSchedule.add("1747");
+        MatchSchedule.add("2851");
+        MatchSchedule.add("9120");
+        MatchSchedule.add("5587");
+        MatchSchedule.add("4188");
+        MatchSchedule.add("8738");
+        MatchSchedule.add("7419");
+        MatchSchedule.add("3193");
+        MatchSchedule.add("589");
+        MatchSchedule.add("2582");
+        MatchSchedule.add("4944");
+        MatchSchedule.add("2959");
+        MatchSchedule.add("5010");
+        MatchSchedule.add("9128");
+        MatchSchedule.add("1768");
+        MatchSchedule.add("525");
+        MatchSchedule.add("9758");
+        MatchSchedule.add("5665");
+        MatchSchedule.add("1756");
+        MatchSchedule.add("973");
+        MatchSchedule.add("2438");
+        MatchSchedule.add("9785");
+        MatchSchedule.add("3647");
+        MatchSchedule.add("4451");
+        MatchSchedule.add("2429");
+        MatchSchedule.add("2877");
+        MatchSchedule.add("2659");
+        MatchSchedule.add("4118");
+        MatchSchedule.add("5406");
+        MatchSchedule.add("4391");
+        MatchSchedule.add("2642");
+        MatchSchedule.add("973");
+        MatchSchedule.add("1796");
+        MatchSchedule.add("1768");
+        MatchSchedule.add("1684");
+        MatchSchedule.add("1477");
+        MatchSchedule.add("1816");
+        MatchSchedule.add("3132");
+        MatchSchedule.add("9644");
+        MatchSchedule.add("5126");
+        MatchSchedule.add("973");
+        MatchSchedule.add("9593");
+        MatchSchedule.add("5584");
+        MatchSchedule.add("1684");
+        MatchSchedule.add("9579");
+        MatchSchedule.add("2659");
+        MatchSchedule.add("3061");
+        MatchSchedule.add("1683");
+        MatchSchedule.add("3136");
+        MatchSchedule.add("9785");
+        MatchSchedule.add("2035");
+        MatchSchedule.add("9545");
+        MatchSchedule.add("4450");
+        MatchSchedule.add("3647");
+        MatchSchedule.add("9128");
+        MatchSchedule.add("6017");
+        MatchSchedule.add("5813");
+        MatchSchedule.add("4611");
+        MatchSchedule.add("4391");
+        MatchSchedule.add("4952");
+        MatchSchedule.add("4118");
+        MatchSchedule.add("7021");
+        MatchSchedule.add("4381");
+        MatchSchedule.add("973");
+        MatchSchedule.add("1796");
+        MatchSchedule.add("7312");
+        MatchSchedule.add("1756");
+        MatchSchedule.add("9128");
+        MatchSchedule.add("3637");
+        MatchSchedule.add("1787");
+        MatchSchedule.add("2582");
+        MatchSchedule.add("2875");
+        MatchSchedule.add("4188");
+        MatchSchedule.add("801");
+        MatchSchedule.add("4611");
+        MatchSchedule.add("1683");
+        MatchSchedule.add("1747");
+        MatchSchedule.add("4381");
+        MatchSchedule.add("4342");
+        MatchSchedule.add("9120");
+        MatchSchedule.add("1706");
+        MatchSchedule.add("8738");
+        MatchSchedule.add("325");
+        MatchSchedule.add("9593");
+        MatchSchedule.add("1477");
+        MatchSchedule.add("4020");
+        MatchSchedule.add("4451");
+        MatchSchedule.add("4145");
+
+
+
 
         //Defines button needed and actions to cancel a data collection
         Button Cancel_Collection = (Button) findViewById(R.id.Cancel_Collection_B);
@@ -199,9 +316,9 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             if (Compare_Team_Num < Team_Num_Real) {
                                 Team_Num = Integer.parseInt(MatchSchedule.get(Match_Num_Real-1)); //Sets team num data to txt box information
                                 String teamnumpls = Integer.toString(Team_Num);
-                                Intent intent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
-                                intent.putExtra(Team_Num_Display, teamnumpls);
-                                startActivity(intent);
+                                Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
+                                teamnumintent.putExtra(Team_Num_Display, teamnumpls);
+                                startActivity(teamnumintent);
                             } else {
                                 Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
 

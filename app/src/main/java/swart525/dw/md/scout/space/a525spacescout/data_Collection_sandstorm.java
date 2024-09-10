@@ -48,8 +48,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection_sandstorm);
 
         TextView TeamNumSandy = (TextView) findViewById(R.id.TeamNumSandyTV);
-        Intent intent = getIntent();
-        String sandstormteamnumstring = intent.getStringExtra(Data_Collection_Page_1.Team_Num_Display);
+        Intent teamnumintent = getIntent();
+        String sandstormteamnumstring = teamnumintent.getStringExtra(Data_Collection_Page_1.Team_Num_Display);
         TeamNumSandy.setText(sandstormteamnumstring);
 
         // int Team_Num_Real = bundle.getInt("code");
@@ -324,9 +324,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                // intent2.putExtra(Team_Num_Display2, sandstormteamnumstring);
                 //startActivity(intent2);
                 /*add in data collection pieces from checkboxes*/
-                Intent intent2 = new Intent(data_Collection_sandstorm.this, data_collection_TeleOP.class);
-                intent2.putExtra(Team_Num_Display, sandstormteamnumstring);
-                startActivity(intent2);
+                Intent teamnumintent = new Intent(data_Collection_sandstorm.this, data_collection_TeleOP.class);
+                teamnumintent.putExtra(Team_Num_Display, sandstormteamnumstring);
+                startActivity(teamnumintent);
                 //Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
                 //startActivity(startintent);
             }

@@ -95,11 +95,11 @@ public class data_collection_TeleOP extends AppCompatActivity {
                    // Intent intent4 = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
                    // intent4.putExtra(Team_Num_Display_3,teleopteamnumstring);
                    // startActivity(intent4);
-                    Intent intent3 = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
-                    intent3.putExtra(Team_Num_Display, teleopteamnumstring);
-                    startActivity(intent3);
-                    Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-                    startActivity(startintent);
+                    Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
+                    teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
+                    startActivity (teamnumintent);
+                    //Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+                    //startActivity(startintent);
                 }
 
         });
