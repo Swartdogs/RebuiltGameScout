@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
 //import java.util.
 
 
@@ -30,7 +31,9 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static String Team_Num_Display = "NA";
     public static String Initials = "We got a runner";
     public static String NoShow = "false";
-    public static ArrayList<String> MatchSchedule;
+    public static int[] MatchSchedule = new int[4];
+
+
 
 
 
@@ -77,131 +80,8 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         TextView tv = (TextView)findViewById(R.id.TeamNumTB);
         tv.setVisibility(View.VISIBLE);
 
-        MatchSchedule = new ArrayList<>();
-        MatchSchedule.add("3136");
-        MatchSchedule.add("2875");
-        MatchSchedule.add("4020");
-        MatchSchedule.add("4766");
-        MatchSchedule.add("2642");
-        MatchSchedule.add("5126");
-        MatchSchedule.add("2959");
-        MatchSchedule.add("3647");
-        MatchSchedule.add("2375");
-        MatchSchedule.add("7419");
-        MatchSchedule.add("494");
-        MatchSchedule.add("3637");
-        MatchSchedule.add("201");
-        MatchSchedule.add("4405");
-        MatchSchedule.add("8738");
-        MatchSchedule.add("1683");
-        MatchSchedule.add("8");
-        MatchSchedule.add("4112");
-        MatchSchedule.add("589");
-        MatchSchedule.add("3061");
-        MatchSchedule.add("4342");
-        MatchSchedule.add("5584");
-        MatchSchedule.add("5010");
-        MatchSchedule.add("4381");
-        MatchSchedule.add("1899");
-        MatchSchedule.add("1683");
-        MatchSchedule.add("9579");
-        MatchSchedule.add("1701");
-        MatchSchedule.add("201");
-        MatchSchedule.add("5587");
-        MatchSchedule.add("2642");
-        MatchSchedule.add("4381");
-        MatchSchedule.add("1816");
-        MatchSchedule.add("7419");
-        MatchSchedule.add("801");
-        MatchSchedule.add("7021");
-        MatchSchedule.add("1747");
-        MatchSchedule.add("2851");
-        MatchSchedule.add("9120");
-        MatchSchedule.add("5587");
-        MatchSchedule.add("4188");
-        MatchSchedule.add("8738");
-        MatchSchedule.add("7419");
-        MatchSchedule.add("3193");
-        MatchSchedule.add("589");
-        MatchSchedule.add("2582");
-        MatchSchedule.add("4944");
-        MatchSchedule.add("2959");
-        MatchSchedule.add("5010");
-        MatchSchedule.add("9128");
-        MatchSchedule.add("1768");
-        MatchSchedule.add("525");
-        MatchSchedule.add("9758");
-        MatchSchedule.add("5665");
-        MatchSchedule.add("1756");
-        MatchSchedule.add("973");
-        MatchSchedule.add("2438");
-        MatchSchedule.add("9785");
-        MatchSchedule.add("3647");
-        MatchSchedule.add("4451");
-        MatchSchedule.add("2429");
-        MatchSchedule.add("2877");
-        MatchSchedule.add("2659");
-        MatchSchedule.add("4118");
-        MatchSchedule.add("5406");
-        MatchSchedule.add("4391");
-        MatchSchedule.add("2642");
-        MatchSchedule.add("973");
-        MatchSchedule.add("1796");
-        MatchSchedule.add("1768");
-        MatchSchedule.add("1684");
-        MatchSchedule.add("1477");
-        MatchSchedule.add("1816");
-        MatchSchedule.add("3132");
-        MatchSchedule.add("9644");
-        MatchSchedule.add("5126");
-        MatchSchedule.add("973");
-        MatchSchedule.add("9593");
-        MatchSchedule.add("5584");
-        MatchSchedule.add("1684");
-        MatchSchedule.add("9579");
-        MatchSchedule.add("2659");
-        MatchSchedule.add("3061");
-        MatchSchedule.add("1683");
-        MatchSchedule.add("3136");
-        MatchSchedule.add("9785");
-        MatchSchedule.add("2035");
-        MatchSchedule.add("9545");
-        MatchSchedule.add("4450");
-        MatchSchedule.add("3647");
-        MatchSchedule.add("9128");
-        MatchSchedule.add("6017");
-        MatchSchedule.add("5813");
-        MatchSchedule.add("4611");
-        MatchSchedule.add("4391");
-        MatchSchedule.add("4952");
-        MatchSchedule.add("4118");
-        MatchSchedule.add("7021");
-        MatchSchedule.add("4381");
-        MatchSchedule.add("973");
-        MatchSchedule.add("1796");
-        MatchSchedule.add("7312");
-        MatchSchedule.add("1756");
-        MatchSchedule.add("9128");
-        MatchSchedule.add("3637");
-        MatchSchedule.add("1787");
-        MatchSchedule.add("2582");
-        MatchSchedule.add("2875");
-        MatchSchedule.add("4188");
-        MatchSchedule.add("801");
-        MatchSchedule.add("4611");
-        MatchSchedule.add("1683");
-        MatchSchedule.add("1747");
-        MatchSchedule.add("4381");
-        MatchSchedule.add("4342");
-        MatchSchedule.add("9120");
-        MatchSchedule.add("1706");
-        MatchSchedule.add("8738");
-        MatchSchedule.add("325");
-        MatchSchedule.add("9593");
-        MatchSchedule.add("1477");
-        MatchSchedule.add("4020");
-        MatchSchedule.add("4451");
-        MatchSchedule.add("4145");
+        /*MatchSchedule = new ArrayList<>();
+        MatchSchedule.add("706");*/
 
 
 
@@ -247,7 +127,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     }
                     else {
                         TextView TeamNumTB = findViewById(R.id.TeamNumTB);
-                        TeamNumTB.setText(MatchSchedule.get(Match_Num_Real - 1));
+                        int teamnum = 0;
+                        for (int i = 0; i < MatchSchedule.length; i++) {
+                            if (MatchSchedule[i] == Match_Num_Real) {
+                                teamnum = i;
+                            }
+                        }
+                        TeamNumTB.setText(teamnum);
                     }
                 }
 
@@ -283,7 +169,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     if (Compare_Match_Num > Match_Num_Real) {
 
                         if(et.getText().toString().isEmpty() ) {
-                            Team_Num = Integer.parseInt(MatchSchedule.get(Match_Num_Real-1));
+                            int teamnum = 0;
+                            for (int i = 0; i < MatchSchedule.length; i++) {
+                                if (MatchSchedule[i] == Match_Num_Real) {
+                                    teamnum = i;
+                                }
+                            }
+                            Team_Num = teamnum;
                             //Sets team num data to txt box information
                         }
                         else {
@@ -310,11 +202,17 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     Start_Collection.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button ~ an onclick listener is when the code is looking for you to click(event) so that it can make something visible
                         @Override
                         public void onClick(View v) {
+                            int teamnum = 0;
+                            for (int i = 0; i < MatchSchedule.length; i++) {
+                                if (MatchSchedule[i] == Match_Num_Real) {
+                                    teamnum = i;
+                                }
+                            }
                             TextView TeamNumTB = findViewById(R.id.TeamNumTB);
-                            TeamNumTB.setText(MatchSchedule.get(Match_Num_Real - 1));
-                            int Team_Num_Real = Integer.parseInt(MatchSchedule.get(Match_Num_Real-1));
+                            TeamNumTB.setText(teamnum);
+                            int Team_Num_Real = teamnum;
                             if (Compare_Team_Num < Team_Num_Real) {
-                                Team_Num = Integer.parseInt(MatchSchedule.get(Match_Num_Real-1)); //Sets team num data to txt box information
+                                Team_Num = teamnum; //Sets team num data to txt box information
                                 String teamnumpls = Integer.toString(Team_Num);
                                 Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
                                 teamnumintent.putExtra(Team_Num_Display, teamnumpls);
