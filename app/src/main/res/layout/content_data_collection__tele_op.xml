@@ -11,33 +11,92 @@
 
 
     <TextView
-        android:id="@+id/autoKnockedOut_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Knocked Off Reef"
-        android:textColor="#000000"
+        android:id="@+id/teleOpAlgaeScoredProcessed_TV3"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
         android:textSize="34sp"
-        android:textStyle="bold"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.593" />
 
     <Button
-        android:id="@+id/autoAlgaePlus_GB"
+        android:id="@+id/teleOpProcessedAlgaeMinus_GB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="320dp"
+        android:layout_height="76dp"
+        android:background="#4CBD8B"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <Button
+        android:id="@+id/teleOpProcessedAlgaePlus_GB2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
         android:text="+"
         android:textSize="34sp"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/teleOpAlgaeScoredNet_TV2"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <Button
+        android:id="@+id/teleOpNetAlgaeMinus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
 
     <View
         android:id="@+id/divider13"
@@ -47,39 +106,25 @@
         android:translationZ="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintVertical_bias="0.595" />
 
-    <TextView
-        android:id="@+id/autoAlgaeScored_TV2"
-        android:layout_width="89dp"
-        android:layout_height="44dp"
-        android:text="0"
-        android:textAlignment="center"
+    <Button
+        android:id="@+id/teleOpNetAlgaePlus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="+"
         android:textSize="34sp"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
-
-    <Button
-        android:id="@+id/autoAlgaeMinus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        app:layout_constraintVertical_bias="0.594" />
 
     <TextView
         android:id="@+id/autoProcessedLabel_TV"
@@ -91,22 +136,38 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintVertical_bias="0.541" />
 
-    <CheckBox
-        android:id="@+id/autoKnockedOff_CB"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:textSize="96sp"
+    <TextView
+        android:id="@+id/autoProcessedLabel_TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robot Net"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.541" />
+
+    <CheckBox
+        android:id="@+id/teleOpKnockedOff_CB"
+        android:layout_width="232dp"
+        android:layout_height="80dp"
+        android:text="Knocked Off"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
 
     <TextView
         android:id="@+id/teleOpOther_TV"
@@ -119,424 +180,423 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintVertical_bias="0.695" />
 
     <View
-        android:id="@+id/hDiv2"
-        android:layout_width="345dp"
-        android:layout_height="15dp"
+        android:id="@+id/hDiv3"
+        android:layout_width="708dp"
+        android:layout_height="10dp"
         android:background="#000000"
         android:fadingEdge="none"
         android:fadingEdgeLength="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
-
-    <View
-        android:id="@+id/hDiv"
-        android:layout_width="345dp"
-        android:layout_height="15dp"
-        android:background="#000000"
-        android:fadingEdge="none"
-        android:fadingEdgeLength="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
-
-    <TextView
-            android:id="@+id/teleOp_TVCoralL4Scored_TV"
-            android:layout_width="89dp"
-            android:layout_height="44dp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            android:translationZ="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.713"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.177" />
-
-        <Button
-            android:id="@+id/teleOp_TVCoralL4Plus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="+"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.848"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.170" />
-
-        <View
-            android:id="@+id/divider8"
-            android:layout_width="320dp"
-            android:layout_height="75dp"
-            android:background="#C135D1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.827"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.170" />
-
-        <TextView
-            android:id="@+id/teleOpCoralL3Scored_TV"
-            android:layout_width="89dp"
-            android:layout_height="44dp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            android:translationZ="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.713"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.253" />
-
-        <TextView
-            android:id="@+id/teleOpCoralL2Scored_TV"
-            android:layout_width="89dp"
-            android:layout_height="44dp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            android:translationZ="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.713"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.322" />
-
-        <View
-            android:id="@+id/divider9"
-            android:layout_width="320dp"
-            android:layout_height="76dp"
-            android:background="#C135D1"
-            android:translationZ="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.827"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.395" />
-
-        <ImageView
-            android:id="@+id/reefImg_IV2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19"
-            app:srcCompat="@drawable/reef_removebg_preview__1_" />
-
-        <View
-            android:id="@+id/divider10"
-            android:layout_width="320dp"
-            android:layout_height="75dp"
-            android:background="#C135D1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.827"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.320" />
-
-        <Button
-            android:id="@+id/teleOpCoralL2Minus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="-"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.588"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.320" />
-
-        <Button
-            android:id="@+id/teleOpCoralL1Plus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="+"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.848"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.395" />
-
-        <TextView
-            android:id="@+id/teleOpCoralL1Scored_TV"
-            android:layout_width="89dp"
-            android:layout_height="44dp"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            android:translationZ="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.713"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.398" />
-
-        <TextView
-            android:id="@+id/teleOpReefLabelL2_TV"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:text="L2"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.418"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.323" />
-
-        <Button
-            android:id="@+id/teleOpCoralL3Minus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="-"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.588"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245" />
-
-        <Button
-            android:id="@+id/teleOpCoralL3Plus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="+"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.848"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245" />
-
-        <TextView
-            android:id="@+id/teleOpReefLabelL4_TV"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:text="L4"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.419"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.17" />
-
-        <Button
-            android:id="@+id/teleOpCoralL2Plus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="+"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.848"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.320" />
-
-        <View
-            android:id="@+id/divider11"
-            android:layout_width="320dp"
-            android:layout_height="75dp"
-            android:background="#C135D1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.827"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245" />
-
-        <Button
-            android:id="@+id/teleOpCoralL1Minus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="-"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.588"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.395" />
-
-        <TextView
-            android:id="@+id/teleOpReefLabelL3_TV"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:text="L3"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.418"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.246" />
-
-        <TextView
-            android:id="@+id/teleOpReefLabelL1_TV"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:text="L1"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.418"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4" />
-
-        <Button
-            android:id="@+id/teleOpCoralL4Minus_GB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bolt_regular"
-            android:text="-"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.588"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.170" />
-
-
-        <Button
-            android:id="@+id/toSubmission"
-            android:layout_width="594dp"
-            android:layout_height="161dp"
-            android:backgroundTint="@color/colorAccent"
-            android:fontFamily="@font/bolt_regular"
-            android:text="To End Game"
-            android:textSize="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.97" />
-
-        <TextView
-            android:id="@+id/teleOpLabel_TV"
-            android:layout_width="429dp"
-            android:layout_height="87dp"
-            android:fontFamily="@font/bolt_regular"
-            android:gravity="center"
-            android:text="Teleop:"
-            android:textColor="#000"
-            android:textSize="72sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.318"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.033" />
-
-    <CheckBox
-        android:id="@+id/stalled_CB"
-        android:layout_width="199dp"
-        android:layout_height="82dp"
-        android:text="Stalled"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
-
-    <CheckBox
-        android:id="@+id/defense_CB"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:text="Defense"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.711" />
 
     <CheckBox
         android:id="@+id/foul_CB"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
         android:text="Fouled"
-        android:textSize="40sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.773" />
 
     <CheckBox
         android:id="@+id/tipped_CB"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
         android:text="Tipped"
-        android:textSize="40sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintVertical_bias="0.771" />
+
+    <CheckBox
+        android:id="@+id/defense_CB"
+        android:layout_width="160dp"
+        android:layout_height="74dp"
+        android:text="Defense"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <CheckBox
+        android:id="@+id/stalled_CB"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
+        android:text="Stalled"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
 
     <View
-            android:id="@+id/hDiv1"
-            android:layout_width="708dp"
-            android:layout_height="15dp"
-            android:background="#000000"
-            android:fadingEdge="none"
-            android:fadingEdgeLength="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.1" />
+        android:id="@+id/hDiv"
+        android:layout_width="708dp"
+        android:layout_height="10dp"
+        android:background="#000000"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <TextView
+        android:id="@+id/teleOp_TVCoralL4Scored_TV"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <Button
+        android:id="@+id/teleOp_TVCoralL4Plus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:background="#C135D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170" />
+
+    <TextView
+        android:id="@+id/teleOpCoralL3Scored_TV"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/teleOpCoralL2Scored_TV"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="320dp"
+        android:layout_height="76dp"
+        android:background="#C135D1"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <ImageView
+        android:id="@+id/reefImg_IV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/reef_removebg_preview__1_" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:background="#C135D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.320" />
+
+    <Button
+        android:id="@+id/teleOpCoralL2Minus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.320" />
+
+    <Button
+        android:id="@+id/teleOpCoralL1Plus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/teleOpCoralL1Scored_TV"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <TextView
+        android:id="@+id/teleOpReefLabelL2_TV"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:text="L2"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <Button
+        android:id="@+id/teleOpCoralL3Minus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <Button
+        android:id="@+id/teleOpCoralL3Plus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/teleOpReefLabelL4_TV"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:text="L4"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+        android:id="@+id/teleOpCoralL2Plus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.320" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:background="#C135D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <Button
+        android:id="@+id/teleOpCoralL1Minus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/teleOpReefLabelL3_TV"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:text="L3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <TextView
+        android:id="@+id/teleOpReefLabelL1_TV"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:text="L1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/teleOpCoralL4Minus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170" />
+
+
+    <Button
+        android:id="@+id/toSubmission"
+        android:layout_width="600dp"
+        android:layout_height="165dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/bolt_regular"
+        android:text="To End Game"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/teleOpLabel_TV"
+        android:layout_width="429dp"
+        android:layout_height="87dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="Teleop:"
+        android:textColor="#000"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <View
+        android:id="@+id/hDiv1"
+        android:layout_width="708dp"
+        android:layout_height="15dp"
+        android:background="#000000"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
 
     <TextView
@@ -550,72 +610,71 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintVertical_bias="0.490" />
 
     <android.support.constraint.Barrier
-            android:id="@+id/barrier3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="top"
-            tools:layout_editor_absoluteY="1280dp" />
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="1280dp" />
 
-        <android.support.constraint.Barrier
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="top" />
+    <android.support.constraint.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
 
-        <android.support.constraint.Barrier
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="top" />
+    <android.support.constraint.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
 
 
-        <android.support.constraint.Barrier
-            android:id="@+id/barrier2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="left" />
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
-        <android.support.constraint.Group
-            android:id="@+id/group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        <android.support.constraint.Group
-            android:id="@+id/group2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <android.support.constraint.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        <android.support.constraint.Group
-            android:id="@+id/group3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <android.support.constraint.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        <android.support.constraint.Barrier
-            android:id="@+id/barrier2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="left" />
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
-        <TextView
-            android:id="@+id/TeamNumTeleopTV"
-            android:layout_width="194dp"
-            android:layout_height="67dp"
-            android:fontFamily="@font/bolt_regular"
-            android:text="0000"
-            android:textColor="#000000"
-            android:textSize="55sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.831"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.043" />
+    <TextView
+        android:id="@+id/TeamNumTeleopTV"
+        android:layout_width="194dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="0000"
+        android:textColor="#000000"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
 
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
     <TextView
         android:id="@+id/teleOp_TVCoralL4Scored_TV"
