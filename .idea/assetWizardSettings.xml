@@ -218,7 +218,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\Student\Downloads\Untitled design (1).png" />
+                                                <entry key="imagePath" value="C:\Users\Student\Downloads\reef-removebg-preview (1).png" />
                                                 <entry key="scalingPercent" value="97" />
                                               </map>
                                             </option>
@@ -232,7 +232,6 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="scalingPercent" value="0" />
-                                                <entry key="text" value="" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -244,7 +243,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="ff6300" />
-                                      <entry key="outputName" value="fieldmap" />
+                                      <entry key="outputName" value="reefcropped" />
                                     </map>
                                   </option>
                                 </PersistentState>

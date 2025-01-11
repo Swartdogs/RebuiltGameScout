@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
@@ -61,7 +60,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final ElegantNumberButton TeleAmpScoredEB = (ElegantNumberButton) findViewById(R.id.TeleAmpScore_EB);
         final ElegantNumberButton TeleAmpMissedEB = (ElegantNumberButton) findViewById(R.id.TeleAmpMissed_EB);
         final ElegantNumberButton TeleSpeakerMissedEB = (ElegantNumberButton) findViewById(R.id.TeleSpeakerMissed_EB);
-        final ElegantNumberButton TeleSpeakerScoredEB = (ElegantNumberButton) findViewById(R.id.TeleSpeakerScore_EB);
+        final ElegantNumberButton TeleSpeakerScoredEB = (ElegantNumberButton) findViewById(R.id.superdupercool_EB);
 
         //Below defines the button and commands for saving data and switching pages
         Button To_EndGame = (Button) findViewById(R.id.toSubmission);
