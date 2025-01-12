@@ -24,69 +24,6 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
-        android:id="@+id/end_Trap_TV2"
-        android:layout_width="154dp"
-        android:layout_height="68dp"
-        android:fontFamily="@font/bolt_regular"
-        android:gravity="center"
-        android:text="Trap"
-        android:textColor="#000"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
-
-    <View
-        android:id="@+id/divider22"
-        android:layout_width="406dp"
-        android:layout_height="231dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.401"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
-
-    <RadioGroup
-        android:id="@+id/End_Trap_RG"
-        android:layout_width="329dp"
-        android:layout_height="249dp"
-        android:layout_margin="18dp"
-        android:layout_marginStart="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723">
-
-        <RadioButton
-            android:id="@+id/End_TrapScore_RB"
-            android:layout_width="392dp"
-            android:layout_height="wrap_content"
-            android:text="Scored in Trap"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_TrapAttempt_RB"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="Attempted Trap"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_NoTrapAttempt_RB"
-            android:layout_width="263dp"
-            android:layout_height="65dp"
-            android:text="No Attempt"
-            android:textSize="40sp" />
-    </RadioGroup>
-
-    <TextView
         android:id="@+id/end_Hang_TV"
         android:layout_width="172dp"
         android:layout_height="70dp"
@@ -97,69 +34,9 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
-
-    <RadioGroup
-        android:id="@+id/End_HangPark_RG"
-        android:layout_width="463dp"
-        android:layout_height="397dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27">
-
-        <RadioButton
-            android:id="@+id/End_SoloHang_RB"
-            android:layout_width="485dp"
-            android:layout_height="76dp"
-            android:text="Solo/Initiates Harmony"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_HarmonyHang_RB"
-            android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:text="Completes Harmony"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_AttemptedHang_RB"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Attempted Stage"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_Park_RB"
-            android:layout_width="173dp"
-            android:layout_height="73dp"
-            android:text="Park"
-            android:textSize="40sp" />
-
-        <RadioButton
-            android:id="@+id/End_NoHangParkAttempt_RB"
-            android:layout_width="281dp"
-            android:layout_height="75dp"
-            android:text="No Attempt"
-            android:textSize="40sp" />
-    </RadioGroup>
-
-    <View
-        android:id="@+id/divider22"
-        android:layout_width="486dp"
-        android:layout_height="377dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.146" />
 
     <TextView
         android:id="@+id/textView12"
@@ -190,7 +67,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/TeamNumEndgameTV"
@@ -206,5 +83,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1114dp"
+        android:layout_height="505dp"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467"
+        app:srcCompat="@mipmap/cages_foreground" />
+
+    <RadioGroup
+        android:id="@+id/hang_RG"
+        android:layout_width="315dp"
+        android:layout_height="593dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" >
+
+        <RadioButton
+            android:id="@+id/shallowHang_RB"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="Shallow"
+            android:textSize="36sp" />
+
+        <RadioButton
+            android:id="@+id/deepHang_RB"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="Deep"
+            android:textSize="36sp" />
+
+        <RadioButton
+            android:id="@+id/park_RB"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="Park"
+            android:textSize="36sp" />
+
+        <RadioButton
+            android:id="@+id/noAttempt_RB"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="No Attempt"
+            android:textSize="36sp" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
