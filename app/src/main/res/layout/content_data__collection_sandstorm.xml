@@ -236,6 +236,7 @@
         android:fontFamily="@font/bolt_regular"
         android:text="+"
         android:textSize="34sp"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -307,6 +308,7 @@
         android:fontFamily="@font/bolt_regular"
         android:text="-"
         android:textSize="34sp"
+        android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.588"
@@ -376,12 +378,13 @@
         android:layout_width="320dp"
         android:layout_height="75dp"
         android:background="#C135D1"
+        android:translationZ="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <View
         android:id="@+id/divider6"
@@ -426,7 +429,7 @@
         app:layout_constraintVertical_bias="0.733" />
 
     <TextView
-        android:id="@+id/AutoProcessedLabel_TV"
+        android:id="@+id/AutoProcessedScored_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Processed"
@@ -513,9 +516,10 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintVertical_bias="0.76" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -24,20 +24,19 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
 
-    public static String RobotTip = "False";
-    public static String RobotStall = "False";
-    public static String Defense = "False";
-    public static String Fouls = "False";
-    public static String TeleAmpScore = "0";
-    public static String TeleSpeakerScore = "0";
-    public static String TeleAmpMiss = "0";
-    public static String TeleSpeakerMiss = "0";
+    public static String RobotTip = "false";
+    public static String RobotStall = "false";
+    public static String Defense = "false";
+    public static String Fouls = "false";
+    public static int teleCoralL4 = 0;
+    public static int teleCoralL3 = 0;
+    public static int teleCoralL2 = 0;
+    public static int teleCoralL1 = 0;
+    public static int teleProcessed = 0;
+    public static String teleAlgaeKnockedOff = "false";
+    public static int teleRobotNet = 0;
+    public static String Team_Num_Display = "0000";
 
-    public static String Add_TeleAmpScore = "0";
-    public static String Add_TeleSpeakerScore = "0";
-    public static String Add_TeleAmpMiss = "0";
-    public static String Add_TeleSpeakerMiss = "0";
-    public static String Team_Num_Display = "NA";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,26 +52,138 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final CheckBox RobotStallCB = (CheckBox) findViewById(R.id.stalled_CB);
         final CheckBox DefenseCB = (CheckBox) findViewById(R.id.defense_CB);
         final CheckBox FoulsCB = (CheckBox) findViewById(R.id.foul_CB);
+        final CheckBox teleAlgaeKnockedOffCB = (CheckBox) findViewById(R.id.teleOpKnockedOff_CB);
 
+        //Defines all buttons
+        //Coral Buttons
+        final Button teleCoralL4Plus = (Button) findViewById(R.id.teleOpCoralL4Plus_GB);
+        final Button teleCoralL4Minus = (Button) findViewById(R.id.teleOpCoralL4Minus_GB);
+        final Button teleCoralL3Plus = (Button) findViewById(R.id.teleOpCoralL3Plus_GB);
+        final Button teleCoralL3Minus = (Button) findViewById(R.id.teleOpCoralL3Minus_GB);
+        final Button teleCoralL2Plus = (Button) findViewById(R.id.teleOpCoralL2Plus_GB);
+        final Button teleCoralL2Minus = (Button) findViewById(R.id.teleOpCoralL2Minus_GB);
+        final Button teleCoralL1Plus = (Button) findViewById(R.id.teleOpCoralL1Plus_GB);
+        final Button teleCoralL1Minus = (Button) findViewById(R.id.teleOpCoralL1Minus_GB);
 
-
-        //Defines "Elegant" Number Blocks
-        final ElegantNumberButton TeleAmpScoredEB = (ElegantNumberButton) findViewById(R.id.TeleAmpScore_EB);
-        final ElegantNumberButton TeleAmpMissedEB = (ElegantNumberButton) findViewById(R.id.TeleAmpMissed_EB);
-        final ElegantNumberButton TeleSpeakerMissedEB = (ElegantNumberButton) findViewById(R.id.TeleSpeakerMissed_EB);
-        final ElegantNumberButton TeleSpeakerScoredEB = (ElegantNumberButton) findViewById(R.id.superdupercool_EB);
+        //Algae Buttons
+        final Button teleProcessedPlus = (Button) findViewById(R.id.teleOpProcessedAlgaePlus_GB2);
+        final Button teleProcessedMinus = (Button) findViewById(R.id.teleOpProcessedAlgaeMinus_GB2);
+        final Button teleRobotNetPlus = (Button) findViewById(R.id.teleOpNetAlgaePlus_GB);
+        final Button teleRobotNetMinus = (Button) findViewById(R.id.teleOpNetAlgaeMinus_GB);
 
         //Below defines the button and commands for saving data and switching pages
         Button To_EndGame = (Button) findViewById(R.id.toSubmission);
+
+        TextView teleL4Text = (TextView) findViewById(R.id.teleOpCoralL4Scored_TV);
+        TextView teleL3Text = (TextView) findViewById(R.id.teleOpCoralL3Scored_TV);
+        TextView teleL2Text = (TextView) findViewById(R.id.teleOpCoralL2Scored_TV);
+        TextView teleL1Text = (TextView) findViewById(R.id.teleOpCoralL1Scored_TV);
+        TextView teleProcessedText = (TextView) findViewById(R.id.teleOpAlgaeScoredProcessed_TV3);
+        TextView teleRobotNetText = (TextView) findViewById(R.id.teleOpAlgaeScoredNet_TV2);
+
+
+        teleCoralL4Plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleCoralL4 += 1;
+                teleL4Text.setText(teleCoralL4);
+            }});
+
+        teleCoralL4Minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleCoralL4 > 0) {
+                    teleCoralL4 -= 1;
+                    teleL4Text.setText(teleCoralL4);
+                }
+            }});
+
+        teleCoralL3Plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleCoralL3 += 1;
+                teleL3Text.setText(teleCoralL3);
+            }});
+
+        teleCoralL3Minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleCoralL3 > 0) {
+                    teleCoralL3 -= 1;
+                    teleL3Text.setText(teleCoralL3);
+                }
+            }});
+
+        teleCoralL2Plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleCoralL2 += 1;
+                teleL2Text.setText(teleCoralL2);
+            }});
+
+        teleCoralL2Minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleCoralL2 > 0) {
+                    teleCoralL2 -= 1;
+                    teleL2Text.setText(teleCoralL2);
+                }
+            }});
+
+        teleCoralL1Plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleCoralL1 += 1;
+                teleL1Text.setText(teleCoralL1);
+            }});
+
+        teleCoralL1Minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleCoralL1 > 0) {
+                    teleCoralL1 -= 1;
+                    teleL1Text.setText(teleCoralL1);
+                }
+            }});
+
+        teleProcessedPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleProcessed += 1;
+                teleProcessedText.setText(teleProcessed);
+            }});
+
+        teleProcessedMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleProcessed > 0) {
+                    teleProcessed -= 1;
+                    teleProcessedText.setText(teleProcessed);
+                }
+            }});
+
+        teleRobotNetPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teleRobotNet += 1;
+                teleRobotNetText.setText(teleRobotNet);
+            }});
+
+        teleRobotNetMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleRobotNet > 0) {
+                    teleRobotNet -= 1;
+                    teleRobotNetText.setText(teleRobotNet);
+                }
+            }});
+
+
+
         To_EndGame.setOnClickListener(new View.OnClickListener()
         { //Makes onclick listener for button
            @Override
            public void onClick(View v) {
-
-                TeleAmpScore = Integer.toString(Integer.parseInt(TeleAmpScoredEB.getNumber()) + Integer.parseInt(data_collection_TeleOP.Add_TeleAmpScore));
-                TeleAmpMiss = Integer.toString(Integer.parseInt(TeleAmpMissedEB.getNumber()) + Integer.parseInt(data_collection_TeleOP.Add_TeleAmpMiss));
-                TeleSpeakerMiss = Integer.toString(Integer.parseInt(TeleSpeakerMissedEB.getNumber()) + Integer.parseInt(data_collection_TeleOP.Add_TeleSpeakerMiss));
-                TeleSpeakerScore = Integer.toString(Integer.parseInt(TeleSpeakerScoredEB.getNumber()) + Integer.parseInt(data_collection_TeleOP.Add_TeleSpeakerScore));
 
                 if (RobotTipCB.isChecked()) {
                     RobotTip = "True";
@@ -86,14 +197,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (FoulsCB.isChecked()) {
                     Fouls = "True";
                 }
-
-                if (RobotTipCB.isChecked()) {
-                   RobotTip = "True";
+                if (teleAlgaeKnockedOffCB.isChecked()) {
+                    teleAlgaeKnockedOff = "True";
                 }
-
-                   // Intent intent4 = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
-                   // intent4.putExtra(Team_Num_Display_3,teleopteamnumstring);
-                   // startActivity(intent4);
                     Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
                     teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
                     startActivity (teamnumintent);

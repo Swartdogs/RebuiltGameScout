@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
-        android:id="@+id/end_Hang_TV"
+        android:id="@+id/endHang_TV"
         android:layout_width="172dp"
         android:layout_height="70dp"
         android:fontFamily="@font/bolt_regular"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/cages_IV"
         android:layout_width="1114dp"
         android:layout_height="505dp"
         android:translationZ="0dp"
