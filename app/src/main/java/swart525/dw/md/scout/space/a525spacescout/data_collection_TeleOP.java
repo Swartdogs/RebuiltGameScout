@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
-
 
 //After the first competition, we decided to only count the inner and outer
 //goals as the top goal instead of separating them. When scouting, it was too

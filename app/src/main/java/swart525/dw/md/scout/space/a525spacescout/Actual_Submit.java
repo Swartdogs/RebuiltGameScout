@@ -26,41 +26,32 @@ public class Actual_Submit extends AppCompatActivity {
     public String fileName = "Blue_1_Data.csv";
     public String filePath = "/ScoutData/";
     //Compiles string for CSV file
-    public String Final_String = Data_Collection_Page_1.Team_Num + "," +
+    public String Final_String =
+            Data_Collection_Page_1.Team_Num + "," +
             Data_Collection_Page_1.Match_Num + "," +
-            data_Collection_sandstorm.AutoAmpScore + "," +
-            data_Collection_sandstorm.AutoAmpAttempt + "," +
-            data_Collection_sandstorm.AutoSpeakerScore + "," +
-            data_Collection_sandstorm.AutoSpeakerAttempt + "," +
-            data_Collection_sandstorm.CenterOneAttempt + "," +
-            data_Collection_sandstorm.CenterTwoAttempt + "," +
-            data_Collection_sandstorm.CenterThreeAttempt + "," +
-            data_Collection_sandstorm.CenterFourAttempt + "," +
-            data_Collection_sandstorm.CenterFiveAttempt + "," +
-            data_Collection_sandstorm.RedOneAttempt + "," +
-            data_Collection_sandstorm.RedTwoAttempt + "," +
-            data_Collection_sandstorm.RedThreeAttempt + "," +
-            data_Collection_sandstorm.BlueOneAttempt + "," +
-            data_Collection_sandstorm.BlueTwoAttempt + "," +
-            data_Collection_sandstorm.BlueThreeAttempt + "," +
-            data_collection_TeleOP.TeleAmpScore + "," +
-            data_collection_TeleOP.TeleAmpMiss + "," +
-            data_collection_TeleOP.TeleSpeakerScore + "," +
-            data_collection_TeleOP.TeleSpeakerMiss + "," +
-            data_collection_end_game.AttemptedHang + "," +
-            data_collection_end_game.SoloHang + "," +
-            data_collection_end_game.HarmonyHang + "," +
-            data_collection_end_game.NoneHang + "," +
-            data_collection_end_game.Parked + "," +
-            data_collection_end_game.ScoredTrap + "," +
-            data_collection_end_game.AttemptedTrap + "," +
+            data_Collection_sandstorm.autoCoralL1 + "," +
+            data_Collection_sandstorm.autoCoralL2 + "," +
+            data_Collection_sandstorm.autoCoralL3 + "," +
+            data_Collection_sandstorm.autoCoralL4 + "," +
+            data_Collection_sandstorm.autoAlgaeKnockedOff + "," +
+            data_Collection_sandstorm.autoProcessed + "," +
+            data_collection_TeleOP.teleCoralL1 + "," +
+            data_collection_TeleOP.teleCoralL2 + "," +
+            data_collection_TeleOP.teleCoralL3 + "," +
+            data_collection_TeleOP.teleCoralL4 + "," +
+            data_collection_TeleOP.teleAlgaeKnockedOff + "," +
+            data_collection_TeleOP.teleProcessed + "," +
+            data_collection_TeleOP.teleRobotNet + "," +
+            data_collection_end_game.shallow + "," +
+            data_collection_end_game.deep + "," +
+            data_collection_end_game.parked + "," +
+            data_collection_end_game.noAttempt + "," +
             data_collection_TeleOP.Defense + "," +
             data_collection_TeleOP.Fouls + "," +
             data_collection_TeleOP.RobotTip + "," +
             data_collection_TeleOP.RobotStall + "," +
             Data_Collection_Page_1.Initials + "," +
-            Data_Collection_Page_1.NoShow + "," +
-            Save_Page.comment;
+            Data_Collection_Page_1.NoShow + ",";
 
 
     File externalStorageDir = Environment.getExternalStorageDirectory();

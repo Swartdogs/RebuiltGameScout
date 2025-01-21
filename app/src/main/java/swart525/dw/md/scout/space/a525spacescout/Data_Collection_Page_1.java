@@ -97,19 +97,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             }
         });
 
-        //MatchSchedule = new ArrayList<>();
-        //MatchSchedule.add("706");
-        //MatchSchedule.add("4021");
-       // try (BufferedReader br = new BufferedReader(new FileReader("MatchSchedule.csv"))) {
-           // String line;
-           // while ((line = br.readLine()) != null) {
-           //     String[] values = line.split(",");
-           //     recor
-          //  }
-      //  }
-
-
-
 
 
 

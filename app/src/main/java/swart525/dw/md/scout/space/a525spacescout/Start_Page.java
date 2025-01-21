@@ -21,38 +21,37 @@ public class Start_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Data_Collection_Page_1.NoShow = "False";
-                data_Collection_sandstorm.CenterOneAttempt = 0;
-                data_Collection_sandstorm.CenterTwoAttempt = 0;
-                data_Collection_sandstorm.CenterThreeAttempt = 0;
-                data_Collection_sandstorm.CenterFourAttempt = 0;
-                data_Collection_sandstorm.CenterFiveAttempt = 0;
-                data_Collection_sandstorm.RedOneAttempt = 0;
-                data_Collection_sandstorm.RedTwoAttempt = 0;
-                data_Collection_sandstorm.RedThreeAttempt = 0;
-                data_Collection_sandstorm.BlueOneAttempt = 0;
-                data_Collection_sandstorm.BlueTwoAttempt = 0;
-                data_Collection_sandstorm.BlueThreeAttempt = 0;
-                data_Collection_sandstorm.AutoAmpAttempt = "0";
-                data_Collection_sandstorm.AutoAmpScore = "0";
-                data_Collection_sandstorm.AutoSpeakerAttempt = "0";
-                data_Collection_sandstorm.AutoSpeakerScore = "0";
+
+                Data_Collection_Page_1.Team_Num = 0;
+                Data_Collection_Page_1.Match_Num = 0;
+                data_Collection_sandstorm.autoCoralL1 = 0;
+                data_Collection_sandstorm.autoCoralL2 = 0;
+                data_Collection_sandstorm.autoCoralL3 = 0;
+                data_Collection_sandstorm.autoCoralL4 = 0;
+                data_Collection_sandstorm.autoAlgaeKnockedOff = "False";
+                data_Collection_sandstorm.autoProcessed = 0;
+                data_collection_TeleOP.teleCoralL1 = 0;
+                data_collection_TeleOP.teleCoralL2 = 0;
+                data_collection_TeleOP.teleCoralL3 = 0;
+                data_collection_TeleOP.teleCoralL4 = 0;
+                data_collection_TeleOP.teleAlgaeKnockedOff = "False";
+                data_collection_TeleOP.teleProcessed = 0;
+                data_collection_TeleOP.teleRobotNet = 0;
+                data_collection_end_game.shallow = "False";
+                data_collection_end_game.deep = "False";
+                data_collection_end_game.parked = "False";
+                data_collection_end_game.noAttempt = "False";
                 data_collection_TeleOP.RobotTip = "False";
                 data_collection_TeleOP.RobotStall = "False";
                 data_collection_TeleOP.Defense = "False";
                 data_collection_TeleOP.Fouls = "False";
-                data_collection_end_game.SoloHang = "False";
-                data_collection_end_game.HarmonyHang = "False";
-                data_collection_end_game.ScoredTrap = "False";
-                data_collection_end_game.AttemptedTrap = "False";
-                data_collection_end_game.AttemptedHang = "False";
-                data_collection_end_game.Parked = "False";
-                data_collection_end_game.NoneHang = "False";
-                data_collection_end_game.NoneTrap = "False";
-                data_collection_TeleOP.TeleAmpScore = "0";
-                data_collection_TeleOP.TeleAmpMiss = "0";
-                data_collection_TeleOP.TeleSpeakerMiss = "0";
-                data_collection_TeleOP.TeleSpeakerScore = "0";
+                Data_Collection_Page_1.Initials = "False";
+                Data_Collection_Page_1.NoShow = "False";
+
+
+
+
+
 
 
                 Intent teamnumintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);

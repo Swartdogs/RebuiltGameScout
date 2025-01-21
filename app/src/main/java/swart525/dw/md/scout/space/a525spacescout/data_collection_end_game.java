@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class data_collection_end_game extends AppCompatActivity {
-import android.widget.TextView;
+
 
     //Defines Variables
 
