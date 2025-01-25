@@ -83,8 +83,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         teleCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                teleCoralL4 += 1;
-                teleL4Text.setText(String.valueOf(teleCoralL4));
+                if (teleCoralL4 < 6) {
+                    teleCoralL4 += 1;
+                    teleL4Text.setText(String.valueOf(teleCoralL4));
+                }
             }});
 
         teleCoralL4Minus.setOnClickListener(new View.OnClickListener() {
@@ -99,8 +101,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         teleCoralL3Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                teleCoralL3 += 1;
-                teleL3Text.setText(String.valueOf(teleCoralL3));
+                if (teleCoralL3 < 6) {
+                    teleCoralL3 += 1;
+                    teleL3Text.setText(String.valueOf(teleCoralL3));
+                }
             }});
 
         teleCoralL3Minus.setOnClickListener(new View.OnClickListener() {
@@ -115,8 +119,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         teleCoralL2Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                teleCoralL2 += 1;
-                teleL2Text.setText(String.valueOf(teleCoralL2));
+                if (teleCoralL2 < 6) {
+                    teleCoralL2 += 1;
+                    teleL2Text.setText(String.valueOf(teleCoralL2));
+                }
             }});
 
         teleCoralL2Minus.setOnClickListener(new View.OnClickListener() {
@@ -131,8 +137,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         teleCoralL1Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                teleCoralL1 += 1;
-                teleL1Text.setText(String.valueOf(teleCoralL1));
+                if (teleCoralL1 < 20) {
+                    teleCoralL1 += 1;
+                    teleL1Text.setText(String.valueOf(teleCoralL1));
+                }
             }});
 
         teleCoralL1Minus.setOnClickListener(new View.OnClickListener() {

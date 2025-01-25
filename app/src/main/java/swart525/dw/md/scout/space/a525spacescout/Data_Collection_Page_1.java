@@ -133,9 +133,15 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
                     if (NoShowCB.isChecked()) {
                         NoShow = "True";
+
+                        Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+                        startActivity(startintent);
+                            //comment = commenttxt.getText().toString();
+
+
                     }
 
-                    if (Compare_Match_Num > Match_Num_Real) {
+                    else if (Compare_Match_Num > Match_Num_Real) {
 
                         if(!tv.getText().toString().isEmpty()) {
 

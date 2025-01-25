@@ -71,7 +71,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL4 < 7) {
+                if (autoCoralL4 < 6) {
                     autoCoralL4 += 1;
                     autoL4Text.setText(String.valueOf(autoCoralL4));
                 }
@@ -91,7 +91,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL3Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL3 < 7) {
+                if (autoCoralL3 < 6) {
                     autoCoralL3 += 1;
                     autoL3Text.setText(String.valueOf(autoCoralL3));
                 }
@@ -111,7 +111,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL2Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL2 < 7) {
+                if (autoCoralL2 < 6) {
                     autoCoralL2 += 1;
                     autoL2Text.setText(String.valueOf(autoCoralL2));
                 }
@@ -131,8 +131,11 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL1Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoCoralL1 += 1;
-                autoL1Text.setText(String.valueOf(autoCoralL1));
+                if (autoCoralL1 < 20) {
+                    autoCoralL1 += 1;
+                    autoL1Text.setText(String.valueOf(autoCoralL1));
+                }
+
             }});
 
 
