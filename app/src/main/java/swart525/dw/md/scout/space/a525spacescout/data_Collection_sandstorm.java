@@ -1,14 +1,11 @@
 package swart525.dw.md.scout.space.a525spacescout;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 
@@ -26,6 +23,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static int autoCoralL1 = 0;
     public static int autoProcessed = 0;
     public static String autoAlgaeKnockedOff = "false";
+    public static String autoMoved = "false";
     public static String Team_Num_Display = "0000";
 
 
@@ -58,7 +56,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final Button autoProcessedMinus = (Button) findViewById(R.id.autoAlgaeMinus_GB4);
 
         //Algae CB
-        final CheckBox autoAlgaeKnockedOffCB = (CheckBox) findViewById(R.id.AutoKnockedOff_CB);
+        final CheckBox autoAlgaeKnockedOffCB = (CheckBox) findViewById(R.id.autoKnockedOff_CB);
+        final CheckBox autoMovedCB = (CheckBox) findViewById(R.id.autoMoved_CB);
 
         //Button to move to next page
         Button To_Teleop = (Button) findViewById(R.id.To_Teleop);
@@ -72,8 +71,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoCoralL4 += 1;
-                autoL4Text.setText(String.valueOf(autoCoralL4));
+                if (autoCoralL4 < 7) {
+                    autoCoralL4 += 1;
+                    autoL4Text.setText(String.valueOf(autoCoralL4));
+                }
             }});
 
 
@@ -90,8 +91,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL3Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoCoralL3 += 1;
-                autoL3Text.setText(String.valueOf(autoCoralL3));
+                if (autoCoralL3 < 7) {
+                    autoCoralL3 += 1;
+                    autoL3Text.setText(String.valueOf(autoCoralL3));
+                }
             }});
 
 
@@ -108,8 +111,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL2Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoCoralL2 += 1;
-                autoL2Text.setText(String.valueOf(autoCoralL2));
+                if (autoCoralL2 < 7) {
+                    autoCoralL2 += 1;
+                    autoL2Text.setText(String.valueOf(autoCoralL2));
+                }
             }});
 
 
@@ -172,6 +177,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
                 if (autoAlgaeKnockedOffCB.isChecked()) {
                     autoAlgaeKnockedOff = "true";
+                }
+
+                if(autoMovedCB.isChecked()){
+                    autoMoved = "true";
                 }
 
                 /*add in data collection pieces from checkboxes*/
