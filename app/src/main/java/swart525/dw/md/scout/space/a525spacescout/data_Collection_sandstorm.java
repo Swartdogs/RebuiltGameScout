@@ -67,13 +67,13 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         TextView autoL3Text = (TextView) findViewById(R.id.AutoCoralL3Scored_TV);
         TextView autoL2Text = (TextView) findViewById(R.id.AutoCoralL2Scored_TV);
         TextView autoL1Text = (TextView) findViewById(R.id.AutoCoralL1Scored_TV);
-        TextView autoProcessedText = (TextView) findViewById(R.id.AutoProcessedScored_TV);
+        TextView autoProcessedText = (TextView) findViewById(R.id.autoAlgaeScored_TV);
 
         autoCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 autoCoralL4 += 1;
-                autoL4Text.setText(autoCoralL4);
+                autoL4Text.setText(String.valueOf(autoCoralL4));
             }});
 
 
@@ -82,7 +82,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (autoCoralL4 > 0) {
                     autoCoralL4 -= 1;
-                    autoL4Text.setText(autoCoralL4);
+                    autoL4Text.setText(String.valueOf(autoCoralL4));
                 }
 
             }});
@@ -91,7 +91,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 autoCoralL3 += 1;
-                autoL3Text.setText(autoCoralL3);
+                autoL3Text.setText(String.valueOf(autoCoralL3));
             }});
 
 
@@ -100,7 +100,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (autoCoralL3 > 0) {
                     autoCoralL3 -= 1;
-                    autoL3Text.setText(autoCoralL3);
+                    autoL3Text.setText(String.valueOf(autoCoralL3));
                 }
 
             }});
@@ -109,7 +109,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 autoCoralL2 += 1;
-                autoL2Text.setText(autoCoralL2);
+                autoL2Text.setText(String.valueOf(autoCoralL2));
             }});
 
 
@@ -118,7 +118,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (autoCoralL2 > 0) {
                     autoCoralL2 -= 1;
-                    autoL2Text.setText(autoCoralL2);
+                    autoL2Text.setText(String.valueOf(autoCoralL2));
                 }
 
             }});
@@ -127,7 +127,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 autoCoralL1 += 1;
-                autoL1Text.setText(autoCoralL1);
+                autoL1Text.setText(String.valueOf(autoCoralL1));
             }});
 
 
@@ -136,7 +136,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (autoCoralL1 > 0) {
                     autoCoralL1 -= 1;
-                    autoL1Text.setText(autoCoralL1);
+                    autoL1Text.setText(String.valueOf(autoCoralL1));
                 }
 
             }});
@@ -144,9 +144,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoProcessedPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoCoralL2 += 1;
-                autoL2Text.setText(autoCoralL2);
+                autoProcessed += 1;
+                autoProcessedText.setText(String.valueOf(autoProcessed));
             }});
+
 
 
         autoProcessedMinus.setOnClickListener(new View.OnClickListener() {
@@ -154,7 +155,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (autoProcessed > 0) {
                     autoProcessed -= 1;
-                    autoProcessedText.setText(autoProcessed);
+                    autoProcessedText.setText(String.valueOf(autoProcessed));
                 }
 
             }});

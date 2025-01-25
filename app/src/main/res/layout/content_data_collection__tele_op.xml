@@ -164,10 +164,9 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/teleOpOther_TV"
@@ -182,46 +181,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <CheckBox
-        android:id="@+id/stalled_CB"
-        android:layout_width="155dp"
-        android:layout_height="74dp"
-        android:text="Stalled"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
-
-    <CheckBox
-        android:id="@+id/tipped_CB"
-        android:layout_width="155dp"
-        android:layout_height="74dp"
-        android:text="Tipped"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
-
-    <CheckBox
-        android:id="@+id/defense_CB"
-        android:layout_width="160dp"
-        android:layout_height="74dp"
-        android:text="Defense"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.752" />
 
     <CheckBox
         android:id="@+id/foul_CB"
@@ -234,7 +194,33 @@
         app:layout_constraintHorizontal_bias="0.364"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintVertical_bias="0.831" />
+
+    <CheckBox
+        android:id="@+id/defense_CB"
+        android:layout_width="160dp"
+        android:layout_height="74dp"
+        android:text="Defense"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <CheckBox
+        android:id="@+id/tipped_CB"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
+        android:text="Tipped"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
 
     <View
         android:id="@+id/hDiv3"
@@ -247,7 +233,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.767" />
+
+    <CheckBox
+        android:id="@+id/stalled_CB"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
+        android:text="Stalled"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
     <View
         android:id="@+id/hDiv"
@@ -555,8 +554,8 @@
 
     <Button
         android:id="@+id/toSubmission"
-        android:layout_width="600dp"
-        android:layout_height="165dp"
+        android:layout_width="425dp"
+        android:layout_height="123dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/bolt_regular"
         android:text="To End Game"
@@ -653,13 +652,13 @@
         android:layout_height="wrap_content" />
 
 
-
     <TextView
         android:id="@+id/TeamNumTeleopTV"
         android:layout_width="194dp"
         android:layout_height="67dp"
         android:fontFamily="@font/bolt_regular"
         android:text="0000"
+        android:textAlignment="viewStart"
         android:textColor="#000000"
         android:textSize="55sp"
         app:layout_constraintBottom_toBottomOf="parent"

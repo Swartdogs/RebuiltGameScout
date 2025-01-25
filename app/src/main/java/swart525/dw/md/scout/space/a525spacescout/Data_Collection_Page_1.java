@@ -46,7 +46,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection__page_1);
 
         //Sets up comparison numbers
-        final int Compare_Match_Num = 125; //Match must be less than 150
+        final int Compare_Match_Num = MatchSchedule.length; //Match must be less than 150
         final int Compare_Team_Num = 1; //Team must be greater than 1
 
         //Defines text boxes for Match/Team Number
@@ -59,7 +59,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
 
 
-        EditText editTeamNum = (EditText)findViewById(R.id.Team_Num_txt);
+        final EditText editTeamNum = (EditText)findViewById(R.id.Team_Num_txt);
         editTeamNum.setVisibility(View.INVISIBLE);
 
         TextView tv = (TextView)findViewById(R.id.TeamNumTB);
@@ -92,20 +92,15 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!Match_Num_txt.getText().toString().isEmpty()){
-                    //Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
+                    Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
                     Match_Num = Integer.parseInt(Match_Num_txt.getText().toString());
                     if (Compare_Match_Num < Match_Num){
                         Toast.makeText(Data_Collection_Page_1.this, "That is not a valid match number. Please try again!", Toast.LENGTH_LONG).show();
                     }
                     else {
+                        tv.setText(String.valueOf(MatchSchedule[Match_Num_Real - 1]));
 
-                        int teamnum = 0;
-                        for (int i = 0; i < MatchSchedule.length; i++) {
-                            if (i+1 == Match_Num_Real) {
-                                teamnum = MatchSchedule[i];
-                            }
-                        }
-                        tv.setText(teamnum);
+
                     }
                 }
 
@@ -115,12 +110,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         OverrideTeamnum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText et = (EditText)findViewById(R.id.Team_Num_txt);
-                et.setVisibility(View.VISIBLE);
+                EditText editTeamNum = (EditText)findViewById(R.id.Team_Num_txt);
+                editTeamNum.setVisibility(View.VISIBLE);
 
                 TextView tv = (TextView)findViewById(R.id.TeamNumTB);
                 tv.setVisibility(View.INVISIBLE);
-                Team_Num = Integer.parseInt(editTeamNum.getText().toString());
+
+                //editTeamNum.setText(String.valueOf(MatchSchedule[i]));
             }
         });
 
@@ -130,7 +126,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (Initials_txt.getText().toString().isEmpty() || Match_Num_txt.getText().toString().isEmpty()) {
-                    Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Data_Collection_Page_1.this, "Jump Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                 }
                 else {
                     int Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
@@ -146,11 +142,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             Team_Num = Integer.parseInt(tv.getText().toString());
                             //Sets team num data to txt box information
                         }
-                        if(!editTeamNum.getText().toString().isEmpty() ) {
+                        else if(!editTeamNum.getText().toString().isEmpty() ) {
                             Team_Num = Integer.parseInt(editTeamNum.getText().toString());
                         }
-                        else{
-                            Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
+
+                        //the freak down here is the problem line
+                        else {
+                            Toast.makeText(Data_Collection_Page_1.this, "Crouch Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                         }
                         Match_Num = Integer.parseInt(Match_Num_txt.getText().toString()); //Sets match num data to txt box information
                         Initials = Initials_txt.getText().toString();

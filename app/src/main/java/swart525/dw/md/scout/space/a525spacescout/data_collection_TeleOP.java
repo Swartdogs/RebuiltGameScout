@@ -84,7 +84,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleCoralL4 += 1;
-                teleL4Text.setText(teleCoralL4);
+                teleL4Text.setText(String.valueOf(teleCoralL4));
             }});
 
         teleCoralL4Minus.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +92,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleCoralL4 > 0) {
                     teleCoralL4 -= 1;
-                    teleL4Text.setText(teleCoralL4);
+                    teleL4Text.setText(String.valueOf(teleCoralL4));
                 }
             }});
 
@@ -100,7 +100,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleCoralL3 += 1;
-                teleL3Text.setText(teleCoralL3);
+                teleL3Text.setText(String.valueOf(teleCoralL3));
             }});
 
         teleCoralL3Minus.setOnClickListener(new View.OnClickListener() {
@@ -108,7 +108,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleCoralL3 > 0) {
                     teleCoralL3 -= 1;
-                    teleL3Text.setText(teleCoralL3);
+                    teleL3Text.setText(String.valueOf(teleCoralL3));
                 }
             }});
 
@@ -116,7 +116,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleCoralL2 += 1;
-                teleL2Text.setText(teleCoralL2);
+                teleL2Text.setText(String.valueOf(teleCoralL2));
             }});
 
         teleCoralL2Minus.setOnClickListener(new View.OnClickListener() {
@@ -124,7 +124,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleCoralL2 > 0) {
                     teleCoralL2 -= 1;
-                    teleL2Text.setText(teleCoralL2);
+                    teleL2Text.setText(String.valueOf(teleCoralL2));
                 }
             }});
 
@@ -132,7 +132,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleCoralL1 += 1;
-                teleL1Text.setText(teleCoralL1);
+                teleL1Text.setText(String.valueOf(teleCoralL1));
             }});
 
         teleCoralL1Minus.setOnClickListener(new View.OnClickListener() {
@@ -140,7 +140,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleCoralL1 > 0) {
                     teleCoralL1 -= 1;
-                    teleL1Text.setText(teleCoralL1);
+                    teleL1Text.setText(String.valueOf(teleCoralL1));
                 }
             }});
 
@@ -148,7 +148,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleProcessed += 1;
-                teleProcessedText.setText(teleProcessed);
+                teleProcessedText.setText(String.valueOf(teleProcessed));
             }});
 
         teleProcessedMinus.setOnClickListener(new View.OnClickListener() {
@@ -156,7 +156,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleProcessed > 0) {
                     teleProcessed -= 1;
-                    teleProcessedText.setText(teleProcessed);
+                    teleProcessedText.setText(String.valueOf(teleProcessed));
                 }
             }});
 
@@ -164,7 +164,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 teleRobotNet += 1;
-                teleRobotNetText.setText(teleRobotNet);
+                teleRobotNetText.setText(String.valueOf(teleRobotNet));
             }});
 
         teleRobotNetMinus.setOnClickListener(new View.OnClickListener() {
@@ -172,7 +172,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (teleRobotNet > 0) {
                     teleRobotNet -= 1;
-                    teleRobotNetText.setText(teleRobotNet);
+                    teleRobotNetText.setText(String.valueOf(teleRobotNet));
                 }
             }});
 

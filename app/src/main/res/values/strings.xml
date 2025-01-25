@@ -13,7 +13,7 @@
     <!--<string name="robot_color">#ff4444</string>-->o
 
 
-    <string name="app_name">525 REEFSCAPE Scouting App</string>
+    <string name="app_name">525 Reefscape Game App</string>
     <string name="title_activity_data__collection__page_1">Data_Collection_Page_1</string>
     <string name="to_begin_data_collection_enter_team_match_number_and_click_start">Please Enter Team Number, Match Number and your Initials to Begin</string>
     <string name="match_number">Match Number:</string>
