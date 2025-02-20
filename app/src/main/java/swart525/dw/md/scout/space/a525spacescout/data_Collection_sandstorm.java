@@ -2,6 +2,7 @@ package swart525.dw.md.scout.space.a525spacescout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -51,13 +52,15 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final Button autoCoralL1Plus = (Button) findViewById(R.id.AutoCoralL1Plus_GB);
         final Button autoCoralL1Minus = (Button) findViewById(R.id.AutoCoralL1Minus_GB);
 
+        final Button autoMovedB = (Button) findViewById(R.id.autoMovedFromStart_B);
+        autoMovedB.setTag("D7D7D7D5");
+        final Button autoAlgaeKnockedOffB = (Button) findViewById(R.id.autoKnockedOff_B);
+        autoAlgaeKnockedOffB.setTag("#D7D7D7D5");
+
         //Algae Buttons
         final Button autoProcessedPlus = (Button) findViewById(R.id.autoAlgaePlus_GB4);
         final Button autoProcessedMinus = (Button) findViewById(R.id.autoAlgaeMinus_GB4);
 
-        //Algae CB
-        final CheckBox autoAlgaeKnockedOffCB = (CheckBox) findViewById(R.id.autoKnockedOff_CB);
-        final CheckBox autoMovedCB = (CheckBox) findViewById(R.id.autoMoved_CB);
 
         //Button to move to next page
         Button To_Teleop = (Button) findViewById(R.id.To_Teleop);
@@ -71,7 +74,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL4 < 6) {
+                if (autoCoralL4 < 12) {
                     autoCoralL4 += 1;
                     autoL4Text.setText(String.valueOf(autoCoralL4));
                 }
@@ -91,7 +94,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL3Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL3 < 6) {
+                if (autoCoralL3 < 12) {
                     autoCoralL3 += 1;
                     autoL3Text.setText(String.valueOf(autoCoralL3));
                 }
@@ -111,7 +114,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL2Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL2 < 6) {
+                if (autoCoralL2 < 12) {
                     autoCoralL2 += 1;
                     autoL2Text.setText(String.valueOf(autoCoralL2));
                 }
@@ -131,7 +134,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoCoralL1Plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (autoCoralL1 < 20) {
+                if (autoCoralL1 < 50) {
                     autoCoralL1 += 1;
                     autoL1Text.setText(String.valueOf(autoCoralL1));
                 }
@@ -152,8 +155,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         autoProcessedPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                autoProcessed += 1;
-                autoProcessedText.setText(String.valueOf(autoProcessed));
+                if (autoProcessed < 18) {
+                    autoProcessed++;
+                    autoProcessedText.setText(String.valueOf(autoProcessed));
+                }
             }});
 
 
@@ -167,6 +172,66 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 }
 
             }});
+        autoMovedB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 String colorCode = (String) autoMovedB.getTag();
+                 if (!"#FFE600".equals(colorCode)){
+                     autoMovedB.setBackgroundColor(ContextCompat.getColor(autoMovedB.getContext(), R.color.colorPrimary));
+                     autoMovedB.setTag("#FFE600");
+                     autoMoved = "true";
+
+
+                     }
+                 else if("#FFE600".equals(colorCode)){
+                     autoMovedB.setBackgroundColor(ContextCompat.getColor(autoMovedB.getContext(), R.color.grey_button));
+                     autoMovedB.setTag("D7D7D7D5");
+                     autoMoved = "false";
+                     }
+
+            }
+
+            });
+        autoAlgaeKnockedOffB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) autoAlgaeKnockedOffB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    autoAlgaeKnockedOffB.setBackgroundColor(ContextCompat.getColor(autoAlgaeKnockedOffB.getContext(), R.color.colorPrimary));
+                    autoAlgaeKnockedOffB.setTag("#FFE600");
+                    autoAlgaeKnockedOff = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    autoAlgaeKnockedOffB.setBackgroundColor(ContextCompat.getColor(autoAlgaeKnockedOffB.getContext(), R.color.grey_button));
+                    autoAlgaeKnockedOffB.setTag("D7D7D7D5");
+                    autoAlgaeKnockedOff = "false";
+                }
+
+            }
+
+        });
+
+//        autoAlgaeKnockedOffB.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                String colorCode = (String) autoAlgaeKnockedOffB.getTag();
+//                if ("D7D7D7D5".equals(colorCode)){
+//                    autoAlgaeKnockedOffB.setBackgroundColor(ContextCompat.getColor(autoAlgaeKnockedOffB.getContext(), R.color.colorPrimary));
+//                    autoAlgaeKnockedOffB.setTag("#D7D7D7D5");
+//                    autoAlgaeKnockedOff = "true";
+//                }
+//                else{
+//                    autoAlgaeKnockedOffB.setBackgroundColor(ContextCompat.getColor(autoAlgaeKnockedOffB.getContext(), R.color.grey_button));
+//                    autoAlgaeKnockedOffB.setTag("#FFE600");
+//                    autoAlgaeKnockedOff = "false";
+//                }
+//
+//            }
+//
+//        });
 
         To_Teleop.setOnClickListener(new View.OnClickListener()
         { //Makes onclick listener for button
@@ -178,13 +243,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoSpeakerScore = Integer.toString(Integer.parseInt(AutoSpeakerScoredEB.getNumber()) + Integer.parseInt(data_Collection_sandstorm.Add_AutoSpeakerScore));
                 */
 
-                if (autoAlgaeKnockedOffCB.isChecked()) {
-                    autoAlgaeKnockedOff = "true";
-                }
 
-                if(autoMovedCB.isChecked()){
-                    autoMoved = "true";
-                }
 
                 /*add in data collection pieces from checkboxes*/
                 Intent teamnumintent = new Intent(data_Collection_sandstorm.this, data_collection_TeleOP.class);

@@ -31,7 +31,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static String Team_Num_Display = "NA";
     public static String Initials = "We got a runner";
     public static String NoShow = "false";
-    public static int[] MatchSchedule = {3, 525, 7, 42, 1252, 9960};
+    public static int[] MatchSchedule = {3, 525, 7, 42, 1252, 99600};
 
 
 
@@ -46,7 +46,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection__page_1);
 
         //Sets up comparison numbers
-        final int Compare_Match_Num = MatchSchedule.length; //Match must be less than 150
+        final int Compare_Match_Num = MatchSchedule.length+1; //Match must be less than 150
         final int Compare_Team_Num = 1; //Team must be greater than 1
 
         //Defines text boxes for Match/Team Number
@@ -94,7 +94,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (!Match_Num_txt.getText().toString().isEmpty()){
                     Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
                     Match_Num = Integer.parseInt(Match_Num_txt.getText().toString());
-                    if (Compare_Match_Num < Match_Num){
+                    if (Compare_Match_Num < Match_Num + 1){
                         Toast.makeText(Data_Collection_Page_1.this, "That is not a valid match number. Please try again!", Toast.LENGTH_LONG).show();
                     }
                     else {
@@ -114,6 +114,8 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 editTeamNum.setVisibility(View.VISIBLE);
 
                 TextView tv = (TextView)findViewById(R.id.TeamNumTB);
+                tv.setText("");
+
                 tv.setVisibility(View.INVISIBLE);
 
                 //editTeamNum.setText(String.valueOf(MatchSchedule[i]));
@@ -147,24 +149,30 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
                             Team_Num = Integer.parseInt(tv.getText().toString());
                             //Sets team num data to txt box information
+                            Match_Num = Integer.parseInt(Match_Num_txt.getText().toString()); //Sets match num data to txt box information
+                            Initials = Initials_txt.getText().toString();
+
+
+                            String teamnumpls = Integer.toString(Team_Num);
+                            Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
+                            teamnumintent.putExtra(Team_Num_Display, teamnumpls);
+                            startActivity(teamnumintent);
                         }
                         else if(!editTeamNum.getText().toString().isEmpty() ) {
                             Team_Num = Integer.parseInt(editTeamNum.getText().toString());
-                        }
+                            Match_Num = Integer.parseInt(Match_Num_txt.getText().toString()); //Sets match num data to txt box information
+                            Initials = Initials_txt.getText().toString();
 
+
+                            String teamnumpls = Integer.toString(Team_Num);
+                            Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
+                            teamnumintent.putExtra(Team_Num_Display, teamnumpls);
+                            startActivity(teamnumintent);
+                        }
                         //the freak down here is the problem line
                         else {
                             Toast.makeText(Data_Collection_Page_1.this, "Crouch Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                         }
-                        Match_Num = Integer.parseInt(Match_Num_txt.getText().toString()); //Sets match num data to txt box information
-                        Initials = Initials_txt.getText().toString();
-
-
-                        String teamnumpls = Integer.toString(Team_Num);
-                        Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
-                        teamnumintent.putExtra(Team_Num_Display, teamnumpls);
-                        startActivity(teamnumintent);
-
                     }
                     else {
                         Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();

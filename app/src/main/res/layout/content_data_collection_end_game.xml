@@ -10,21 +10,95 @@
     tools:showIn="@layout/activity_data_collection_end_game">
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shallow"
-        android:textColor="#000000"
-        android:textSize="34sp"
+        android:id="@+id/teleOpOther_TV3"
+        android:layout_width="261dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="OTHER"
+        android:textColor="#000"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintVertical_bias="0.752" />
+
+    <Button
+        android:id="@+id/end_defense_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="#D7D5D7D7"
+        android:text="DEFENSE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <Button
+        android:id="@+id/end_tipped_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="#D7D5D7D7"
+        android:text="Tipped"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <Button
+        android:id="@+id/end_stalled_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="#D7D5D7D7"
+        android:text="Stalled"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
 
     <View
-        android:id="@+id/hDiv1"
+        android:id="@+id/hDiv4"
+        android:layout_width="708dp"
+        android:layout_height="10dp"
+        android:background="#000000"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <Button
+        android:id="@+id/end_fouled_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="#D7D5D7D7"
+        android:text="Fouled"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <View
+        android:id="@+id/hDiv2"
         android:layout_width="699dp"
         android:layout_height="16dp"
         android:background="#000000"
@@ -39,33 +113,33 @@
 
     <TextView
         android:id="@+id/endHang_TV"
-        android:layout_width="172dp"
-        android:layout_height="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
         android:fontFamily="@font/bolt_regular"
         android:gravity="center"
-        android:text="Hang"
+        android:text="HANG/BARGE"
         android:textColor="#000"
-        android:textSize="45sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
-        android:text="End Game:"
+        android:text="ENDGAME:"
         android:textColor="#000"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <Button
         android:id="@+id/To_Submission_B"
@@ -73,6 +147,7 @@
         android:layout_height="141dp"
         android:layout_marginStart="131dp"
         android:layout_marginEnd="130dp"
+        android:background="#FF6E00"
         android:fontFamily="@font/bolt_regular"
         android:text="To Final Page"
         android:textSize="50dp"
@@ -81,7 +156,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.97" />
 
     <TextView
         android:id="@+id/TeamNumEndgameTV"
@@ -89,7 +164,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
         android:text="0000"
-        android:textAlignment="viewStart"
+        android:textAlignment="textStart"
         android:textColor="#000000"
         android:textSize="55sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,68 +176,89 @@
 
     <RadioGroup
         android:id="@+id/hang_RG"
-        android:layout_width="315dp"
-        android:layout_height="593dp"
+        android:layout_width="318dp"
+        android:layout_height="426dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" >
+        app:layout_constraintVertical_bias="0.364">
 
         <RadioButton
             android:id="@+id/shallowHang_RB"
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:text="Shallow"
-            android:textSize="36sp" />
+            android:text="SHALLOW"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/deepHang_RB"
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:text="Deep"
-            android:textSize="36sp" />
+            android:text="DEEP"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/park_RB"
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:text="Park"
-            android:textSize="36sp" />
+            android:text="PARK"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/noAttempt_RB"
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:text="No Attempt"
-            android:textSize="36sp" />
+            android:text="NO ATTEMPT"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="278dp"
-        android:layout_height="543dp"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHALLOW"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411"
-        app:srcCompat="@drawable/screenshot_2025_01_22_at_7_24_42_pm_removebg_preview" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deep"
+        android:text="DEEP"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintVertical_bias="0.698" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="328dp"
+        android:layout_height="607dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
+        app:srcCompat="@drawable/screenshot_2025_01_22_at_7_24_42_pm_removebg_preview_removebg_preview" />
 
 </android.support.constraint.ConstraintLayout>

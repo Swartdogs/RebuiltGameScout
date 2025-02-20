@@ -16,9 +16,11 @@
     <color name="colorPrimaryDark">#FF6E00</color>
     <color name="colorAccent">#FF6E00</color>
     <color name="button_no">#FFFFFF</color>
-    <color name="grey_button">#828282</color>
+    <color name="grey_button">#D5D7D7D7</color>
     <color name="colorBlue">#3F51B5</color>
     <color name="colorRed">#FF4444</color>
     <color name="colorGreen">#00b500</color>
     <color name="gREY">#FFD5D6D6</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>
