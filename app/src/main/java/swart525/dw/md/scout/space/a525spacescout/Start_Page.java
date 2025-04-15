@@ -24,6 +24,7 @@ public class Start_Page extends AppCompatActivity {
 
                 Data_Collection_Page_1.Team_Num = 0;
                 Data_Collection_Page_1.Match_Num = 0;
+                data_Collection_sandstorm.autoMoved = "False";
                 data_Collection_sandstorm.autoCoralL1 = 0;
                 data_Collection_sandstorm.autoCoralL2 = 0;
                 data_Collection_sandstorm.autoCoralL3 = 0;
@@ -34,17 +35,20 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_TeleOP.teleCoralL2 = 0;
                 data_collection_TeleOP.teleCoralL3 = 0;
                 data_collection_TeleOP.teleCoralL4 = 0;
-                data_collection_TeleOP.teleAlgaeKnockedOff = "False";
+                data_collection_TeleOP.teleAlgaeKnockedOff = 0;
                 data_collection_TeleOP.teleProcessed = 0;
                 data_collection_TeleOP.teleRobotNet = 0;
+                data_collection_TeleOP.teleAlgaeMissed = "False";
                 data_collection_end_game.shallow = "False";
+                data_collection_end_game.attemptShallow = "False";
                 data_collection_end_game.deep = "False";
+                data_collection_end_game.attemptDeep = "False";
                 data_collection_end_game.parked = "False";
                 data_collection_end_game.noAttempt = "False";
-                data_collection_TeleOP.RobotTip = "False";
-                data_collection_TeleOP.RobotStall = "False";
                 data_collection_TeleOP.Defense = "False";
                 data_collection_TeleOP.Fouls = "False";
+                data_collection_TeleOP.RobotTip = "False";
+                data_collection_TeleOP.RobotStall = "False";
                 Data_Collection_Page_1.Initials = "False";
                 Data_Collection_Page_1.NoShow = "False";
 

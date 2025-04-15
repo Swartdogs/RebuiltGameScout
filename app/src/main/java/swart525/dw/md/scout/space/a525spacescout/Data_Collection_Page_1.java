@@ -30,10 +30,8 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static int Match_Num_Real = 0;
     public static String Team_Num_Display = "NA";
     public static String Initials = "We got a runner";
-    public static String NoShow = "false";
-    public static int[] MatchSchedule = {3, 525, 7, 42, 1252, 99600};
-
-
+    public static String NoShow = "False";
+    public static int[] MatchSchedule = {4859,8821,3313,7541,9576,2839,3928,3723,1625,5275,8024,4260,8824,5914,9570,648,9543,4646,3723,5914,967,9576,9579,4859,9092,5275,6455,171,4021,9061,9579,6420,4959,9570,10476,6419,3134,7848,4859,8824,648,4539,9508,3723,1625,8770,2839,3134,9570,6455,9543,4260,10476,525,6391,6420,5442,5041,5837,9082,3275,1785,8821,8024,8766,6419,10439,4646,6420,9551,5576,9092,167,5041,9508,1706,9445};
 
 
 
@@ -133,17 +131,9 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 else {
                     int Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
 
-                    if (NoShowCB.isChecked()) {
-                        NoShow = "True";
-
-                        Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
-                        startActivity(startintent);
-                            //comment = commenttxt.getText().toString();
 
 
-                    }
-
-                    else if (Compare_Match_Num > Match_Num_Real) {
+                    if (Compare_Match_Num > Match_Num_Real) {
 
                         if(!tv.getText().toString().isEmpty()) {
 
@@ -174,9 +164,19 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             Toast.makeText(Data_Collection_Page_1.this, "Crouch Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                         }
                     }
-                    else {
-                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
+
+                    if (NoShowCB.isChecked()) {
+                        NoShow = "True";
+
+                        Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+                        startActivity(startintent);
+                        //comment = commenttxt.getText().toString();
+
+
                     }
+//                    else {
+//                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
+//                    }
 
 
 

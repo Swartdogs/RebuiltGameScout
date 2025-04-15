@@ -29,7 +29,7 @@ public class Actual_Submit extends AppCompatActivity {
     public String Final_String =
             Data_Collection_Page_1.Team_Num + "," +
             Data_Collection_Page_1.Match_Num + "," +
-                    data_Collection_sandstorm.autoMoved + "," +
+            data_Collection_sandstorm.autoMoved + "," +
             data_Collection_sandstorm.autoCoralL1 + "," +
             data_Collection_sandstorm.autoCoralL2 + "," +
             data_Collection_sandstorm.autoCoralL3 + "," +
@@ -40,11 +40,14 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_TeleOP.teleCoralL2 + "," +
             data_collection_TeleOP.teleCoralL3 + "," +
             data_collection_TeleOP.teleCoralL4 + "," +
-            data_collection_TeleOP.teleAlgaeKnockedOff + "," +
             data_collection_TeleOP.teleProcessed + "," +
             data_collection_TeleOP.teleRobotNet + "," +
+            data_collection_TeleOP.teleAlgaeKnockedOff + "," +
+            data_collection_TeleOP.teleAlgaeMissed + "," +
             data_collection_end_game.shallow + "," +
+            data_collection_end_game.attemptShallow + "," +
             data_collection_end_game.deep + "," +
+            data_collection_end_game.attemptDeep + "," +
             data_collection_end_game.parked + "," +
             data_collection_end_game.noAttempt + "," +
             data_collection_end_game.Defense + "," +

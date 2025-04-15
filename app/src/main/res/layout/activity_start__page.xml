@@ -61,7 +61,7 @@
         android:fontFamily="@font/bolt_regular"
         android:gravity="center"
         android:text="Blue 3 Robot"
-        android:textColor="@color/colorLabel"
+        android:textColor="@color/button_yes_blue"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

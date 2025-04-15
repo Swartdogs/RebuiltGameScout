@@ -6,7 +6,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 
@@ -23,16 +22,17 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
 
-    public static String RobotTip = "false";
-    public static String RobotStall = "false";
-    public static String Defense = "false";
-    public static String Fouls = "false";
+    public static String RobotTip = "False";
+    public static String RobotStall = "False";
+    public static String Defense = "False";
+    public static String Fouls = "False";
     public static int teleCoralL4 = 0;
     public static int teleCoralL3 = 0;
     public static int teleCoralL2 = 0;
     public static int teleCoralL1 = 0;
     public static int teleProcessed = 0;
-    public static String teleAlgaeKnockedOff = "false";
+    public static int teleAlgaeKnockedOff = 0;
+    public static String teleAlgaeMissed = "False";
     public static int teleRobotNet = 0;
     public static String Team_Num_Display = "0000";
 
@@ -51,7 +51,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button RobotStallB = (Button) findViewById(R.id.teleOp_stalled_B);
         final Button DefenseB = (Button) findViewById(R.id.teleOp_Defense_B);
         final Button FoulsB = (Button) findViewById(R.id.teleOp_fouled_B);
-        final Button teleOpKnockedOffB = (Button) findViewById(R.id.teleOpKnockedOff_B);
+        final Button teleOpNetAlgaeMissedB = (Button) findViewById(R.id.teleOp_missed_B);
 
         //Defines all buttons
         //Coral Buttons
@@ -67,8 +67,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         //Algae Buttons
         final Button teleProcessedPlus = (Button) findViewById(R.id.teleOpProcessedAlgaePlus_GB2);
         final Button teleProcessedMinus = (Button) findViewById(R.id.teleOpProcessedAlgaeMinus_GB2);
-        final Button teleRobotNetPlus = (Button) findViewById(R.id.teleOpNetAlgaePlus_GB);
-        final Button teleRobotNetMinus = (Button) findViewById(R.id.teleOpNetAlgaeMinus_GB);
+        final Button teleRobotNetPlus = (Button) findViewById(R.id.teleOpNetAlgaePlus_GB2);
+        final Button teleRobotNetMinus = (Button) findViewById(R.id.teleOpNetAlgaeMinus_GB2);
+        final Button teleOpKnockedOffPlus = (Button) findViewById(R.id.teleOpKnockedOffPlus_GB);
+        final Button teleOpKnockedOffMinus = (Button) findViewById(R.id.teleOpKockedOffMinus_GB);
 
         //Below defines the button and commands for saving data and switching pages
         Button To_EndGame = (Button) findViewById(R.id.toSubmission);
@@ -78,56 +80,62 @@ public class data_collection_TeleOP extends AppCompatActivity {
         TextView teleL2Text = (TextView) findViewById(R.id.teleOpCoralL2Scored_TV);
         TextView teleL1Text = (TextView) findViewById(R.id.teleOpCoralL1Scored_TV);
         TextView teleProcessedText = (TextView) findViewById(R.id.teleOpAlgaeScoredProcessed_TV3);
-        TextView teleRobotNetText = (TextView) findViewById(R.id.teleOpAlgaeScoredNet_TV2);
+        TextView teleRobotNetText = (TextView) findViewById(R.id.teleOpAlgaeScoredNet_TV);
+        TextView teleOpKnockedOffText = findViewById(R.id.teleOpKnockedOff_TV);
 
-        if (data_collection_end_game.RobotTip.equals("true")) {
-            RobotTip = "true";
-            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.colorPrimary));
-            RobotTipB.setTag("#FFE600");
-        }
-        else {
-            RobotTip = "false";
-            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
-            RobotTipB.setTag("D7D7D7D5");
-        }
+        RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
+        RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
+        DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.grey_button));
+        FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
 
-        if (data_collection_end_game.RobotStall.equals("true")) {
-            RobotStall = "true";
-            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.colorPrimary));
-            RobotStallB.setTag("#FFE600");
-        }
-        else {
-            RobotStall = "false";
-            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
-            RobotStallB.setTag("D7D7D7D5");
-        }
-
-        if (data_collection_end_game.Defense.equals("true")) {
-            Defense = "true";
-            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.colorPrimary));
-            DefenseB.setTag("#FFE600");
-        }
-        else {
-            RobotStall = "false";
-            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.grey_button));
-            DefenseB.setTag("D7D7D7D5");
-        }
-
-        if (data_collection_end_game.Fouls.equals("true")) {
-            Fouls = "true";
-            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
-            FoulsB.setTag("#FFE600");
-        }
-        else {
-            Fouls = "false";
-            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
-            FoulsB.setTag("D7D7D7D5");
-        }
-
-
+//        if (data_collection_end_game.RobotTip.equals("true")) {
+//            RobotTip = "true";
+//            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.colorPrimary));
+//            RobotTipB.setTag("#FFE600");
+//        }
+//        else {
+//            RobotTip = "false";
+//            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
+//            RobotTipB.setTag("D7D7D7D5");
+//        }
+//
+//        if (data_collection_end_game.RobotStall.equals("true")) {
+//            RobotStall = "true";
+//            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.colorPrimary));
+//            RobotStallB.setTag("#FFE600");
+//        }
+//        else {
+//            RobotStall = "false";
+//            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
+//            RobotStallB.setTag("D7D7D7D5");
+//        }
+//
+//        if (data_collection_end_game.Defense.equals("true")) {
+//            Defense = "true";
+//            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.colorPrimary));
+//            DefenseB.setTag("#FFE600");
+//        }
+//        else {
+//            RobotStall = "false";
+//            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.grey_button));
+//            DefenseB.setTag("D7D7D7D5");
+//        }
+//
+//        if (data_collection_end_game.Fouls.equals("true")) {
+//            Fouls = "true";
+//            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
+//            FoulsB.setTag("#FFE600");
+//        }
+//        else {
+//            Fouls = "false";
+//            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
+//            FoulsB.setTag("D7D7D7D5");
+//        }
+//
+//
         teleCoralL4Plus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+           public void onClick(View view) {
                 if (teleCoralL4 < 12) {
                     teleCoralL4 += 1;
                     teleL4Text.setText(String.valueOf(teleCoralL4));
@@ -232,6 +240,24 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     teleRobotNetText.setText(String.valueOf(teleRobotNet));
                 }
             }});
+
+        teleOpKnockedOffPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleAlgaeKnockedOff < 6) {
+                    teleAlgaeKnockedOff += 1;
+                    teleOpKnockedOffText.setText(String.valueOf(teleAlgaeKnockedOff));
+                }
+            }});
+
+        teleOpKnockedOffMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (teleAlgaeKnockedOff > 0) {
+                    teleAlgaeKnockedOff -= 1;
+                    teleOpKnockedOffText.setText(String.valueOf(teleAlgaeKnockedOff));
+                }
+            }});
 //        teleOpKnockedOffB.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -250,26 +276,26 @@ public class data_collection_TeleOP extends AppCompatActivity {
 //            }
 //
 //        });
-        teleOpKnockedOffB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String colorCode = (String) teleOpKnockedOffB.getTag();
-                if (!"#FFE600".equals(colorCode)){
-                    teleOpKnockedOffB.setBackgroundColor(ContextCompat.getColor(teleOpKnockedOffB.getContext(), R.color.colorPrimary));
-                    teleOpKnockedOffB.setTag("#FFE600");
-                    teleAlgaeKnockedOff = "true";
-
-
-                }
-                else if("#FFE600".equals(colorCode)){
-                    teleOpKnockedOffB.setBackgroundColor(ContextCompat.getColor(teleOpKnockedOffB.getContext(), R.color.grey_button));
-                    teleOpKnockedOffB.setTag("D7D7D7D5");
-                    teleAlgaeKnockedOff = "false";
-                }
-
-            }
-
-        });
+//        teleOpKnockedOffB.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String colorCode = (String) teleOpKnockedOffB.getTag();
+//                if (!"#FFE600".equals(colorCode)){
+//                    teleOpKnockedOffB.setBackgroundColor(ContextCompat.getColor(teleOpKnockedOffB.getContext(), R.color.colorPrimary));
+//                    teleOpKnockedOffB.setTag("#FFE600");
+//                    teleAlgaeKnockedOff = "true";
+//
+//
+//                }
+//                else if("#FFE600".equals(colorCode)){
+//                    teleOpKnockedOffB.setBackgroundColor(ContextCompat.getColor(teleOpKnockedOffB.getContext(), R.color.grey_button));
+//                    teleOpKnockedOffB.setTag("D7D7D7D5");
+//                    teleAlgaeKnockedOff = "false";
+//                }
+//
+//            }
+//
+//        });
 
 
         RobotTipB.setOnClickListener(new View.OnClickListener() {
@@ -308,6 +334,28 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
                     RobotStallB.setTag("D7D7D7D5");
                     RobotStall= "false";
+                }
+
+            }
+
+        });
+
+        //teleOpNetAlgaeMissedB
+        teleOpNetAlgaeMissedB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) teleOpNetAlgaeMissedB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    teleOpNetAlgaeMissedB.setBackgroundColor(ContextCompat.getColor(teleOpNetAlgaeMissedB.getContext(), R.color.colorPrimary));
+                    teleOpNetAlgaeMissedB.setTag("#FFE600");
+                    teleAlgaeMissed = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    teleOpNetAlgaeMissedB.setBackgroundColor(ContextCompat.getColor(teleOpNetAlgaeMissedB.getContext(), R.color.grey_button));
+                    teleOpNetAlgaeMissedB.setTag("D7D7D7D5");
+                    teleAlgaeMissed= "false";
                 }
 
             }

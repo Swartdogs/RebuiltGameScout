@@ -34,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.833" />
@@ -49,7 +49,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.833" />
@@ -64,7 +64,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.833" />
@@ -176,35 +176,55 @@
 
     <RadioGroup
         android:id="@+id/hang_RG"
-        android:layout_width="318dp"
-        android:layout_height="426dp"
+        android:layout_width="320dp"
+        android:layout_height="564dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364">
+        app:layout_constraintVertical_bias="0.397">
 
         <RadioButton
             android:id="@+id/shallowHang_RB"
-            android:layout_width="match_parent"
-            android:layout_height="102dp"
+            android:layout_width="332dp"
+            android:layout_height="62dp"
             android:text="SHALLOW"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/attemptShallowHang_RB"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:text="ATTEMPTED SHALLOW"
             android:textSize="34sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/deepHang_RB"
             android:layout_width="match_parent"
-            android:layout_height="102dp"
+            android:layout_height="95dp"
+            android:gravity="bottom"
             android:text="DEEP"
             android:textSize="34sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/park_RB"
+            android:id="@+id/attemptDeepHang_RB"
             android:layout_width="match_parent"
-            android:layout_height="102dp"
+            android:layout_height="105dp"
+            android:text="ATTEMPTED DEEP"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/park_RB"
+            android:layout_width="340dp"
+            android:layout_height="89dp"
+            android:gravity="bottom"
             android:text="PARK"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -212,7 +232,7 @@
         <RadioButton
             android:id="@+id/noAttempt_RB"
             android:layout_width="match_parent"
-            android:layout_height="102dp"
+            android:layout_height="99dp"
             android:text="NO ATTEMPT"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -244,15 +264,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintVertical_bias="0.672" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="328dp"
-        android:layout_height="607dp"
+        android:layout_width="303dp"
+        android:layout_height="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"

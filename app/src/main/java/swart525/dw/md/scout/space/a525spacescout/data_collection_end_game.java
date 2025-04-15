@@ -18,6 +18,8 @@ public class data_collection_end_game extends AppCompatActivity {
 
     public static String shallow = "False";
     public static String deep = "False";
+    public static String attemptShallow = "False";
+    public static String attemptDeep = "False";
     public static String parked = "False";
     public static String noAttempt = "False";
     public static String RobotTip = "false";
@@ -45,6 +47,8 @@ public class data_collection_end_game extends AppCompatActivity {
         //Radio Buttons
         final RadioButton shallowRB = (RadioButton) findViewById(R.id.shallowHang_RB);
         final RadioButton deepRB = (RadioButton) findViewById(R.id.deepHang_RB);
+        final RadioButton attemptShallowRB = (RadioButton) findViewById(R.id.attemptShallowHang_RB);
+        final RadioButton attemptDeepRB = (RadioButton) findViewById(R.id.attemptDeepHang_RB);
         final RadioButton parkedRB = (RadioButton) findViewById(R.id.park_RB);
         final RadioButton noAttemptRB = (RadioButton) findViewById(R.id.noAttempt_RB);
         final Button RobotTipB = (Button) findViewById(R.id.end_tipped_B);
@@ -192,20 +196,29 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (deepRB.isChecked()) {
                     deep = "True";
                 }
+                if (attemptShallowRB.isChecked()) {
+                    attemptShallow = "True";
+                }
+                if (attemptDeepRB.isChecked()) {
+                    attemptDeep = "True";
+                }
                 if (parkedRB.isChecked()) {
                     parked = "True";
                 }
                 if (noAttemptRB.isChecked()) {
                     noAttempt = "True";
                 }
-                    if (shallow == "False" && deep == "False" && parked == "False" && noAttempt == "False") {
-                        Toast.makeText(data_collection_end_game.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
 
-                    }else{
-                            Intent teamnumintent = new Intent(getApplicationContext(), Save_Page.class);
-                            startActivity(teamnumintent);
-                        }
+                if (shallow.equals("False") && deep.equals("False") && parked.equals("False") && noAttempt.equals("False") && attemptShallow.equals("False") && attemptDeep.equals("False"))
+                {
+                    Toast.makeText(data_collection_end_game.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
+                }
 
+                else
+                {
+                    Intent teamnumintent = new Intent(getApplicationContext(), Save_Page.class);
+                    startActivity(teamnumintent);
+                }
             }
         });
     }
