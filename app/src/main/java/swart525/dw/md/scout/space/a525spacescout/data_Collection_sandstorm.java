@@ -40,12 +40,12 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         //Buttons for Coral
         final Button autoCoralL4Plus = findViewById(R.id.AutoCyclesPlus_GB);
         final Button autoCoralL4Minus = findViewById(R.id.AutoCyclesMinus_GB);
-        final Button autoCoralL3Plus = findViewById(R.id.AutoCoralL3Plus_GB);
-        final Button autoCoralL3Minus = findViewById(R.id.AutoCoralL3Minus_GB);
-        final Button autoCoralL2Plus = findViewById(R.id.AutoCoralL2Plus_GB);
-        final Button autoCoralL2Minus = findViewById(R.id.AutoCoralL2Minus_GB);
-        final Button autoCoralL1Plus = findViewById(R.id.AutoCoralL1Plus_GB);
-        final Button autoCoralL1Minus = findViewById(R.id.AutoCoralL1Minus_GB);
+        final Button autoCoralL3Plus = findViewById(R.id.AutoFouled_B);
+        final Button autoCoralL3Minus = findViewById(R.id.AutoDepot_B);
+        final Button autoCoralL2Plus = findViewById(R.id.AutoTipped_B);
+        final Button autoCoralL2Minus = findViewById(R.id.AutoOutpost_B);
+        final Button autoCoralL1Plus = findViewById(R.id.AutoFerry_B);
+        final Button autoCoralL1Minus = findViewById(R.id.AutoNeutralZone_B);
 
         final Button autoMovedB = findViewById(R.id.autoMovedFromStart_B);
         autoMovedB.setTag("D7D7D7D5");

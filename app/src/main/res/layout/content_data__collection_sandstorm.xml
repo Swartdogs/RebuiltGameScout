@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9B9B9B"
+    android:orientation="horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".data_Collection_sandstorm"
     tools:layout_editor_absoluteX="-28dp"
@@ -91,7 +92,7 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <TextView
-        android:id="@+id/Coral_TV"
+        android:id="@+id/AutoFuel_TV"
         android:layout_width="378dp"
         android:layout_height="58dp"
         android:fontFamily="@font/bolt_regular"
@@ -103,53 +104,75 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.126" />
 
-    <Button
-        android:id="@+id/AutoCoralL2Plus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/AutoOther_TB"
+        android:layout_width="284dp"
+        android:layout_height="53dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="+"
-        android:textSize="34sp"
+        android:gravity="center"
+        android:text="Other"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.778"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+        app:layout_constraintVertical_bias="0.773" />
 
     <Button
-        android:id="@+id/AutoCoralL3Plus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="+"
-        android:textSize="34sp"
+        android:id="@+id/AutoFerry_B"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ferry"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/AutoTipped_B"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tipped"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849"
+        tools:textAllCaps="false"
+        tools:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AutoFouled_B"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Fouled"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
-
-    <Button
-        android:id="@+id/AutoCoralL1Plus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="+"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.778"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.753" />
+        app:layout_constraintVertical_bias="0.849" />
 
     <TextView
         android:id="@+id/AutoAvgCycleQ_TV"
@@ -164,15 +187,104 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292"
+        app:layout_constraintVertical_bias="0.275"
         tools:textAlignment="center" />
 
+    <RadioGroup
+        android:id="@+id/AutoCycles_RG"
+        android:layout_width="760dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343">
+
+        <RadioButton
+            android:id="@+id/AutoCycles010_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0-10"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles1120_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11-20"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles2130_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="21-30"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles3140_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="31-40"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/AutoGreaterCycles_RG"
+        android:layout_width="760dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411">
+
+        <RadioButton
+            android:id="@+id/AutoCycles4150_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:text="41-50"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="51-60"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles6170_RB"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="61-70"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCyclesto71andbeyond_RB"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="70 +"
+            android:textSize="48sp" />
+    </RadioGroup>
+
     <TextView
-        android:id="@+id/AutoCyclesLabel_TV"
+        android:id="@+id/AutoCycles_TV"
         android:layout_width="149dp"
         android:layout_height="62dp"
         android:textAlignment="center"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:textColor="@color/ic_launcher_background"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -204,9 +316,10 @@
         android:layout_width="320dp"
         android:layout_height="75dp"
         android:background="@android:color/holo_orange_light"
+        android:translationY="-1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintHorizontal_bias="0.804"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.185" />
@@ -241,94 +354,137 @@
 
 
     <TextView
-        android:id="@+id/Algae_TB"
-        android:layout_width="378dp"
-        android:layout_height="58dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:text="ALGAE"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
-
-    <Button
-        android:id="@+id/AutoCoralL2Minus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
-
-    <TextView
         android:id="@+id/AutoReefLabelL2_TV"
-        android:layout_width="247dp"
-        android:layout_height="123dp"
-        android:text="Gathered Extra Fuel"
+        android:layout_width="565dp"
+        android:layout_height="68dp"
+        android:text="Gathered Extra Fuel:"
         android:textAlignment="center"
         android:textColor="@color/ic_launcher_background"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.49" />
 
     <Button
-        android:id="@+id/AutoCoralL3Minus_GB"
+        android:id="@+id/AutoOutpost_B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
-
-    <Button
-        android:id="@+id/AutoCoralL1Minus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
-
-    <TextView
-        android:id="@+id/AutoReefLabelL1_TV"
-        android:layout_width="85dp"
-        android:layout_height="45dp"
-        android:text="L1"
-        android:textSize="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Outpost"
+        android:textAllCaps="false"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/AutoNeutralZone_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Neutral Zone"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/AutoDepot_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Depot"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <TextView
+        android:id="@+id/AutoTower_TV"
+        android:layout_width="267dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="Tower"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <RadioGroup
+
+        android:id="@+id/AutoHangL1_RG"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71">
+
+        <RadioButton
+            android:id="@+id/AutoHangL1Yes_RB"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Yes"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/AutoHangL1No_RB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="No"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/AutoHangQ_TV"
+        android:layout_width="419dp"
+        android:layout_height="82dp"
+        android:text="Did they hang L1?"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
 
     <android.support.constraint.Barrier
         android:id="@+id/leftBorder"
