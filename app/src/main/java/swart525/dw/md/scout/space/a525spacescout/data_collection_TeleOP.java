@@ -51,6 +51,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button RobotStallB = (Button) findViewById(R.id.teleOp_stalled_B);
         final Button DefenseB = (Button) findViewById(R.id.teleOp_Defense_B);
         final Button FoulsB = (Button) findViewById(R.id.teleOp_fouled_B);
+        final Button Names = (Button) findViewById(R.id.nos);
         final Button teleOpNetAlgaeMissedB = (Button) findViewById(R.id.teleOp_missed_B);
 
         //Defines all buttons
@@ -387,21 +388,30 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String colorCode = (String) FoulsB.getTag();
-                if (!"#FFE600".equals(colorCode)){
+                if (!"#FFE600".equals(colorCode)) {
                     FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
                     FoulsB.setTag("#FFE600");
+                    Names.setTag("D7D7D7D5");
                     Fouls = "true";
 
-
                 }
-                else if("#FFE600".equals(colorCode)){
-                    FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
-                    FoulsB.setTag("D7D7D7D5");
-                    Fouls= "false";
-                }
-
             }
 
+        });
+
+
+        Names.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) Names.getTag();
+                if (!"#FFE600".equals(colorCode)) {
+                    Names.setBackgroundColor(ContextCompat.getColor(Names.getContext(), R.color.colorPrimary));
+                    Names.setTag("#FFE600");
+                    FoulsB.setTag("D7D7D7D5");
+                    Fouls = "false";
+
+                }
+            }
         });
 
         To_EndGame.setOnClickListener(new View.OnClickListener()

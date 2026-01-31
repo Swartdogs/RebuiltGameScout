@@ -6,7 +6,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,10 +44,10 @@ public class data_collection_end_game extends AppCompatActivity {
         TeamNumEndgame.setText(endgameteamnumstring);
         //Defines Page Elements
         //Radio Buttons
-        final RadioButton shallowRB = (RadioButton) findViewById(R.id.shallowHang_RB);
-        final RadioButton deepRB = (RadioButton) findViewById(R.id.deepHang_RB);
-        final RadioButton attemptShallowRB = (RadioButton) findViewById(R.id.attemptShallowHang_RB);
-        final RadioButton attemptDeepRB = (RadioButton) findViewById(R.id.attemptDeepHang_RB);
+        final RadioButton shallowRB = (RadioButton) findViewById(R.id.EndL3_RB);
+        final RadioButton deepRB = (RadioButton) findViewById(R.id.EndL1_RB);
+        final RadioButton attemptShallowRB = (RadioButton) findViewById(R.id.EndL2_RB);
+        final RadioButton attemptDeepRB = (RadioButton) findViewById(R.id.EndNone_RB);
         final RadioButton parkedRB = (RadioButton) findViewById(R.id.park_RB);
         final RadioButton noAttemptRB = (RadioButton) findViewById(R.id.noAttempt_RB);
         final Button RobotTipB = (Button) findViewById(R.id.end_tipped_B);

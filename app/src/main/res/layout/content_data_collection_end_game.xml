@@ -9,93 +9,154 @@
     tools:context=".data_collection_end_game"
     tools:showIn="@layout/activity_data_collection_end_game">
 
+    <Button
+        android:id="@+id/EndTipped_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tipped"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <Button
+        android:id="@+id/EndStalled_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Stalled"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
     <TextView
-        android:id="@+id/teleOpOther_TV3"
-        android:layout_width="261dp"
-        android:layout_height="74dp"
+        android:id="@+id/EndOther_TV"
+        android:layout_width="378dp"
+        android:layout_height="58dp"
         android:fontFamily="@font/bolt_regular"
         android:gravity="center"
-        android:text="OTHER"
-        android:textColor="#000"
+        android:text="Other"
+        android:textAllCaps="true"
+        android:textColor="#000000"
         android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
-
-    <Button
-        android:id="@+id/end_defense_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:background="#D7D5D7D7"
-        android:text="DEFENSE"
-        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.756" />
 
     <Button
-        android:id="@+id/end_tipped_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:background="#D7D5D7D7"
-        android:text="Tipped"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
-
-    <Button
-        android:id="@+id/end_stalled_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:background="#D7D5D7D7"
-        android:text="Stalled"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
-
-    <View
-        android:id="@+id/hDiv4"
-        android:layout_width="708dp"
-        android:layout_height="10dp"
-        android:background="#000000"
-        android:fadingEdge="none"
-        android:fadingEdgeLength="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.766" />
-
-    <Button
-        android:id="@+id/end_fouled_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:background="#D7D5D7D7"
+        android:id="@+id/EndFouled_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
         android:text="Fouled"
-        android:textSize="28sp"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <Button
+        android:id="@+id/EndNone_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="None"
+        android:textAllCaps="false"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/EndStyles_TV"
+        android:layout_width="378dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="Styles"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <Button
+        android:id="@+id/EndScoreFuel_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Score Fuel"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/EndFerry_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ferry"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/EndDefense_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Defense"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
 
     <View
         android:id="@+id/hDiv2"
@@ -112,12 +173,13 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
-        android:id="@+id/endHang_TV"
+        android:id="@+id/EndTower_TV"
         android:layout_width="wrap_content"
         android:layout_height="98dp"
         android:fontFamily="@font/bolt_regular"
         android:gravity="center"
-        android:text="HANG/BARGE"
+        android:text="Tower"
+        android:textAllCaps="true"
         android:textColor="#000"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -175,110 +237,64 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <RadioGroup
-        android:id="@+id/hang_RG"
-        android:layout_width="320dp"
-        android:layout_height="564dp"
+        android:id="@+id/EndTower_RG"
+        android:layout_width="321dp"
+        android:layout_height="452dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397">
+        app:layout_constraintVertical_bias="0.308">
 
         <RadioButton
-            android:id="@+id/shallowHang_RB"
-            android:layout_width="332dp"
-            android:layout_height="62dp"
-            android:text="SHALLOW"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/attemptShallowHang_RB"
+            android:id="@+id/EndL3_RB"
             android:layout_width="match_parent"
-            android:layout_height="108dp"
-            android:text="ATTEMPTED SHALLOW"
-            android:textSize="34sp"
+            android:layout_height="100dp"
+            android:text="Level 3"
+            android:textSize="48sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/deepHang_RB"
+            android:id="@+id/EndL2_RB"
             android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:gravity="bottom"
-            android:text="DEEP"
-            android:textSize="34sp"
+            android:layout_height="100dp"
+            android:text="Level 2"
+            android:textSize="48sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/attemptDeepHang_RB"
+            android:id="@+id/EndL1_RB"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Level 1"
+            android:textAlignment="textStart"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/EndNone_RB"
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            android:text="ATTEMPTED DEEP"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/park_RB"
-            android:layout_width="340dp"
-            android:layout_height="89dp"
-            android:gravity="bottom"
-            android:text="PARK"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/noAttempt_RB"
-            android:layout_width="match_parent"
-            android:layout_height="99dp"
-            android:text="NO ATTEMPT"
-            android:textSize="34sp"
+            android:text="None"
+            android:textSize="48sp"
             android:textStyle="bold" />
 
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SHALLOW"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DEEP"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
-
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="303dp"
-        android:layout_height="548dp"
+        android:id="@+id/EndTower_IV"
+        android:layout_width="354dp"
+        android:layout_height="365dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389"
-        app:srcCompat="@drawable/screenshot_2025_01_22_at_7_24_42_pm_removebg_preview_removebg_preview" />
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@drawable/capture_removebg_preview" />
 
 </android.support.constraint.ConstraintLayout>

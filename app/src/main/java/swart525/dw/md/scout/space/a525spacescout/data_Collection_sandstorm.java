@@ -8,18 +8,19 @@ import android.widget.Button;
 //import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 
 
 public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for use
-    public static int autoCoralL4 = 0;
-    public static int autoCoralL3 = 0;
-    public static int autoCoralL2 = 0;
-    public static int autoCoralL1 = 0;
-    public static int autoProcessed = 0;
-    public static String autoAlgaeKnockedOff = "False";
-    public static String autoMoved = "False";
+    public static int cycles = 0;
+    public static int fuel_stored = 0;
+    public static String extra_fuel = "False";
+    public static String hanged = "False";
+    public static List<String> others = new ArrayList<>();
+
+
     public static String Team_Num_Display = "0000";
 
 
@@ -37,34 +38,13 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
         //Defines and implements Button to continue along with variable savings
 
-        //Buttons for Coral
-        final Button autoCoralL4Plus = findViewById(R.id.AutoCyclesPlus_GB);
-        final Button autoCoralL4Minus = findViewById(R.id.AutoCyclesMinus_GB);
-        final Button autoCoralL3Plus = findViewById(R.id.AutoFouled_B);
-        final Button autoCoralL3Minus = findViewById(R.id.AutoDepot_B);
-        final Button autoCoralL2Plus = findViewById(R.id.AutoTipped_B);
-        final Button autoCoralL2Minus = findViewById(R.id.AutoOutpost_B);
-        final Button autoCoralL1Plus = findViewById(R.id.AutoFerry_B);
-        final Button autoCoralL1Minus = findViewById(R.id.AutoNeutralZone_B);
-
-        final Button autoMovedB = findViewById(R.id.autoMovedFromStart_B);
-        autoMovedB.setTag("D7D7D7D5");
-        final Button autoAlgaeKnockedOffB = findViewById(R.id.autoKnockedOff_B);
-        autoAlgaeKnockedOffB.setTag("#D7D7D7D5");
-
-        //Algae Buttons
-        final Button autoProcessedPlus = findViewById(R.id.autoAlgaePlus_GB4);
-        final Button autoProcessedMinus = findViewById(R.id.autoAlgaeMinus_GB4);
 
 
         //Button to move to next page
         Button To_TeleOp = findViewById(R.id.To_Teleop);
 
         TextView autoL4Text = findViewById(R.id.AutoCyclesScored_TV);
-        TextView autoL3Text = findViewById(R.id.AutoCoralL3Scored_TV);
-        TextView autoL2Text = findViewById(R.id.AutoCoralL2Scored_TV);
-        TextView autoL1Text = findViewById(R.id.AutoCoralL1Scored_TV);
-        TextView autoProcessedText = findViewById(R.id.autoAlgaeScored_TV);
+
 
         autoCoralL4Plus.setOnClickListener(view -> {
             if (autoCoralL4 < 12) {
