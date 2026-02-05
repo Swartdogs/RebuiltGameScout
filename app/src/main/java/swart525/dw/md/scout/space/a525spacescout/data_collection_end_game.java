@@ -15,20 +15,17 @@ public class data_collection_end_game extends AppCompatActivity {
 
     //Defines Variables
 
-    public static String shallow = "False";
-    public static String deep = "False";
-    public static String attemptShallow = "False";
-    public static String attemptDeep = "False";
-    public static String parked = "False";
-    public static String noAttempt = "False";
-    public static String RobotTip = "false";
-    public static String RobotStall = "false";
+    public static String hangL1 = "False";
+    public static String hangL2 = "False";
+    public static String hangL3 = "False";
+    public static String hangNone = "False";
     public static String Defense = "false";
-    public static String Fouls = "false";
-
-
-
-
+    public static String ferryEnd = "false";
+    public static String scoreFuelEnd = "false";
+    public static String noneEnd = "false";
+    public static String fouledEnd = "false";
+    public static String tippedEnd = "false";
+    public static String stalledEnd = "false";
 
 
 
@@ -44,97 +41,117 @@ public class data_collection_end_game extends AppCompatActivity {
         TeamNumEndgame.setText(endgameteamnumstring);
         //Defines Page Elements
         //Radio Buttons
-        final RadioButton shallowRB = (RadioButton) findViewById(R.id.EndL3_RB);
-        final RadioButton deepRB = (RadioButton) findViewById(R.id.EndL1_RB);
-        final RadioButton attemptShallowRB = (RadioButton) findViewById(R.id.EndL2_RB);
-        final RadioButton attemptDeepRB = (RadioButton) findViewById(R.id.EndNone_RB);
-        final RadioButton parkedRB = (RadioButton) findViewById(R.id.park_RB);
-        final RadioButton noAttemptRB = (RadioButton) findViewById(R.id.noAttempt_RB);
-        final Button RobotTipB = (Button) findViewById(R.id.end_tipped_B);
-        final Button RobotStallB = (Button) findViewById(R.id.end_stalled_B);
-        final Button DefenseB = (Button) findViewById(R.id.end_defense_B);
-        final Button FoulsB = (Button) findViewById(R.id.end_fouled_B);
+        final RadioButton HangL3RB = (RadioButton) findViewById(R.id.EndL3_RB);
+        final RadioButton HangL2RB = (RadioButton) findViewById(R.id.EndL2_RB);
+        final RadioButton HangL1RB = (RadioButton) findViewById(R.id.EndL1_RB);
+        final RadioButton HangNoneRB = (RadioButton) findViewById(R.id.EndNone_RB);
+        final Button EndFerryB = (Button) findViewById(R.id.EndFerry_B);
+        final Button EndScoreFuelB = (Button) findViewById(R.id.EndScoreFuel_B);
+        final Button DefenseB = (Button) findViewById(R.id.EndDefense_B);
+        final Button FoulsB = (Button) findViewById(R.id.EndNone_B);
+        final Button TippedB = (Button) findViewById(R.id.EndTipped_B);
+        final Button stalledB = (Button) findViewById(R.id.EndStalled_B);
+        final Button noneB = (Button) findViewById(R.id.EndNone_B);
 
-        if (data_collection_TeleOP.RobotTip.equals("true")) {
-            RobotTip = "true";
-            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.colorPrimary));
-            RobotTipB.setTag("#FFE600");
-        }
-        else {
-            RobotTip = "false";
-            RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
-            RobotTipB.setTag("D7D7D7D5");
-        }
-
-        if (data_collection_TeleOP.RobotStall.equals("true")) {
-            RobotStall = "true";
-            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.colorPrimary));
-            RobotStallB.setTag("#FFE600");
-        }
-        else {
-            RobotStall = "false";
-            RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
-            RobotStallB.setTag("D7D7D7D5");
-        }
-
-        if (data_collection_TeleOP.Defense.equals("true")) {
-            Defense = "true";
-            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.colorPrimary));
-            DefenseB.setTag("#FFE600");
-        }
-        else {
-            RobotStall = "false";
-            DefenseB.setBackgroundColor(ContextCompat.getColor(DefenseB.getContext(), R.color.grey_button));
-            DefenseB.setTag("D7D7D7D5");
-        }
-
-        if (data_collection_TeleOP.Fouls.equals("true")) {
-            Fouls = "true";
-            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
-            FoulsB.setTag("#FFE600");
-        }
-        else {
-            Fouls = "false";
-            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
-            FoulsB.setTag("D7D7D7D5");
-        }
-
-        RobotTipB.setOnClickListener(new View.OnClickListener() {
+        TippedB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) RobotTipB.getTag();
+                String colorCode = (String) noneB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.colorPrimary));
-                    RobotTipB.setTag("#FFE600");
-                    RobotTip = "true";
+                    noneB.setBackgroundColor(ContextCompat.getColor(noneB.getContext(), R.color.colorPrimary));
+                    noneB.setTag("#FFE600");
+                    noneEnd = "true";
 
 
                 }
                 else if("#FFE600".equals(colorCode)){
-                    RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
-                    RobotTipB.setTag("D7D7D7D5");
-                    RobotTip= "false";
+                    noneB.setBackgroundColor(ContextCompat.getColor(noneB.getContext(), R.color.grey_button));
+                    noneB.setTag("D7D7D7D5");
+                    noneEnd= "false";
                 }
 
             }
 
         });
 
-        RobotStallB.setOnClickListener(new View.OnClickListener() {
+        stalledB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) RobotStallB.getTag();
+                String colorCode = (String) stalledB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.colorPrimary));
-                    RobotStallB.setTag("#FFE600");
-                    RobotStall = "true";
+                    stalledB.setBackgroundColor(ContextCompat.getColor(stalledB.getContext(), R.color.colorPrimary));
+                    stalledB.setTag("#FFE600");
+                    stalledEnd = "true";
 
 
                 }
                 else if("#FFE600".equals(colorCode)){
-                    RobotStallB.setBackgroundColor(ContextCompat.getColor(RobotStallB.getContext(), R.color.grey_button));
-                    RobotStallB.setTag("D7D7D7D5");
-                    RobotStall= "false";
+                    stalledB.setBackgroundColor(ContextCompat.getColor(stalledB.getContext(), R.color.grey_button));
+                    stalledB.setTag("D7D7D7D5");
+                    stalledEnd= "false";
+                }
+
+            }
+
+        });
+
+        TippedB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) TippedB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    TippedB.setBackgroundColor(ContextCompat.getColor(TippedB.getContext(), R.color.colorPrimary));
+                    TippedB.setTag("#FFE600");
+                    tippedEnd = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    TippedB.setBackgroundColor(ContextCompat.getColor(TippedB.getContext(), R.color.grey_button));
+                    TippedB.setTag("D7D7D7D5");
+                    tippedEnd= "false";
+                }
+
+            }
+
+        });
+
+        EndScoreFuelB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) EndScoreFuelB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    EndScoreFuelB.setBackgroundColor(ContextCompat.getColor(EndScoreFuelB.getContext(), R.color.colorPrimary));
+                    EndScoreFuelB.setTag("#FFE600");
+                    scoreFuelEnd = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    EndScoreFuelB.setBackgroundColor(ContextCompat.getColor(EndScoreFuelB.getContext(), R.color.grey_button));
+                    EndScoreFuelB.setTag("D7D7D7D5");
+                    scoreFuelEnd= "false";
+                }
+
+            }
+
+        });
+
+        EndFerryB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) EndFerryB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    EndFerryB.setBackgroundColor(ContextCompat.getColor(EndFerryB.getContext(), R.color.colorPrimary));
+                    EndFerryB.setTag("#FFE600");
+                    ferryEnd = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    EndFerryB.setBackgroundColor(ContextCompat.getColor(EndFerryB.getContext(), R.color.grey_button));
+                    EndFerryB.setTag("D7D7D7D5");
+                    ferryEnd= "false";
                 }
 
             }
@@ -169,14 +186,14 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (!"#FFE600".equals(colorCode)){
                     FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
                     FoulsB.setTag("#FFE600");
-                    Fouls = "true";
+                    fouledEnd = "true";
 
 
                 }
                 else if("#FFE600".equals(colorCode)){
                     FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.grey_button));
                     FoulsB.setTag("D7D7D7D5");
-                    Fouls= "false";
+                    fouledEnd= "false";
                 }
 
             }
@@ -189,26 +206,20 @@ public class data_collection_end_game extends AppCompatActivity {
 
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
-                if (shallowRB.isChecked()) {
-                    shallow = "True";
+                if (HangL1RB.isChecked()) {
+                    hangL1 = "True";
                 }
-                if (deepRB.isChecked()) {
-                    deep = "True";
+                if (HangL2RB.isChecked()) {
+                    hangL2 = "True";
                 }
-                if (attemptShallowRB.isChecked()) {
-                    attemptShallow = "True";
+                if (HangL3RB.isChecked()) {
+                    hangL3 = "True";
                 }
-                if (attemptDeepRB.isChecked()) {
-                    attemptDeep = "True";
-                }
-                if (parkedRB.isChecked()) {
-                    parked = "True";
-                }
-                if (noAttemptRB.isChecked()) {
-                    noAttempt = "True";
+                if (HangNoneRB.isChecked()) {
+                    hangNone = "True";
                 }
 
-                if (shallow.equals("False") && deep.equals("False") && parked.equals("False") && noAttempt.equals("False") && attemptShallow.equals("False") && attemptDeep.equals("False"))
+                if (hangL1.equals("False") && hangL2.equals("False") && hangL3.equals("False") && hangNone.equals("False"))
                 {
                     Toast.makeText(data_collection_end_game.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
                 }

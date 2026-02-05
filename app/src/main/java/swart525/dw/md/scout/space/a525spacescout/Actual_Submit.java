@@ -27,33 +27,53 @@ public class Actual_Submit extends AppCompatActivity {
     public String filePath = "/ScoutData/";
     //Compiles string for CSV file
     public String Final_String =
-            Data_Collection_Page_1.Team_Num + "," +
-            Data_Collection_Page_1.Match_Num + "," +
-            data_Collection_sandstorm.autoMoved + "," +
-            data_Collection_sandstorm.autoCoralL1 + "," +
-            data_Collection_sandstorm.autoCoralL2 + "," +
-            data_Collection_sandstorm.autoCoralL3 + "," +
-            data_Collection_sandstorm.autoCoralL4 + "," +
-            data_Collection_sandstorm.autoAlgaeKnockedOff + "," +
-            data_Collection_sandstorm.autoProcessed + "," +
-            data_collection_TeleOP.teleCoralL1 + "," +
-            data_collection_TeleOP.teleCoralL2 + "," +
-            data_collection_TeleOP.teleCoralL3 + "," +
-            data_collection_TeleOP.teleCoralL4 + "," +
-            data_collection_TeleOP.teleProcessed + "," +
-            data_collection_TeleOP.teleRobotNet + "," +
-            data_collection_TeleOP.teleAlgaeKnockedOff + "," +
-            data_collection_TeleOP.teleAlgaeMissed + "," +
-            data_collection_end_game.shallow + "," +
-            data_collection_end_game.attemptShallow + "," +
-            data_collection_end_game.deep + "," +
-            data_collection_end_game.attemptDeep + "," +
-            data_collection_end_game.parked + "," +
-            data_collection_end_game.noAttempt + "," +
+            Data_Collection_Page_1.Team_Num + ","+
+            Data_Collection_Page_1.Match_Num + ","+
+            data_Collection_sandstorm.cycles + "," +
+            data_Collection_sandstorm.fuel_stored + "," +
+            data_Collection_sandstorm.extra_fuel + "," +
+            data_Collection_sandstorm.depot + "," +
+            data_Collection_sandstorm.neutral_zone + "," +
+            data_Collection_sandstorm.outpost + "," +
+            data_Collection_sandstorm.hanged + "," +
+            data_Collection_sandstorm.Fuel010Auto + "," +
+            data_Collection_sandstorm.Fuel1120Auto + "," +
+            data_Collection_sandstorm.Fuel2130Auto + "," +
+            data_Collection_sandstorm.Fuel3140Auto + "," +
+            data_Collection_sandstorm.Fuel4150Auto + "," +
+            data_Collection_sandstorm.Fuel5160Auto + "," +
+            data_Collection_sandstorm.Fuel6170Auto + "," +
+            data_Collection_sandstorm.Fuel70PlusAuto + "," +
+            data_collection_TeleOP.Tipped + "," +
+            data_collection_TeleOP.Stall + "," +
+            data_collection_TeleOP.DefenseActive + "," +
+            data_collection_TeleOP.Fuel1120 + "," +
+            data_collection_TeleOP.Fuel2130 + "," +
+            data_collection_TeleOP.Fuel3140 + "," +
+            data_collection_TeleOP.Fuel4150 + "," +
+            data_collection_TeleOP.Fuel5160 + "," +
+            data_collection_TeleOP.Fuel6170 + "," +
+            data_collection_TeleOP.Fuel70Plus + "," +
+            data_collection_TeleOP.Fouls + "," +
+            data_collection_TeleOP.DefenseInactive + "," +
+            data_collection_TeleOP.ScoreFuel + "," +
+            data_collection_TeleOP.FerryInactive + "," +
+            data_collection_TeleOP.FerryActive + "," +
+            data_collection_TeleOP.NoneInactive + "," +
+            data_collection_TeleOP.NoneActive + "," +
+            data_collection_TeleOP.cyclesTele + "," +
+            data_collection_TeleOP.percent + "," +
+            data_collection_end_game.hangL1 + "," +
+            data_collection_end_game.hangL2 + "," +
+            data_collection_end_game.hangL3 + "," +
+            data_collection_end_game.hangNone + "," +
             data_collection_end_game.Defense + "," +
-            data_collection_end_game.Fouls + "," +
-            data_collection_end_game.RobotTip + "," +
-            data_collection_end_game.RobotStall + "," +
+            data_collection_end_game.ferryEnd + "," +
+            data_collection_end_game.scoreFuelEnd + "," +
+            data_collection_end_game.noneEnd + "," +
+            data_collection_end_game.fouledEnd + "," +
+            data_collection_end_game.tippedEnd + "," +
+            data_collection_end_game.stalledEnd + "," +
             Data_Collection_Page_1.Initials + "," +
             Data_Collection_Page_1.NoShow + ",";
 

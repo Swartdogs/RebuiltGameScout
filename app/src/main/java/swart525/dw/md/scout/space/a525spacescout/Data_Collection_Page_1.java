@@ -55,8 +55,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         //Defines checkboxes
         final CheckBox NoShowCB = (CheckBox) findViewById(R.id.No_Show_CB);
 
-
-
         final EditText editTeamNum = (EditText)findViewById(R.id.Team_Num_txt);
         editTeamNum.setVisibility(View.INVISIBLE);
 
@@ -126,14 +124,19 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (Initials_txt.getText().toString().isEmpty() || Match_Num_txt.getText().toString().isEmpty()) {
-                    Toast.makeText(Data_Collection_Page_1.this, "Jump Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Data_Collection_Page_1.this, "Jump Now! Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                 }
                 else {
                     int Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
 
-
-
-                    if (Compare_Match_Num > Match_Num_Real) {
+                    if (Match_Num_Real < Compare_Match_Num) {
+//                        if (NoShowCB.isChecked()) {
+//                            NoShow = "True";
+//
+//                            Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+//                            startActivity(startintent);
+//
+//                        }
 
                         if(!tv.getText().toString().isEmpty()) {
 
@@ -141,7 +144,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             //Sets team num data to txt box information
                             Match_Num = Integer.parseInt(Match_Num_txt.getText().toString()); //Sets match num data to txt box information
                             Initials = Initials_txt.getText().toString();
-
 
                             String teamnumpls = Integer.toString(Team_Num);
                             Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
@@ -170,10 +172,9 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
                         Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
                         startActivity(startintent);
-                        //comment = commenttxt.getText().toString();
-
 
                     }
+
 //                    else {
 //                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
 //                    }

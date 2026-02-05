@@ -24,37 +24,52 @@ public class Start_Page extends AppCompatActivity {
 
                 Data_Collection_Page_1.Team_Num = 0;
                 Data_Collection_Page_1.Match_Num = 0;
-                data_Collection_sandstorm.autoMoved = "False";
-                data_Collection_sandstorm.autoCoralL1 = 0;
-                data_Collection_sandstorm.autoCoralL2 = 0;
-                data_Collection_sandstorm.autoCoralL3 = 0;
-                data_Collection_sandstorm.autoCoralL4 = 0;
-                data_Collection_sandstorm.autoAlgaeKnockedOff = "False";
-                data_Collection_sandstorm.autoProcessed = 0;
-                data_collection_TeleOP.teleCoralL1 = 0;
-                data_collection_TeleOP.teleCoralL2 = 0;
-                data_collection_TeleOP.teleCoralL3 = 0;
-                data_collection_TeleOP.teleCoralL4 = 0;
-                data_collection_TeleOP.teleAlgaeKnockedOff = 0;
-                data_collection_TeleOP.teleProcessed = 0;
-                data_collection_TeleOP.teleRobotNet = 0;
-                data_collection_TeleOP.teleAlgaeMissed = "False";
-                data_collection_end_game.shallow = "False";
-                data_collection_end_game.attemptShallow = "False";
-                data_collection_end_game.deep = "False";
-                data_collection_end_game.attemptDeep = "False";
-                data_collection_end_game.parked = "False";
-                data_collection_end_game.noAttempt = "False";
-                data_collection_TeleOP.Defense = "False";
+                data_Collection_sandstorm.cycles = 0;
+                data_Collection_sandstorm.fuel_stored = 0;
+                data_Collection_sandstorm.extra_fuel = "False";
+                data_Collection_sandstorm.depot = "False";
+                data_Collection_sandstorm.neutral_zone = "False";
+                data_Collection_sandstorm.outpost = "False";
+                data_Collection_sandstorm.hanged = "False";
+                data_Collection_sandstorm.Fuel010Auto = "False";
+                data_Collection_sandstorm.Fuel1120Auto = "False";
+                data_Collection_sandstorm.Fuel2130Auto = "False";
+                data_Collection_sandstorm.Fuel3140Auto = "False";
+                data_Collection_sandstorm.Fuel4150Auto = "False";
+                data_Collection_sandstorm.Fuel5160Auto = "False";
+                data_Collection_sandstorm.Fuel6170Auto = "False";
+                data_Collection_sandstorm.Fuel70PlusAuto = "False";
+                data_collection_TeleOP.Tipped = "False";
+                data_collection_TeleOP.Stall = "False";
+                data_collection_TeleOP.DefenseActive = "False";
+                data_collection_TeleOP.Fuel1120 = "False";
+                data_collection_TeleOP.Fuel2130 = "False";
+                data_collection_TeleOP.Fuel3140 = "False";
+                data_collection_TeleOP.Fuel4150 = "False";
+                data_collection_TeleOP.Fuel5160 = "False";
+                data_collection_TeleOP.Fuel6170 = "False";
+                data_collection_TeleOP.Fuel70Plus = "False";
                 data_collection_TeleOP.Fouls = "False";
-                data_collection_TeleOP.RobotTip = "False";
-                data_collection_TeleOP.RobotStall = "False";
+                data_collection_TeleOP.DefenseInactive = "False";
+                data_collection_TeleOP.ScoreFuel = "False";
+                data_collection_TeleOP.FerryInactive = "False";
+                data_collection_TeleOP.FerryActive = "False";
+                data_collection_TeleOP.NoneInactive = "False";
+                data_collection_TeleOP.NoneActive = "False";
+                data_collection_TeleOP.cyclesTele = 0;
+                data_collection_TeleOP.percent = 0;
+                data_collection_end_game.hangL2 = "False";
+                data_collection_end_game.hangL3 = "False";
+                data_collection_end_game.hangNone = "False";
+                data_collection_end_game.Defense = "False";
+                data_collection_end_game.ferryEnd = "False";
+                data_collection_end_game.scoreFuelEnd = "False";
+                data_collection_end_game.noneEnd = "False";
+                data_collection_end_game.fouledEnd = "False";
+                data_collection_end_game.tippedEnd = "False";
+                data_collection_end_game.stalledEnd = "False";
                 Data_Collection_Page_1.Initials = "False";
                 Data_Collection_Page_1.NoShow = "False";
-
-
-
-
 
 
 
