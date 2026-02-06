@@ -30,14 +30,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String Tipped = "False";
     public static String Stall = "False";
     public static String DefenseActive = "False";
-    public static String Fuel010 = "False";
-    public static String Fuel1120 = "False";
-    public static String Fuel2130 = "False";
-    public static String Fuel3140 = "False";
-    public static String Fuel4150 = "False";
-    public static String Fuel5160 = "False";
-    public static String Fuel6170 = "False";
-    public static String Fuel70Plus = "False";
+    public static String TeleAverageFuelScored = "Empty";
     public static String Fouls = "False";
     public static String DefenseInactive = "False";
     public static String ScoreFuel = "False";
@@ -351,31 +344,31 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
                 if (FuelAvg010RB.isChecked()) {
-                    Fuel010 = "True";
+                    TeleAverageFuelScored = "0-10";
                 }
                 else if (FuelAvg1120RB.isChecked()) {
-                    Fuel1120 = "True";
+                    TeleAverageFuelScored = "11-20";
                 }
                 else if (FuelAvg2130RB.isChecked()) {
-                    Fuel2130 = "True";
+                    TeleAverageFuelScored = "21-30";
                 }
                 else if (FuelAvg3140RB.isChecked()) {
-                    Fuel3140 = "True";
+                    TeleAverageFuelScored = "31-40";
                 }
                 else if (FuelAvg4150RB.isChecked()) {
-                    Fuel4150 = "True";
+                    TeleAverageFuelScored = "41-50";
                 }
                 else if (FuelAvg5160RB.isChecked()) {
-                    Fuel5160 = "True";
+                    TeleAverageFuelScored = "51-60";
                 }
                 else if (FuelAvg6170RB.isChecked()) {
-                    Fuel6170 = "True";
+                    TeleAverageFuelScored = "61-70";
                 }
                 else if (FuelAvg70PlusRB.isChecked()) {
-                    Fuel70Plus = "True";
+                    TeleAverageFuelScored = "70+";
                 }
 
-                if (Fuel010.equals("False") && Fuel1120.equals("False") && Fuel2130.equals("False") && Fuel3140.equals("False") && Fuel4150.equals("False") && Fuel5160.equals("False") && Fuel6170.equals("False") && Fuel70Plus.equals("False"))
+                if (TeleAverageFuelScored.equals("Empty"))
                 {
                     Toast.makeText(data_collection_TeleOP.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
                 }

@@ -34,24 +34,11 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.neutral_zone + "," +
             data_Collection_sandstorm.outpost + "," +
             data_Collection_sandstorm.hanged + "," +
-            data_Collection_sandstorm.Fuel010Auto + "," +
-            data_Collection_sandstorm.Fuel1120Auto + "," +
-            data_Collection_sandstorm.Fuel2130Auto + "," +
-            data_Collection_sandstorm.Fuel3140Auto + "," +
-            data_Collection_sandstorm.Fuel4150Auto + "," +
-            data_Collection_sandstorm.Fuel5160Auto + "," +
-            data_Collection_sandstorm.Fuel6170Auto + "," +
-            data_Collection_sandstorm.Fuel70PlusAuto + "," +
+            data_Collection_sandstorm.averageFuelScored + "," +
             data_collection_TeleOP.Tipped + "," +
             data_collection_TeleOP.Stall + "," +
             data_collection_TeleOP.DefenseActive + "," +
-            data_collection_TeleOP.Fuel1120 + "," +
-            data_collection_TeleOP.Fuel2130 + "," +
-            data_collection_TeleOP.Fuel3140 + "," +
-            data_collection_TeleOP.Fuel4150 + "," +
-            data_collection_TeleOP.Fuel5160 + "," +
-            data_collection_TeleOP.Fuel6170 + "," +
-            data_collection_TeleOP.Fuel70Plus + "," +
+            data_collection_TeleOP.TeleAverageFuelScored + "," +
             data_collection_TeleOP.Fouls + "," +
             data_collection_TeleOP.DefenseInactive + "," +
             data_collection_TeleOP.ScoreFuel + "," +

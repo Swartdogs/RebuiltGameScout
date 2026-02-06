@@ -109,20 +109,20 @@
         app:layout_constraintVertical_bias="0.435" />
 
     <TextView
-        android:id="@+id/TeleAvgCycleQ_TV"
-        android:layout_width="253dp"
-        android:layout_height="60dp"
-        android:text="Avg. Fuel:"
+        android:id="@+id/TeleAvgCycleScoredQ_TV"
+        android:layout_width="260dp"
+        android:layout_height="99dp"
+        android:text="Avg. fuel scored per cycle?"
         android:textAlignment="center"
         android:textColor="@color/ic_launcher_background"
-        android:textSize="48sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193"
+        app:layout_constraintVertical_bias="0.182"
         tools:textAlignment="center" />
 
     <RadioGroup
@@ -412,10 +412,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <TextView
         android:id="@+id/TeleStylesActive_TV"

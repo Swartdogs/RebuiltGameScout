@@ -20,20 +20,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String neutral_zone = "False";
     public static String outpost = "False";
     public static String hanged = "Empty";
-
-
-    public static String Fuel010Auto = "False";
-    public static String Fuel1120Auto = "False";
-    public static String Fuel2130Auto = "False";
-    public static String Fuel3140Auto = "False";
-    public static String Fuel4150Auto = "False";
-    public static String Fuel5160Auto = "False";
-    public static String Fuel6170Auto = "False";
-    public static String Fuel70PlusAuto = "False";
-
+    public static String averageFuelScored = "Empty";
 
     //public static List<String> others = new ArrayList<>();
-
 
     public static String Team_Num_Display = "0000";
 
@@ -148,33 +137,33 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             }
 
             if (Fuel010AutoRB.isChecked()) {
-                Fuel010Auto = "True";
+                averageFuelScored = "0-10";
             }
             else if (Fuel1120AutoRB.isChecked()) {
-                Fuel1120Auto = "True";
+                averageFuelScored= "11-20";
             }
             else if (Fuel2130AutoRB.isChecked()) {
-                Fuel2130Auto = "True";
+                averageFuelScored = "21-30";
             }
             else if (Fuel3140AutoRB.isChecked()) {
-                Fuel3140Auto = "True";
+                averageFuelScored = "31-40";
             }
             else if (Fuel4150AutoRB.isChecked()) {
-                Fuel4150Auto = "True";
+                averageFuelScored = "41-50";
             }
             else if (Fuel5160AutoRB.isChecked()) {
-                Fuel5160Auto = "True";
+                averageFuelScored = "51-60";
             }
             else if (Fuel6170AutoRB.isChecked()) {
-                Fuel6170Auto = "True";
+                averageFuelScored = "61-70";
             }
             else if (Fuel70PlusAutoRB.isChecked()) {
-                Fuel70PlusAuto = "True";
+                averageFuelScored = "70+";
             }
 
-            if (Fuel010Auto.equals("False") && Fuel1120Auto.equals("False") && Fuel2130Auto.equals("False") && Fuel3140Auto.equals("False") && Fuel4150Auto.equals("False") && Fuel5160Auto.equals("False") && Fuel6170Auto.equals("False") && Fuel70PlusAuto.equals("False"))
+            if (averageFuelScored.equals("Empty"))
             {
-                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
+                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel Scored Per Cycle!!!!!", Toast.LENGTH_LONG).show();
             }
 
             if (hanged.equals("Empty"))
