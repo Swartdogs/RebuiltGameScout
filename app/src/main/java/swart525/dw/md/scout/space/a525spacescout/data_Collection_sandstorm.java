@@ -8,19 +8,14 @@ import android.view.View;
 import android.widget.Button;
 //import android.widget.CheckBox;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 
 public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for use
     public static int cycles = 0;
-    public static int fuel_stored = 0;
-    public static String extra_fuel = "False";
     public static String depot = "False";
     public static String neutral_zone = "False";
     public static String outpost = "False";
@@ -74,7 +69,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         RadioButton AutoHangL1NoRB = findViewById(R.id.AutoHangL1No_RB);
 
         //Button to move to next page
-        Button To_TeleOp = findViewById(R.id.To_Teleop);
+        Button To_TeleOp = findViewById(R.id.To_Teleop_B);
 
         TextView CyclesText = findViewById(R.id.AutoCyclesScored_TV);
 
@@ -152,6 +147,36 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 hanged = "False";
             }
 
+            if (Fuel010AutoRB.isChecked()) {
+                Fuel010Auto = "True";
+            }
+            else if (Fuel1120AutoRB.isChecked()) {
+                Fuel1120Auto = "True";
+            }
+            else if (Fuel2130AutoRB.isChecked()) {
+                Fuel2130Auto = "True";
+            }
+            else if (Fuel3140AutoRB.isChecked()) {
+                Fuel3140Auto = "True";
+            }
+            else if (Fuel4150AutoRB.isChecked()) {
+                Fuel4150Auto = "True";
+            }
+            else if (Fuel5160AutoRB.isChecked()) {
+                Fuel5160Auto = "True";
+            }
+            else if (Fuel6170AutoRB.isChecked()) {
+                Fuel6170Auto = "True";
+            }
+            else if (Fuel70PlusAutoRB.isChecked()) {
+                Fuel70PlusAuto = "True";
+            }
+
+            if (Fuel010Auto.equals("False") && Fuel1120Auto.equals("False") && Fuel2130Auto.equals("False") && Fuel3140Auto.equals("False") && Fuel4150Auto.equals("False") && Fuel5160Auto.equals("False") && Fuel6170Auto.equals("False") && Fuel70PlusAuto.equals("False"))
+            {
+                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
+            }
+
             if (hanged.equals("Empty"))
             {
                 Toast.makeText(data_Collection_sandstorm.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
@@ -159,53 +184,21 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
             //add in data collection pieces from checkboxes
-            Intent teamnumintent1 = new Intent(data_Collection_sandstorm.this, data_collection_TeleOP.class);
+            Intent teamnumintent1 = new Intent(getApplicationContext(), data_collection_TeleOP.class);
             teamnumintent1.putExtra(Team_Num_Display, sandstormteamnumstring);
             startActivity(teamnumintent1);
             //Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
             //startActivity(startintent);
         });
 
-        Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
-        To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
-            @Override
-            public void onClick(View v) {
+
 
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
-                if (Fuel010AutoRB.isChecked()) {
-                    Fuel010Auto = "True";
-                }
-                else if (Fuel1120AutoRB.isChecked()) {
-                    Fuel1120Auto = "True";
-                }
-                else if (Fuel2130AutoRB.isChecked()) {
-                    Fuel2130Auto = "True";
-                }
-                else if (Fuel3140AutoRB.isChecked()) {
-                    Fuel3140Auto = "True";
-                }
-                else if (Fuel4150AutoRB.isChecked()) {
-                    Fuel4150Auto = "True";
-                }
-                else if (Fuel5160AutoRB.isChecked()) {
-                    Fuel5160Auto = "True";
-                }
-                else if (Fuel6170AutoRB.isChecked()) {
-                    Fuel6170Auto = "True";
-                }
-                else if (Fuel70PlusAutoRB.isChecked()) {
-                    Fuel70PlusAuto = "True";
-                }
-
-                if (Fuel010Auto.equals("False") && Fuel1120Auto.equals("False") && Fuel2130Auto.equals("False") && Fuel3140Auto.equals("False") && Fuel4150Auto.equals("False") && Fuel5160Auto.equals("False") && Fuel6170Auto.equals("False") && Fuel70PlusAuto.equals("False"))
-                {
-                    Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
 
 
         };
-    }
+
+
+        };
+

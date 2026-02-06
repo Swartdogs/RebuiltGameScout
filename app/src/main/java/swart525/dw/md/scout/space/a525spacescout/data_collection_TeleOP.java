@@ -86,7 +86,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         //Defines all buttons
         //Coral Buttons
         //Below defines the button and commands for saving data and switching pages
-        Button To_EndGame = (Button) findViewById(R.id.toSubmission);
+
 
         RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
         StallOtherB.setBackgroundColor(ContextCompat.getColor(StallOtherB.getContext(), R.color.grey_button));
@@ -343,7 +343,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         });
 
-        Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
+        Button To_Submission = (Button) findViewById(R.id.toSubmission); //Defines button for later use
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
@@ -380,24 +380,25 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     Toast.makeText(data_collection_TeleOP.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
                 }
 
+                Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
+                teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
+                startActivity (teamnumintent);
             }
         });
 
-        To_EndGame.setOnClickListener(new View.OnClickListener()
-        { //Makes onclick listener for button
-           @Override
-           public void onClick(View v) {
-
-
-
-
-                    Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
-                    teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
-                    startActivity (teamnumintent);
-                    //Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-                    //startActivity(startintent);
-                }
-
-        });
+//        To_EndGame.setOnClickListener(new View.OnClickListener()
+//        { //Makes onclick listener for button
+//           @Override
+//           public void onClick(View v) {
+//
+//
+//
+//
+////                    Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
+////                    teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
+////                    startActivity (teamnumintent);
+//                    //Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+//                    //startActivity(startintent);
+//                }
     }
 }

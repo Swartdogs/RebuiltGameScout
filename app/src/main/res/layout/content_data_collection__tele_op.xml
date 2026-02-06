@@ -496,7 +496,7 @@
         android:layout_height="123dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/bolt_regular"
-        android:text="To Teleop"
+        android:text="To EndGame"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

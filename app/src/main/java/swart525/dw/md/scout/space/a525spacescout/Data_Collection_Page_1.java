@@ -130,13 +130,14 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     int Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
 
                     if (Match_Num_Real < Compare_Match_Num) {
-//                        if (NoShowCB.isChecked()) {
-//                            NoShow = "True";
-//
-//                            Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
-//                            startActivity(startintent);
-//
-//                        }
+
+                        if (NoShowCB.isChecked()) {
+                            NoShow = "True";
+
+                            Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+                            startActivity(startintent);
+
+                        }
 
                         if(!tv.getText().toString().isEmpty()) {
 
@@ -146,7 +147,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             Initials = Initials_txt.getText().toString();
 
                             String teamnumpls = Integer.toString(Team_Num);
-                            Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
+                            Intent teamnumintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
                             teamnumintent.putExtra(Team_Num_Display, teamnumpls);
                             startActivity(teamnumintent);
                         }
@@ -157,7 +158,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
 
                             String teamnumpls = Integer.toString(Team_Num);
-                            Intent teamnumintent = new Intent(Data_Collection_Page_1.this, data_Collection_sandstorm.class);
+                            Intent teamnumintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
                             teamnumintent.putExtra(Team_Num_Display, teamnumpls);
                             startActivity(teamnumintent);
                         }
@@ -166,14 +167,14 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                             Toast.makeText(Data_Collection_Page_1.this, "Crouch Cannot Continue. Please Enter ALL Information!", Toast.LENGTH_LONG).show();
                         }
                     }
+//                    if (NoShowCB.isChecked()) {
+//                        NoShow = "True";
+//
+//                        Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+//                        startActivity(startintent);
+//
+//                    }
 
-                    if (NoShowCB.isChecked()) {
-                        NoShow = "True";
-
-                        Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
-                        startActivity(startintent);
-
-                    }
 
 //                    else {
 //                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();

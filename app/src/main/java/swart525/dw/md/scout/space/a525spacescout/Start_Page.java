@@ -25,8 +25,6 @@ public class Start_Page extends AppCompatActivity {
                 Data_Collection_Page_1.Team_Num = 0;
                 Data_Collection_Page_1.Match_Num = 0;
                 data_Collection_sandstorm.cycles = 0;
-                data_Collection_sandstorm.fuel_stored = 0;
-                data_Collection_sandstorm.extra_fuel = "False";
                 data_Collection_sandstorm.depot = "False";
                 data_Collection_sandstorm.neutral_zone = "False";
                 data_Collection_sandstorm.outpost = "False";

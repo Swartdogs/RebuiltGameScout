@@ -30,8 +30,6 @@ public class Actual_Submit extends AppCompatActivity {
             Data_Collection_Page_1.Team_Num + ","+
             Data_Collection_Page_1.Match_Num + ","+
             data_Collection_sandstorm.cycles + "," +
-            data_Collection_sandstorm.fuel_stored + "," +
-            data_Collection_sandstorm.extra_fuel + "," +
             data_Collection_sandstorm.depot + "," +
             data_Collection_sandstorm.neutral_zone + "," +
             data_Collection_sandstorm.outpost + "," +
@@ -75,7 +73,7 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_end_game.tippedEnd + "," +
             data_collection_end_game.stalledEnd + "," +
             Data_Collection_Page_1.Initials + "," +
-            Data_Collection_Page_1.NoShow + ",";
+            Data_Collection_Page_1.NoShow;
 
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
