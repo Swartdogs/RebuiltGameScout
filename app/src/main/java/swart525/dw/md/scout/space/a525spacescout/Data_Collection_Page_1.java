@@ -91,7 +91,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     Match_Num_Real = Integer.parseInt(Match_Num_txt.getText().toString());
                     Match_Num = Integer.parseInt(Match_Num_txt.getText().toString());
                     if (Compare_Match_Num < Match_Num + 1){
-                        Toast.makeText(Data_Collection_Page_1.this, "That is not a valid match number. Please try again!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Data_Collection_Page_1.this, "That is not a valid match number. Please enter less than" + Compare_Match_Num, Toast.LENGTH_LONG).show();
                     }
                     else {
                         tv.setText(String.valueOf(MatchSchedule[Match_Num_Real - 1]));

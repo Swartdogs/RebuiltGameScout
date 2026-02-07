@@ -17,17 +17,17 @@
     <View
         android:id="@+id/divider2"
         android:layout_width="5dp"
-        android:layout_height="800dp"
+        android:layout_height="650dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
         android:translationZ="1sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.36" />
 
     <View
         android:id="@+id/divider17"
@@ -84,7 +84,6 @@
         android:topRightRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
@@ -133,6 +132,7 @@
         android:textColor="@color/ic_launcher_background"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:translationY="-25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.97"
@@ -141,133 +141,6 @@
         app:layout_constraintVertical_bias="0.243"
         tools:textAlignment="center" />
 
-    <RadioButton
-        android:id="@+id/AutoCycles2130_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="21-30"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles4150_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:text="41-50"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles1120_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="11-20"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles5160_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="51-60"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles6170_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="61-70"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.417" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles010_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="0-10"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
-
-    <RadioButton
-        android:id="@+id/AutoCycles3140_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="31-40"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
-
-    <RadioButton
-        android:id="@+id/AutoCyclesto71andbeyond_RB"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:text="70 +"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
-
-    <TextView
-        android:id="@+id/AutoCycles_TV"
-        android:layout_width="149dp"
-        android:layout_height="62dp"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
-        tools:text="Cycles" />
 
     <View
         android:id="@+id/divider5"
@@ -280,22 +153,7 @@
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <Button
-        android:id="@+id/AutoCyclesMinus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        android:translationY="-5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/AutoCyclesPlus_GB"
@@ -310,12 +168,29 @@
         app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/AutoCycles_TV"
+        android:layout_width="265dp"
+        android:layout_height="152dp"
+        android:text="Cycles"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        tools:textAlignment="center" />
 
     <TextView
         android:id="@+id/AutoCyclesScored_TV"
-        android:layout_width="89dp"
-        android:layout_height="44dp"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -323,10 +198,25 @@
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.258" />
+
+    <Button
+        android:id="@+id/AutoCyclesMinus_GB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:text="-"
+        android:textSize="34sp"
+        android:translationY="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
 
 
     <TextView
@@ -340,15 +230,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.383" />
 
     <Button
         android:id="@+id/AutoOutpost_B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:fontFamily="sans-serif-medium"
         android:text="Outpost"
         android:textAllCaps="false"
@@ -356,15 +246,31 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/AutoNeutralZone_B"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Neutral Zone"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
 
     <Button
         android:id="@+id/AutoDepot_B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:fontFamily="sans-serif-medium"
         android:text="Depot"
         android:textAllCaps="false"
@@ -373,26 +279,10 @@
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
-
-    <Button
-        android:id="@+id/AutoNeutralZone_B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Neutral Zone"
-        android:textAllCaps="false"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.195"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintVertical_bias="0.652" />
 
     <TextView
         android:id="@+id/AutoTower_TV"
@@ -407,48 +297,55 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <RadioGroup
 
         android:id="@+id/AutoHangL1_RG"
-        android:layout_width="230dp"
-        android:layout_height="70dp"
+        android:layout_width="625dp"
+        android:layout_height="100dp"
         android:baselineAligned="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808">
+        app:layout_constraintVertical_bias="0.89">
 
         <RadioButton
             android:id="@+id/AutoHangL1Yes_RB"
-            android:layout_width="124dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="Yes"
-            android:textSize="48sp"
+            android:textSize="45sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/AutoHangL1No_RB"
-            android:layout_width="100dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="No"
-            android:textSize="48sp"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/AutoHangL1Attempt_RB"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Attempt"
+            android:textSize="45sp"
             android:textStyle="bold" />
 
     </RadioGroup>
 
     <TextView
         android:id="@+id/AutoHangQ_TV"
-        android:layout_width="419dp"
+        android:layout_width="500dp"
         android:layout_height="82dp"
         android:text="Did they hang L1?"
         android:textAlignment="center"
@@ -457,16 +354,67 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <android.support.constraint.Barrier
         android:id="@+id/leftBorder"
         android:layout_width="590dp"
         android:layout_height="wrap_content"
         app:barrierDirection="left" />
+
+    <RadioGroup
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:translationY="-25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546">
+
+        <RadioButton
+            android:id="@+id/AutoCycles010_RB"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="0-10"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles1130_RB"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="11-30"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles3150_RB"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="31-50"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCycles5170_RB"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="51-70"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/AutoCyclesto71andbeyond_RB"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="70 +"
+            android:textSize="45sp" />
+    </RadioGroup>
 
 
 </android.support.constraint.ConstraintLayout>

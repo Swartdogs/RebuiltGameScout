@@ -39,12 +39,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
         // int Team_Num_Real = bundle.getInt("code");
         final RadioButton Fuel010AutoRB = (RadioButton) findViewById(R.id.AutoCycles010_RB);
-        final RadioButton Fuel1120AutoRB = (RadioButton) findViewById(R.id.AutoCycles1120_RB);
-        final RadioButton Fuel2130AutoRB = (RadioButton) findViewById(R.id.AutoCycles2130_RB);
-        final RadioButton Fuel3140AutoRB = (RadioButton) findViewById(R.id.AutoCycles3140_RB);
-        final RadioButton Fuel4150AutoRB = (RadioButton) findViewById(R.id.AutoCycles4150_RB);
-        final RadioButton Fuel5160AutoRB = (RadioButton) findViewById(R.id.AutoCycles5160_RB);
-        final RadioButton Fuel6170AutoRB = (RadioButton) findViewById(R.id.AutoCycles6170_RB);
+        final RadioButton Fuel1130AutoRB = (RadioButton) findViewById(R.id.AutoCycles1130_RB);
+        final RadioButton Fuel3150AutoRB = (RadioButton) findViewById(R.id.AutoCycles3150_RB);
+        final RadioButton Fuel5170AutoRB = (RadioButton) findViewById(R.id.AutoCycles5170_RB);
         final RadioButton Fuel70PlusAutoRB = (RadioButton) findViewById(R.id.AutoCyclesto71andbeyond_RB);
         //Defines and implements Button to continue along with variable savings
         Button CyclePlus = findViewById(R.id.AutoCyclesPlus_GB);
@@ -125,8 +122,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         //Makes onclick listener for button
-        To_TeleOp.setOnClickListener(view -> {
-
+        To_TeleOp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
             //Ending position variables
             //Because these are radio buttons, they may need to be changed to isChecked
             if (AutoHangL1YesRB.isChecked()) {
@@ -139,23 +137,14 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             if (Fuel010AutoRB.isChecked()) {
                 averageFuelScored = "0-10";
             }
-            else if (Fuel1120AutoRB.isChecked()) {
-                averageFuelScored= "11-20";
+            else if (Fuel1130AutoRB.isChecked()) {
+                averageFuelScored= "11-30";
             }
-            else if (Fuel2130AutoRB.isChecked()) {
-                averageFuelScored = "21-30";
+            else if (Fuel3150AutoRB.isChecked()) {
+                averageFuelScored = "31-50";
             }
-            else if (Fuel3140AutoRB.isChecked()) {
-                averageFuelScored = "31-40";
-            }
-            else if (Fuel4150AutoRB.isChecked()) {
-                averageFuelScored = "41-50";
-            }
-            else if (Fuel5160AutoRB.isChecked()) {
-                averageFuelScored = "51-60";
-            }
-            else if (Fuel6170AutoRB.isChecked()) {
-                averageFuelScored = "61-70";
+            else if (Fuel5170AutoRB.isChecked()) {
+                averageFuelScored = "51-70";
             }
             else if (Fuel70PlusAutoRB.isChecked()) {
                 averageFuelScored = "70+";
@@ -178,16 +167,15 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             startActivity(teamnumintent1);
             //Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
             //startActivity(startintent);
-        });
+        };
 
 
 
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
-
+    });
 
         };
-
 
         };
 

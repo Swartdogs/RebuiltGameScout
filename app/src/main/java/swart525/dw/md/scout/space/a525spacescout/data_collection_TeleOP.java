@@ -57,15 +57,12 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         final Button RobotTipB = (Button) findViewById(R.id.TeleTipped_B);
         final Button StallOtherB = (Button) findViewById(R.id.TeleStalled_B);
-        final Button FouledOtherB = (Button) findViewById(R.id.teleNoneActive_B);
+        final Button FouledOtherB = (Button) findViewById(R.id.TeleFouled_B);
         final Button DefenseInactiveB = (Button) findViewById(R.id.teleDefenseInactive_B);
         final RadioButton FuelAvg010RB = (RadioButton) findViewById(R.id.TeleCycles010_RB);
-        final RadioButton FuelAvg1120RB = (RadioButton) findViewById(R.id.TeleCycles1120_RB);
-        final RadioButton FuelAvg2130RB = (RadioButton) findViewById(R.id.TeleCycles2130_RB);
-        final RadioButton FuelAvg3140RB = (RadioButton) findViewById(R.id.TeleCycles3140_RB);
-        final RadioButton FuelAvg4150RB = (RadioButton) findViewById(R.id.TeleCycles4150_RB);
-        final RadioButton FuelAvg5160RB = (RadioButton) findViewById(R.id.TeleCycles5160_RB);
-        final RadioButton FuelAvg6170RB = (RadioButton) findViewById(R.id.TeleCycles6170_RB);
+        final RadioButton FuelAvg1130RB = (RadioButton) findViewById(R.id.TeleCycles1130_RB);
+        final RadioButton FuelAvg3150RB = (RadioButton) findViewById(R.id.TeleCycles3150_RB);
+        final RadioButton FuelAvg5170RB = (RadioButton) findViewById(R.id.TeleCycles5170_RB);
         final RadioButton FuelAvg70PlusRB = (RadioButton) findViewById(R.id.TeleCyclesto71andbeyond_RB);
         final Button DefenceActiveB = (Button) findViewById(R.id.TeleDefenseActive_B);
         final Button FerryInactiveB = (Button) findViewById(R.id.teleFerryInactive_B);
@@ -346,24 +343,18 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (FuelAvg010RB.isChecked()) {
                     TeleAverageFuelScored = "0-10";
                 }
-                else if (FuelAvg1120RB.isChecked()) {
-                    TeleAverageFuelScored = "11-20";
+                else if (FuelAvg1130RB.isChecked()) {
+                    TeleAverageFuelScored = "11-30";
+
                 }
-                else if (FuelAvg2130RB.isChecked()) {
-                    TeleAverageFuelScored = "21-30";
+                else if (FuelAvg3150RB.isChecked()) {
+                    TeleAverageFuelScored = "31-50";
+
                 }
-                else if (FuelAvg3140RB.isChecked()) {
-                    TeleAverageFuelScored = "31-40";
+                else if (FuelAvg5170RB.isChecked()) {
+                    TeleAverageFuelScored = "51-70";
                 }
-                else if (FuelAvg4150RB.isChecked()) {
-                    TeleAverageFuelScored = "41-50";
-                }
-                else if (FuelAvg5160RB.isChecked()) {
-                    TeleAverageFuelScored = "51-60";
-                }
-                else if (FuelAvg6170RB.isChecked()) {
-                    TeleAverageFuelScored = "61-70";
-                }
+
                 else if (FuelAvg70PlusRB.isChecked()) {
                     TeleAverageFuelScored = "70+";
                 }
