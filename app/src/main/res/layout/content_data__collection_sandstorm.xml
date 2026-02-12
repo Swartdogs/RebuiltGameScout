@@ -17,17 +17,17 @@
     <View
         android:id="@+id/divider2"
         android:layout_width="5dp"
-        android:layout_height="650dp"
+        android:layout_height="600dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
         android:translationZ="1sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.376" />
 
     <View
         android:id="@+id/divider17"
@@ -181,10 +181,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintVertical_bias="0.201"
         tools:textAlignment="center" />
 
     <TextView
@@ -233,44 +233,12 @@
         app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
-
-    <Button
-        android:id="@+id/AutoOutpost_B"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Outpost"
-        android:textAllCaps="false"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
-
-    <Button
-        android:id="@+id/AutoNeutralZone_B"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Neutral Zone"
-        android:textAllCaps="false"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
+        app:layout_constraintVertical_bias="0.372" />
 
     <Button
         android:id="@+id/AutoDepot_B"
         android:layout_width="300dp"
-        android:layout_height="70dp"
+        android:layout_height="75dp"
         android:fontFamily="sans-serif-medium"
         android:text="Depot"
         android:textAllCaps="false"
@@ -282,7 +250,39 @@
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.641" />
+
+    <Button
+        android:id="@+id/AutoNeutralZone_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Neutral Zone"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/AutoOutpost_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Outpost"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
 
     <TextView
         android:id="@+id/AutoTower_TV"
@@ -312,7 +312,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89">
+        app:layout_constraintVertical_bias="0.87">
 
         <RadioButton
             android:id="@+id/AutoHangL1Yes_RB"
@@ -366,19 +366,19 @@
 
     <RadioGroup
         android:layout_width="150dp"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         android:translationY="-25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546">
+        app:layout_constraintVertical_bias="0.507">
 
         <RadioButton
             android:id="@+id/AutoCycles010_RB"
             android:layout_width="175dp"
-            android:layout_height="75dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="0-10"
             android:textSize="45sp" />
@@ -386,7 +386,7 @@
         <RadioButton
             android:id="@+id/AutoCycles1130_RB"
             android:layout_width="175dp"
-            android:layout_height="75dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="11-30"
             android:textSize="45sp" />
@@ -394,7 +394,7 @@
         <RadioButton
             android:id="@+id/AutoCycles3150_RB"
             android:layout_width="175dp"
-            android:layout_height="75dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="31-50"
             android:textSize="45sp" />
@@ -402,7 +402,7 @@
         <RadioButton
             android:id="@+id/AutoCycles5170_RB"
             android:layout_width="175dp"
-            android:layout_height="75dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="51-70"
             android:textSize="45sp" />
@@ -410,7 +410,7 @@
         <RadioButton
             android:id="@+id/AutoCyclesto71andbeyond_RB"
             android:layout_width="175dp"
-            android:layout_height="75dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:text="70 +"
             android:textSize="45sp" />

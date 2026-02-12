@@ -19,9 +19,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String depot = "False";
     public static String neutral_zone = "False";
     public static String outpost = "False";
-    public static String hanged = "Empty";
+    public static String hangedYes = "False";
+    public static String hangedNo = "False";
+    public static String hangAttemptAuto = "False";
     public static String averageFuelScored = "Empty";
-
     //public static List<String> others = new ArrayList<>();
 
     public static String Team_Num_Display = "0000";
@@ -53,6 +54,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         //RadioButton Instantiation
         RadioButton AutoHangL1YesRB = findViewById(R.id.AutoHangL1Yes_RB);
         RadioButton AutoHangL1NoRB = findViewById(R.id.AutoHangL1No_RB);
+        RadioButton AutoHangL1AttemptRB = findViewById(R.id.AutoHangL1Attempt_RB);
 
         //Button to move to next page
         Button To_TeleOp = findViewById(R.id.To_Teleop_B);
@@ -128,10 +130,13 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             //Ending position variables
             //Because these are radio buttons, they may need to be changed to isChecked
             if (AutoHangL1YesRB.isChecked()) {
-                hanged = "True";
+                hangedYes = "True";
             }
             if (AutoHangL1NoRB.isChecked()) {
-                hanged = "False";
+                hangedNo = "True";
+            }
+            if (AutoHangL1AttemptRB.isChecked()) {
+                hangAttemptAuto = "True";
             }
 
             if (Fuel010AutoRB.isChecked()) {
@@ -154,12 +159,21 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             {
                 Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel Scored Per Cycle!!!!!", Toast.LENGTH_LONG).show();
             }
+            else
+            {
+                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
+                startActivity(teamnumintent);
+            }
 
-            if (hanged.equals("Empty"))
+            if (hangedYes.equals("False") && hangedNo.equals("False") && hangAttemptAuto.equals("False"))
             {
                 Toast.makeText(data_Collection_sandstorm.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
             }
-
+            else
+            {
+                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
+                startActivity(teamnumintent);
+            }
 
             //add in data collection pieces from checkboxes
             Intent teamnumintent1 = new Intent(getApplicationContext(), data_collection_TeleOP.class);

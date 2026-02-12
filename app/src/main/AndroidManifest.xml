@@ -32,7 +32,8 @@
         <activity
             android:name=".data_collection_TeleOP"
             android:label="@string/title_activity_data_collection__tele_op"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".data_collection_end_game"
             android:label="@string/title_activity_data_collection_end_game"

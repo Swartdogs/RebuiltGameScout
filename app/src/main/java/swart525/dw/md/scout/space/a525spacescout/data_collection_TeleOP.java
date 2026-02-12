@@ -40,7 +40,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String NoneActive = "False";
     public static String Team_Num_Display = "0000";
     public static int cyclesTele = 0;
-    public static int percent = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
         TeamNumTeleop.setText(teleopteamnumstring);
 
         //Defines all buttons
-        final EditText PercentT = findViewById(R.id.TelePercent_ED);
 
         final Button RobotTipB = (Button) findViewById(R.id.TeleTipped_B);
         final Button StallOtherB = (Button) findViewById(R.id.TeleStalled_B);
@@ -102,7 +101,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             cyclesTele -= 1;
             CyclesText.setText(String.valueOf(cyclesTele));
         });
-        
+
 
         ScoreFuelB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -188,23 +187,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         });
 
-        PercentT.addTextChangedListener(new TextWatcher() {
-
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                percent = Integer.parseInt(s.toString());
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
 
 
         FerryInactiveB.setOnClickListener(new View.OnClickListener() {

@@ -139,7 +139,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
                         }
 
-                        if(!tv.getText().toString().isEmpty()) {
+                        else if(!tv.getText().toString().isEmpty()) {
 
                             Team_Num = Integer.parseInt(tv.getText().toString());
                             //Sets team num data to txt box information

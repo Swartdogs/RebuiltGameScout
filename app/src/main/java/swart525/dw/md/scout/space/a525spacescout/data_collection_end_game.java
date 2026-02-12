@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +22,7 @@ public class data_collection_end_game extends AppCompatActivity {
     public static String hangL2 = "False";
     public static String hangL3 = "False";
     public static String hangNone = "False";
+    public static String hangAttempt = "False";
     public static String Defense = "false";
     public static String ferryEnd = "false";
     public static String scoreFuelEnd = "false";
@@ -26,6 +30,7 @@ public class data_collection_end_game extends AppCompatActivity {
     public static String fouledEnd = "false";
     public static String tippedEnd = "false";
     public static String stalledEnd = "false";
+    public static int percent = 0;
 
 
 
@@ -45,15 +50,52 @@ public class data_collection_end_game extends AppCompatActivity {
         final RadioButton HangL2RB = (RadioButton) findViewById(R.id.EndL2_RB);
         final RadioButton HangL1RB = (RadioButton) findViewById(R.id.EndL1_RB);
         final RadioButton HangNoneRB = (RadioButton) findViewById(R.id.EndNone_RB);
+        final RadioButton HangAttemptRB = (RadioButton) findViewById(R.id.EndAttempt_RB);
         final Button EndFerryB = (Button) findViewById(R.id.EndFerry_B);
         final Button EndScoreFuelB = (Button) findViewById(R.id.EndScoreFuel_B);
         final Button DefenseB = (Button) findViewById(R.id.EndDefense_B);
-        final Button FoulsB = (Button) findViewById(R.id.EndNone_B);
+        final Button FoulsB = (Button) findViewById(R.id.EndFouled_B);
         final Button TippedB = (Button) findViewById(R.id.EndTipped_B);
         final Button stalledB = (Button) findViewById(R.id.EndStalled_B);
         final Button noneB = (Button) findViewById(R.id.EndNone_B);
+        final EditText PercentT = findViewById(R.id.EndPercent_ED);
 
-        TippedB.setOnClickListener(new View.OnClickListener() {
+        if (data_collection_TeleOP.Fouls.equals("true")){
+            FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
+            FoulsB.setTag("#FFE600");
+            fouledEnd = "true";
+        }
+        if (data_collection_TeleOP.Tipped.equals("true")){
+            TippedB.setBackgroundColor(ContextCompat.getColor(TippedB.getContext(), R.color.colorPrimary));
+            TippedB.setTag("#FFE600");
+            tippedEnd = "true";
+        }
+        if (data_collection_TeleOP.Stall.equals("true")){
+            stalledB.setBackgroundColor(ContextCompat.getColor(stalledB.getContext(), R.color.colorPrimary));
+            stalledB.setTag("#FFE600");
+            stalledEnd = "true";
+        }
+
+        PercentT.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                percent = Integer.parseInt(s.toString()+"");
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+
+        noneB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String colorCode = (String) noneB.getTag();
@@ -218,8 +260,12 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (HangNoneRB.isChecked()) {
                     hangNone = "True";
                 }
+                if (HangAttemptRB.isChecked()) {
+                    hangAttempt = "True";
+                }
 
-                if (hangL1.equals("False") && hangL2.equals("False") && hangL3.equals("False") && hangNone.equals("False"))
+
+                if (hangL1.equals("False") && hangL2.equals("False") && hangL3.equals("False") && hangNone.equals("False") && hangAttempt.equals("False"))
                 {
                     Toast.makeText(data_collection_end_game.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
                 }

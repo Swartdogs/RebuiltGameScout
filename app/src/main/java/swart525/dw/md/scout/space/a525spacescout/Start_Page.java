@@ -24,12 +24,16 @@ public class Start_Page extends AppCompatActivity {
 
                 Data_Collection_Page_1.Team_Num = 0;
                 Data_Collection_Page_1.Match_Num = 0;
+                Data_Collection_Page_1.Initials = "False";
+                Data_Collection_Page_1.NoShow = "False";
                 data_Collection_sandstorm.cycles = 0;
+                data_Collection_sandstorm.averageFuelScored = "False";
                 data_Collection_sandstorm.depot = "False";
                 data_Collection_sandstorm.neutral_zone = "False";
                 data_Collection_sandstorm.outpost = "False";
-                data_Collection_sandstorm.hanged = "False";
-                data_Collection_sandstorm.averageFuelScored = "False";
+                data_Collection_sandstorm.hangedYes = "False";
+                data_Collection_sandstorm.hangedNo = "False";
+                data_Collection_sandstorm.hangAttemptAuto = "False";
                 data_collection_TeleOP.Tipped = "False";
                 data_collection_TeleOP.Stall = "False";
                 data_collection_TeleOP.DefenseActive = "False";
@@ -41,11 +45,12 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_TeleOP.FerryActive = "False";
                 data_collection_TeleOP.NoneInactive = "False";
                 data_collection_TeleOP.NoneActive = "False";
-                data_collection_TeleOP.cyclesTele = 0;
-                data_collection_TeleOP.percent = 0;
+                data_collection_end_game.percent = 0;
+                data_collection_end_game.hangL1 = "False";
                 data_collection_end_game.hangL2 = "False";
                 data_collection_end_game.hangL3 = "False";
                 data_collection_end_game.hangNone = "False";
+                data_collection_end_game.hangAttempt = "False";
                 data_collection_end_game.Defense = "False";
                 data_collection_end_game.ferryEnd = "False";
                 data_collection_end_game.scoreFuelEnd = "False";
@@ -53,10 +58,6 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_end_game.fouledEnd = "False";
                 data_collection_end_game.tippedEnd = "False";
                 data_collection_end_game.stalledEnd = "False";
-                Data_Collection_Page_1.Initials = "False";
-                Data_Collection_Page_1.NoShow = "False";
-
-
 
                 Intent teamnumintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
                 startActivity(teamnumintent);

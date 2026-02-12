@@ -26,45 +26,49 @@ public class Actual_Submit extends AppCompatActivity {
     public String fileName = "Blue_1_Data.csv";
     public String filePath = "/ScoutData/";
     //Compiles string for CSV file
-    public String Final_String =
-            Data_Collection_Page_1.Team_Num + ","+
-            Data_Collection_Page_1.Match_Num + ","+
-            data_Collection_sandstorm.cycles + "," +
-            data_Collection_sandstorm.depot + "," +
-            data_Collection_sandstorm.neutral_zone + "," +
-            data_Collection_sandstorm.outpost + "," +
-            data_Collection_sandstorm.hanged + "," +
-            data_Collection_sandstorm.averageFuelScored + "," +
-            data_collection_TeleOP.Tipped + "," +
-            data_collection_TeleOP.Stall + "," +
-            data_collection_TeleOP.DefenseActive + "," +
-            data_collection_TeleOP.TeleAverageFuelScored + "," +
-            data_collection_TeleOP.Fouls + "," +
-            data_collection_TeleOP.DefenseInactive + "," +
-            data_collection_TeleOP.ScoreFuel + "," +
-            data_collection_TeleOP.FerryInactive + "," +
-            data_collection_TeleOP.FerryActive + "," +
-            data_collection_TeleOP.NoneInactive + "," +
-            data_collection_TeleOP.NoneActive + "," +
-            data_collection_TeleOP.cyclesTele + "," +
-            data_collection_TeleOP.percent + "," +
-            data_collection_end_game.hangL1 + "," +
-            data_collection_end_game.hangL2 + "," +
-            data_collection_end_game.hangL3 + "," +
-            data_collection_end_game.hangNone + "," +
-            data_collection_end_game.Defense + "," +
-            data_collection_end_game.ferryEnd + "," +
-            data_collection_end_game.scoreFuelEnd + "," +
-            data_collection_end_game.noneEnd + "," +
-            data_collection_end_game.fouledEnd + "," +
-            data_collection_end_game.tippedEnd + "," +
-            data_collection_end_game.stalledEnd + "," +
-            Data_Collection_Page_1.Initials + "," +
-            Data_Collection_Page_1.NoShow;
+    public String Final_String;
+
 
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);
+
+    public Actual_Submit() {
+        Final_String = Data_Collection_Page_1.Team_Num + ","+
+        Data_Collection_Page_1.Match_Num + ","+
+        Data_Collection_Page_1.Initials + "," +
+        Data_Collection_Page_1.NoShow + "," +
+        data_Collection_sandstorm.cycles + "," +
+        data_Collection_sandstorm.averageFuelScored + "," +
+        data_Collection_sandstorm.depot + "," +
+        data_Collection_sandstorm.neutral_zone + "," +
+        data_Collection_sandstorm.outpost + "," +
+        data_Collection_sandstorm.hangedYes + "," +
+        data_Collection_sandstorm.hangedNo + "," +
+        data_Collection_sandstorm.hangAttemptAuto + "," +
+        data_collection_TeleOP.cyclesTele + "," +
+        data_collection_end_game.percent + "," +
+        data_collection_TeleOP.TeleAverageFuelScored + "," +
+        data_collection_TeleOP.ScoreFuel + "," +
+        data_collection_TeleOP.FerryActive + "," +
+        data_collection_TeleOP.DefenseActive + "," +
+        data_collection_TeleOP.NoneActive + "," +
+        data_collection_TeleOP.FerryInactive + "," +
+        data_collection_TeleOP.DefenseInactive + "," +
+        data_collection_TeleOP.NoneInactive + "," +
+        data_collection_end_game.hangL1 + "," +
+        data_collection_end_game.hangL2 + "," +
+        data_collection_end_game.hangL3 + "," +
+        data_collection_end_game.hangNone + "," +
+        data_collection_end_game.hangAttempt + ","+
+        data_collection_end_game.scoreFuelEnd + "," +
+        data_collection_end_game.ferryEnd + "," +
+        data_collection_end_game.Defense + "," +
+        data_collection_end_game.noneEnd + "," +
+        data_collection_end_game.fouledEnd + "," +
+        data_collection_end_game.tippedEnd + "," +
+        data_collection_end_game.stalledEnd;
+    }
 
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {

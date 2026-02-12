@@ -9,36 +9,38 @@
     tools:context=".data_collection_end_game"
     tools:showIn="@layout/activity_data_collection_end_game">
 
-    <Button
-        android:id="@+id/EndTipped_B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Tipped"
-        android:textAllCaps="false"
-        android:textSize="48sp"
+    <TextView
+        android:id="@+id/teleEstimationQ_TV"
+        android:layout_width="521dp"
+        android:layout_height="83dp"
+        android:text="Robot's estimated contribution to alliance score:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.481"
+        tools:textAlignment="viewStart" />
 
-    <Button
-        android:id="@+id/EndStalled_B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Stalled"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
+    <EditText
+        android:id="@+id/EndPercent_ED"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:ems="5"
+        android:hint="Percent %"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.507" />
 
     <TextView
         android:id="@+id/EndOther_TV"
@@ -73,7 +75,38 @@
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.829" />
+
+    <Button
+        android:id="@+id/EndTipped_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tipped"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <Button
+        android:id="@+id/EndStalled_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Stalled"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
 
     <Button
         android:id="@+id/EndNone_B"
@@ -186,7 +219,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.110000014" />
 
     <TextView
         android:id="@+id/textView12"
@@ -244,15 +277,15 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308">
+        app:layout_constraintVertical_bias="0.207">
 
         <RadioButton
             android:id="@+id/EndL3_RB"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="85dp"
             android:text="Level 3"
             android:textSize="48sp"
             android:textStyle="bold" />
@@ -260,7 +293,7 @@
         <RadioButton
             android:id="@+id/EndL2_RB"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="85dp"
             android:text="Level 2"
             android:textSize="48sp"
             android:textStyle="bold" />
@@ -268,7 +301,7 @@
         <RadioButton
             android:id="@+id/EndL1_RB"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="85dp"
             android:gravity="center"
             android:text="Level 1"
             android:textAlignment="textStart"
@@ -278,8 +311,16 @@
         <RadioButton
             android:id="@+id/EndNone_RB"
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="85dp"
             android:text="None"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/EndAttempt_RB"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="Attempt"
             android:textSize="48sp"
             android:textStyle="bold" />
 
@@ -291,10 +332,10 @@
         android:layout_height="365dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266"
+        app:layout_constraintVertical_bias="0.181"
         app:srcCompat="@drawable/capture_removebg_preview" />
 
 </android.support.constraint.ConstraintLayout>
