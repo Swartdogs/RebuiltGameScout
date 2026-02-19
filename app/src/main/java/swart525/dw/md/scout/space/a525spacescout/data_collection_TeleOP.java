@@ -10,8 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 
 //After the first competition, we decided to only count the inner and outer
@@ -30,7 +33,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String Tipped = "False";
     public static String Stall = "False";
     public static String DefenseActive = "False";
-    public static String TeleAverageFuelScored = "Empty";
+//    public static String TeleAverageFuelScored = "Empty";
     public static String Fouls = "False";
     public static String DefenseInactive = "False";
     public static String ScoreFuel = "False";
@@ -40,6 +43,8 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String NoneActive = "False";
     public static String Team_Num_Display = "0000";
     public static int cyclesTele = 0;
+    public static int FuelTeleNum = 0;
+
 
 
     @Override
@@ -58,11 +63,11 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button StallOtherB = (Button) findViewById(R.id.TeleStalled_B);
         final Button FouledOtherB = (Button) findViewById(R.id.TeleFouled_B);
         final Button DefenseInactiveB = (Button) findViewById(R.id.teleDefenseInactive_B);
-        final RadioButton FuelAvg010RB = (RadioButton) findViewById(R.id.TeleCycles010_RB);
-        final RadioButton FuelAvg1130RB = (RadioButton) findViewById(R.id.TeleCycles1130_RB);
-        final RadioButton FuelAvg3150RB = (RadioButton) findViewById(R.id.TeleCycles3150_RB);
-        final RadioButton FuelAvg5170RB = (RadioButton) findViewById(R.id.TeleCycles5170_RB);
-        final RadioButton FuelAvg70PlusRB = (RadioButton) findViewById(R.id.TeleCyclesto71andbeyond_RB);
+//        final RadioButton FuelAvg010RB = (RadioButton) findViewById(R.id.TeleCycles010_RB);
+//        final RadioButton FuelAvg1130RB = (RadioButton) findViewById(R.id.TeleCycles1130_RB);
+//        final RadioButton FuelAvg3150RB = (RadioButton) findViewById(R.id.TeleCycles3150_RB);
+//        final RadioButton FuelAvg5170RB = (RadioButton) findViewById(R.id.TeleCycles5170_RB);
+//        final RadioButton FuelAvg70PlusRB = (RadioButton) findViewById(R.id.TeleCyclesto71andbeyond_RB);
         final Button DefenceActiveB = (Button) findViewById(R.id.TeleDefenseActive_B);
         final Button FerryInactiveB = (Button) findViewById(R.id.teleFerryInactive_B);
         final Button FerryActiveB = (Button) findViewById(R.id.TeleFerryActive_B);
@@ -71,6 +76,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button ScoreFuelB = (Button) findViewById(R.id.TeleScoreFuelActive_B);
         final Button CyclePlus = (Button) findViewById(R.id.TeleCyclesPlus_GB);
         final Button CycleMinus = (Button) findViewById(R.id.TeleCyclesMinus_GB);
+        final SeekBar FuelSeekBar = (SeekBar) findViewById(R.id.SeekBarFuelTele);
+        final TextView FuelText = (TextView) findViewById(R.id.FuelTeleText);
+
 
         //Defines all buttons
         //Coral Buttons
@@ -88,18 +96,19 @@ public class data_collection_TeleOP extends AppCompatActivity {
         ScoreFuelB.setBackgroundColor(ContextCompat.getColor(ScoreFuelB.getContext(), R.color.grey_button));
 
 
-        TextView CyclesText = findViewById(R.id.TeleCyclesScored_TV);
+        TextView CyclesText = (TextView) findViewById(R.id.TeleCyclesScored_TV);
 
 
         CyclePlus.setOnClickListener(view -> {
-            cyclesTele += 1;
-            CyclesText.setText(String.valueOf(cyclesTele));
+
+                cyclesTele += 1;
+                CyclesText.setText(String.valueOf(cyclesTele));
         });
 
 
-        CycleMinus.setOnClickListener(view -> {
-            cyclesTele -= 1;
-            CyclesText.setText(String.valueOf(cyclesTele));
+        CycleMinus.setOnClickListener(View -> {
+                cyclesTele -= 1;
+                CyclesText.setText(String.valueOf(cyclesTele));
         });
 
 
@@ -315,42 +324,42 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         });
 
+
+
+        FuelSeekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                FuelText.setText( "Fuel: " + String.valueOf((i + 1)));
+                FuelTeleNum = (i + 1);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+
         Button To_Submission = (Button) findViewById(R.id.toSubmission); //Defines button for later use
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
 
-                //Ending position variables
-                //Because these are radio buttons, they may need to be changed to isChecked
-                if (FuelAvg010RB.isChecked()) {
-                    TeleAverageFuelScored = "0-10";
-                }
-                else if (FuelAvg1130RB.isChecked()) {
-                    TeleAverageFuelScored = "11-30";
-
-                }
-                else if (FuelAvg3150RB.isChecked()) {
-                    TeleAverageFuelScored = "31-50";
-
-                }
-                else if (FuelAvg5170RB.isChecked()) {
-                    TeleAverageFuelScored = "51-70";
-                }
-
-                else if (FuelAvg70PlusRB.isChecked()) {
-                    TeleAverageFuelScored = "70+";
-                }
-
-                if (TeleAverageFuelScored.equals("Empty"))
-                {
-                    Toast.makeText(data_collection_TeleOP.this, "Please Choose Avg. Fuel!!!!!", Toast.LENGTH_LONG).show();
-                }
-
                 Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
                 teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
                 startActivity (teamnumintent);
             }
+
         });
+    }}
+
 
 //        To_EndGame.setOnClickListener(new View.OnClickListener()
 //        { //Makes onclick listener for button
@@ -366,5 +375,3 @@ public class data_collection_TeleOP extends AppCompatActivity {
 //                    //Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
 //                    //startActivity(startintent);
 //                }
-    }
-}

@@ -2,6 +2,7 @@ package swart525.dw.md.scout.space.a525spacescout;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -39,7 +40,7 @@ public class Actual_Submit extends AppCompatActivity {
         Data_Collection_Page_1.Initials + "," +
         Data_Collection_Page_1.NoShow + "," +
         data_Collection_sandstorm.cycles + "," +
-        data_Collection_sandstorm.averageFuelScored + "," +
+        data_Collection_sandstorm.FuelNumAuto + "," +
         data_Collection_sandstorm.depot + "," +
         data_Collection_sandstorm.neutral_zone + "," +
         data_Collection_sandstorm.outpost + "," +
@@ -47,8 +48,7 @@ public class Actual_Submit extends AppCompatActivity {
         data_Collection_sandstorm.hangedNo + "," +
         data_Collection_sandstorm.hangAttemptAuto + "," +
         data_collection_TeleOP.cyclesTele + "," +
-        data_collection_end_game.percent + "," +
-        data_collection_TeleOP.TeleAverageFuelScored + "," +
+        data_collection_TeleOP.FuelTeleNum + "," +
         data_collection_TeleOP.ScoreFuel + "," +
         data_collection_TeleOP.FerryActive + "," +
         data_collection_TeleOP.DefenseActive + "," +
@@ -59,6 +59,7 @@ public class Actual_Submit extends AppCompatActivity {
         data_collection_end_game.hangL1 + "," +
         data_collection_end_game.hangL2 + "," +
         data_collection_end_game.hangL3 + "," +
+        data_collection_end_game.PercentValue + "," +
         data_collection_end_game.hangNone + "," +
         data_collection_end_game.hangAttempt + ","+
         data_collection_end_game.scoreFuelEnd + "," +
@@ -69,6 +70,7 @@ public class Actual_Submit extends AppCompatActivity {
         data_collection_end_game.tippedEnd + "," +
         data_collection_end_game.stalledEnd;
     }
+
 
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {

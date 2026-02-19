@@ -14,6 +14,123 @@
     tools:showIn="@layout/activity_data__collection_sandstorm">
 
 
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:scrollbarSize="100dp"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        tools:ignore="MissingConstraints">
+
+        <SeekBar
+            android:id="@+id/SeekBarFuelTele"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:max="4"
+            android:progress="1"
+            android:rotation="270"
+            android:scrollbarSize="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/Auto_Fuel70Plus_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 70+"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/Auto_Fuel1130_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 11-30"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <TextView
+        android:id="@+id/FuelAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Avg."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <TextView
+        android:id="@+id/Auto_Fuel010_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 0-10"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <TextView
+        android:id="@+id/Auto_Fuel3150_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 31-50"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <TextView
+        android:id="@+id/Auto_Fuel5170_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 51-70"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
     <View
         android:id="@+id/divider2"
         android:layout_width="5dp"
@@ -24,7 +141,7 @@
         android:translationZ="1sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.628"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.376" />
@@ -123,6 +240,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.137" />
 
+
     <TextView
         android:id="@+id/AutoAvgCycleScoredQ_TV"
         android:layout_width="265dp"
@@ -135,12 +253,11 @@
         android:translationY="-25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
+        app:layout_constraintVertical_bias="0.162"
         tools:textAlignment="center" />
-
 
     <View
         android:id="@+id/divider5"
@@ -363,58 +480,6 @@
         android:layout_width="590dp"
         android:layout_height="wrap_content"
         app:barrierDirection="left" />
-
-    <RadioGroup
-        android:layout_width="150dp"
-        android:layout_height="400dp"
-        android:translationY="-25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507">
-
-        <RadioButton
-            android:id="@+id/AutoCycles010_RB"
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="0-10"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/AutoCycles1130_RB"
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="11-30"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/AutoCycles3150_RB"
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="31-50"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/AutoCycles5170_RB"
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="51-70"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/AutoCyclesto71andbeyond_RB"
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="70 +"
-            android:textSize="45sp" />
-    </RadioGroup>
 
 
 </android.support.constraint.ConstraintLayout>

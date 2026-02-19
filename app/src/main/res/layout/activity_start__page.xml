@@ -36,7 +36,7 @@
         android:fontFamily="@font/bolt_regular"
         android:text="Start Collection"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintBottom_toTopOf="@+id/robotLabelTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/swartdogs525logo" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/robotLabelTV"
         android:layout_width="639dp"
         android:layout_height="130dp"
         android:fontFamily="@font/bolt_regular"
@@ -69,5 +69,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
+
+    <Button
+        android:id="@+id/robotLabel_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shhhh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.001"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
 
 </android.support.constraint.ConstraintLayout>

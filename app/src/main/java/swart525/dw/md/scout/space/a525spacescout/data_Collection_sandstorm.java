@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 //import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 
 public class data_Collection_sandstorm extends AppCompatActivity {
@@ -22,7 +25,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String hangedYes = "False";
     public static String hangedNo = "False";
     public static String hangAttemptAuto = "False";
-    public static String averageFuelScored = "Empty";
+    public static int FuelNumAuto = 0;
     //public static List<String> others = new ArrayList<>();
 
     public static String Team_Num_Display = "0000";
@@ -39,11 +42,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         TeamNumSandy.setText(sandstormteamnumstring);
 
         // int Team_Num_Real = bundle.getInt("code");
-        final RadioButton Fuel010AutoRB = (RadioButton) findViewById(R.id.AutoCycles010_RB);
-        final RadioButton Fuel1130AutoRB = (RadioButton) findViewById(R.id.AutoCycles1130_RB);
-        final RadioButton Fuel3150AutoRB = (RadioButton) findViewById(R.id.AutoCycles3150_RB);
-        final RadioButton Fuel5170AutoRB = (RadioButton) findViewById(R.id.AutoCycles5170_RB);
-        final RadioButton Fuel70PlusAutoRB = (RadioButton) findViewById(R.id.AutoCyclesto71andbeyond_RB);
+        final SeekBar Auto_FuelSeekBar = (SeekBar) findViewById(R.id.SeekBarFuelTele);
+        final TextView FuelTxtAuto = (TextView) findViewById(R.id.FuelAuto);
+
         //Defines and implements Button to continue along with variable savings
         Button CyclePlus = findViewById(R.id.AutoCyclesPlus_GB);
         Button CycleMinus = findViewById(R.id.AutoCyclesMinus_GB);
@@ -105,6 +106,27 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             }
 
         });
+
+        Auto_FuelSeekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                FuelTxtAuto.setText( "Fuel: " + String.valueOf((i + 1)));
+                FuelNumAuto = (i + 1);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         NeutralZoneButton.setOnClickListener(view -> {
             String colorCode = (String) NeutralZoneButton.getTag();
             if (!"#FFE600".equals(colorCode)){
@@ -139,31 +161,31 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 hangAttemptAuto = "True";
             }
 
-            if (Fuel010AutoRB.isChecked()) {
-                averageFuelScored = "0-10";
-            }
-            else if (Fuel1130AutoRB.isChecked()) {
-                averageFuelScored= "11-30";
-            }
-            else if (Fuel3150AutoRB.isChecked()) {
-                averageFuelScored = "31-50";
-            }
-            else if (Fuel5170AutoRB.isChecked()) {
-                averageFuelScored = "51-70";
-            }
-            else if (Fuel70PlusAutoRB.isChecked()) {
-                averageFuelScored = "70+";
-            }
-
-            if (averageFuelScored.equals("Empty"))
-            {
-                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel Scored Per Cycle!!!!!", Toast.LENGTH_LONG).show();
-            }
-            else
-            {
-                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-                startActivity(teamnumintent);
-            }
+//            if (Fuel010AutoRB.isChecked()) {
+//                averageFuelScored = "1";
+//            }
+//            else if (Fuel1130AutoRB.isChecked()) {
+//                averageFuelScored= "2";
+//            }
+//            else if (Fuel3150AutoRB.isChecked()) {
+//                averageFuelScored = "3";
+//            }
+//            else if (Fuel5170AutoRB.isChecked()) {
+//                averageFuelScored = "4";
+//            }
+//            else if (Fuel70PlusAutoRB.isChecked()) {
+//                averageFuelScored = "5";
+//            }
+//
+//            if (averageFuelScored.equals("Empty"))
+//            {
+//                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel Scored Per Cycle!!!!!", Toast.LENGTH_LONG).show();
+//            }
+//            else
+//            {
+//                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
+//                startActivity(teamnumintent);
+//            }
 
             if (hangedYes.equals("False") && hangedNo.equals("False") && hangAttemptAuto.equals("False"))
             {

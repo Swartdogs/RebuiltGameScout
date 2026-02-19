@@ -1,10 +1,17 @@
 package swart525.dw.md.scout.space.a525spacescout;
 
+import static swart525.dw.md.scout.space.a525spacescout.Tablet_IDKt.loadTabletConfig;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class Start_Page extends AppCompatActivity {
 
@@ -12,7 +19,24 @@ public class Start_Page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start__page);
-        //WARNING: Anything above this line do not edit
+        //WARNING: Anything below this line do not edit
+
+            //WARNING: Anything above this line do not edit
+
+        final Button robotLabel = (Button) findViewById(R.id.robotLabel_B);
+        robotLabel.setOnLongClickListener(new View.OnLongClickListener(){
+            @Override
+            public void onLongClick(View v) {
+                TabletConfig config = Tablet_IDKt.loadTabletConfig(this);
+
+                if (config != null) {
+                    String displayText = config.getRobotColor() + " " + config.getRobotNumber();
+                    robotLabel.setText(displayText);
+                } else {
+                    robotLabel.setText("Config not found");
+                }
+            }
+        });;
 
         //Below to dotted line defines the needed button and are used to bring you to data collection start page
         Button Start_Collection_Open = (Button) findViewById(R.id.Start_Collection_Open_B); //Defines button for later use
@@ -27,7 +51,7 @@ public class Start_Page extends AppCompatActivity {
                 Data_Collection_Page_1.Initials = "False";
                 Data_Collection_Page_1.NoShow = "False";
                 data_Collection_sandstorm.cycles = 0;
-                data_Collection_sandstorm.averageFuelScored = "False";
+                data_Collection_sandstorm.FuelNumAuto = 0;
                 data_Collection_sandstorm.depot = "False";
                 data_Collection_sandstorm.neutral_zone = "False";
                 data_Collection_sandstorm.outpost = "False";
@@ -37,7 +61,7 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_TeleOP.Tipped = "False";
                 data_collection_TeleOP.Stall = "False";
                 data_collection_TeleOP.DefenseActive = "False";
-                data_collection_TeleOP.TeleAverageFuelScored = "False";
+                data_collection_TeleOP.FuelTeleNum = 0;
                 data_collection_TeleOP.Fouls = "False";
                 data_collection_TeleOP.DefenseInactive = "False";
                 data_collection_TeleOP.ScoreFuel = "False";
@@ -45,10 +69,10 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_TeleOP.FerryActive = "False";
                 data_collection_TeleOP.NoneInactive = "False";
                 data_collection_TeleOP.NoneActive = "False";
-                data_collection_end_game.percent = 0;
                 data_collection_end_game.hangL1 = "False";
                 data_collection_end_game.hangL2 = "False";
                 data_collection_end_game.hangL3 = "False";
+                data_collection_end_game.PercentValue = 0;
                 data_collection_end_game.hangNone = "False";
                 data_collection_end_game.hangAttempt = "False";
                 data_collection_end_game.Defense = "False";
@@ -63,6 +87,9 @@ public class Start_Page extends AppCompatActivity {
                 startActivity(teamnumintent);
             }
         });
+
+
+
         //----------------------------------------------------------------------------------------------------------------
 
         /*

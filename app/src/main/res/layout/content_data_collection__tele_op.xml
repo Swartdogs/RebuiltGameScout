@@ -12,6 +12,74 @@
     tools:layout_editor_absoluteY="-20dp"
     tools:showIn="@layout/activity_data_collection__tele_op">
 
+    <TextView
+        android:id="@+id/fuel70Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 70+"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <TextView
+        android:id="@+id/fuel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 51-70"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/Fuel1130"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 11-30"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <TextView
+        android:id="@+id/fuel3150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 31-50"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Fuel010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel 0-10"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
 
     <View
         android:id="@+id/hDiv"
@@ -38,65 +106,67 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182"
+        app:layout_constraintVertical_bias="0.159"
         tools:textAlignment="center" />
 
-    <RadioGroup
-        android:id="@+id/TeleCycles_RG"
-        android:layout_width="175dp"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45">
+<!--    <RadioGroup-->
+<!--        android:id="@+id/TeleCycles_RG"-->
+<!--        android:layout_width="175dp"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.02"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
 
-        <RadioButton
-            android:id="@+id/TeleCycles010_RB"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:text="0-10"
-            android:textSize="48sp" />
+<!--        <RadioButton-->
+<!--            android:id="@+id/TeleCycles010_RB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="0-10"-->
+<!--            android:textSize="48sp" />-->
 
-        <RadioButton
-            android:id="@+id/TeleCycles1130_RB"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:text="11-30"
-            android:textSize="48sp" />
+<!--        <RadioButton-->
+<!--            android:id="@+id/TeleCycles1130_RB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="11-30"-->
+<!--            android:textSize="48sp" />-->
 
-        <RadioButton
-            android:id="@+id/TeleCycles3150_RB"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:text="31-50"
-            android:textSize="48sp"
-            app:layout_constraintEnd_toEndOf="parent" />
+<!--        <RadioButton-->
+<!--            android:id="@+id/TeleCycles3150_RB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="31-50"-->
+<!--            android:textSize="48sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
 
-        <RadioButton
-            android:id="@+id/TeleCycles5170_RB"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:text="51-70"
-            android:textSize="48sp" />
+<!--        <RadioButton-->
+<!--            android:id="@+id/TeleCycles5170_RB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="51-70"-->
+<!--            android:textSize="48sp" />-->
 
-        <RadioButton
-            android:id="@+id/TeleCyclesto71andbeyond_RB"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:text="70 +"
-            android:textSize="48sp" />
-    </RadioGroup>
+<!--        <RadioButton-->
+<!--            android:id="@+id/TeleCyclesto71andbeyond_RB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="70 +"-->
+<!--            android:textSize="48sp"-->
+<!--            android:translationX="30dp" />-->
+
+<!--    </RadioGroup>-->
 
     <TextView
         android:id="@+id/TeleStyles_TV"
@@ -144,10 +214,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.395" />
 
     <View
         android:id="@+id/hDiv3"
@@ -295,7 +365,39 @@
         app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.752" />
+
+    <Button
+        android:id="@+id/TeleStalled_B"
+        android:layout_width="225dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Stalled"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <Button
+        android:id="@+id/TeleTipped_B"
+        android:layout_width="225dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tipped"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
 
     <Button
         android:id="@+id/TeleFouled_B"
@@ -312,39 +414,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
-
-    <Button
-        android:id="@+id/TeleStalled_B"
-        android:layout_width="225dp"
-        android:layout_height="80dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Stalled"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
-
-    <Button
-        android:id="@+id/TeleTipped_B"
-        android:layout_width="225dp"
-        android:layout_height="80dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Tipped"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.827" />
 
     <TextView
         android:id="@+id/TeleFuel_TV"
@@ -547,6 +617,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:scrollbarSize="100dp"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <SeekBar
+            android:id="@+id/SeekBarFuelTele"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:max="4"
+            android:progress="1"
+            android:rotation="270"
+            android:scrollbarSize="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/FuelTeleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Avg."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
 
 
 </android.support.constraint.ConstraintLayout>

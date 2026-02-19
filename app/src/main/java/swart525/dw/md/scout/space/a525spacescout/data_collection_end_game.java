@@ -6,11 +6,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 public class data_collection_end_game extends AppCompatActivity {
@@ -30,8 +32,7 @@ public class data_collection_end_game extends AppCompatActivity {
     public static String fouledEnd = "false";
     public static String tippedEnd = "false";
     public static String stalledEnd = "false";
-    public static int percent = 0;
-
+    public static int PercentValue = 0;
 
 
 
@@ -58,7 +59,11 @@ public class data_collection_end_game extends AppCompatActivity {
         final Button TippedB = (Button) findViewById(R.id.EndTipped_B);
         final Button stalledB = (Button) findViewById(R.id.EndStalled_B);
         final Button noneB = (Button) findViewById(R.id.EndNone_B);
-        final EditText PercentT = findViewById(R.id.EndPercent_ED);
+        final SeekBar PercentBar = (SeekBar) findViewById(R.id.SeekBarPercent);
+        final TextView PercentT = (TextView) findViewById(R.id.percentText_TX);
+
+
+
 
         if (data_collection_TeleOP.Fouls.equals("true")){
             FoulsB.setBackgroundColor(ContextCompat.getColor(FoulsB.getContext(), R.color.colorPrimary));
@@ -76,23 +81,48 @@ public class data_collection_end_game extends AppCompatActivity {
             stalledEnd = "true";
         }
 
-        PercentT.addTextChangedListener(new TextWatcher() {
+
+
+        PercentBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                PercentT.setText( "Percent : " + String.valueOf((i * 10) + "%"));
+                PercentValue = (i * 10);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
 
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                percent = Integer.parseInt(s.toString()+"");
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
+            public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
         });
+
+
+
+//
+//        PercentT.addTextChangedListener(new TextWatcher() {
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                percent = Integer.parseInt(s.toString()+ " ");
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable editable) {
+//
+//            }
+//        });
 
 
         noneB.setOnClickListener(new View.OnClickListener() {
