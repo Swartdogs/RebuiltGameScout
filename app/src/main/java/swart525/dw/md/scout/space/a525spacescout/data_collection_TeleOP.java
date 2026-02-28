@@ -33,7 +33,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String Tipped = "False";
     public static String Stall = "False";
     public static String DefenseActive = "False";
-//    public static String TeleAverageFuelScored = "Empty";
     public static String Fouls = "False";
     public static String DefenseInactive = "False";
     public static String ScoreFuel = "False";
@@ -63,11 +62,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button StallOtherB = (Button) findViewById(R.id.TeleStalled_B);
         final Button FouledOtherB = (Button) findViewById(R.id.TeleFouled_B);
         final Button DefenseInactiveB = (Button) findViewById(R.id.teleDefenseInactive_B);
-//        final RadioButton FuelAvg010RB = (RadioButton) findViewById(R.id.TeleCycles010_RB);
-//        final RadioButton FuelAvg1130RB = (RadioButton) findViewById(R.id.TeleCycles1130_RB);
-//        final RadioButton FuelAvg3150RB = (RadioButton) findViewById(R.id.TeleCycles3150_RB);
-//        final RadioButton FuelAvg5170RB = (RadioButton) findViewById(R.id.TeleCycles5170_RB);
-//        final RadioButton FuelAvg70PlusRB = (RadioButton) findViewById(R.id.TeleCyclesto71andbeyond_RB);
         final Button DefenceActiveB = (Button) findViewById(R.id.TeleDefenseActive_B);
         final Button FerryInactiveB = (Button) findViewById(R.id.teleFerryInactive_B);
         final Button FerryActiveB = (Button) findViewById(R.id.TeleFerryActive_B);
@@ -77,13 +71,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final Button CyclePlus = (Button) findViewById(R.id.TeleCyclesPlus_GB);
         final Button CycleMinus = (Button) findViewById(R.id.TeleCyclesMinus_GB);
         final SeekBar FuelSeekBar = (SeekBar) findViewById(R.id.SeekBarFuelTele);
-        final TextView FuelText = (TextView) findViewById(R.id.FuelTeleText);
-
-
-        //Defines all buttons
-        //Coral Buttons
-        //Below defines the button and commands for saving data and switching pages
-
 
         RobotTipB.setBackgroundColor(ContextCompat.getColor(RobotTipB.getContext(), R.color.grey_button));
         StallOtherB.setBackgroundColor(ContextCompat.getColor(StallOtherB.getContext(), R.color.grey_button));
@@ -97,18 +84,21 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
 
         TextView CyclesText = (TextView) findViewById(R.id.TeleCyclesScored_TV);
+        CyclesText.setText(String.valueOf(cyclesTele));
+
 
 
         CyclePlus.setOnClickListener(view -> {
-
                 cyclesTele += 1;
                 CyclesText.setText(String.valueOf(cyclesTele));
         });
 
 
         CycleMinus.setOnClickListener(View -> {
+            if (cyclesTele > 0){
                 cyclesTele -= 1;
                 CyclesText.setText(String.valueOf(cyclesTele));
+            }
         });
 
 
@@ -120,6 +110,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     ScoreFuelB.setBackgroundColor(ContextCompat.getColor(ScoreFuelB.getContext(), R.color.colorPrimary));
                     ScoreFuelB.setTag("#FFE600");
                     ScoreFuel = "true";
+                    NoneActiveB.setBackgroundColor(ContextCompat.getColor(NoneActiveB.getContext(), R.color.grey_button));
+                    NoneActiveB.setTag("D7D7D7D5");
+                    NoneActive= "false";
+
 
 
                 }
@@ -141,6 +135,18 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     NoneActiveB.setBackgroundColor(ContextCompat.getColor(NoneActiveB.getContext(), R.color.colorPrimary));
                     NoneActiveB.setTag("#FFE600");
                     NoneActive = "true";
+                    //Set everything else to false
+                    ScoreFuel = "false";
+                    FerryActive = "false";
+                    DefenseActive = "false";
+                    ScoreFuelB.setBackgroundColor(ContextCompat.getColor(ScoreFuelB.getContext(), R.color.grey_button));
+                    ScoreFuelB.setTag("D7D7D7D5");
+                    FerryActiveB.setBackgroundColor(ContextCompat.getColor(FerryActiveB.getContext(), R.color.grey_button));
+                    FerryActiveB.setTag("D7D7D7D5");
+                    DefenceActiveB.setBackgroundColor(ContextCompat.getColor(DefenceActiveB.getContext(), R.color.grey_button));
+                    DefenceActiveB.setTag("D7D7D7D5");
+
+
 
 
                 }
@@ -149,6 +155,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     NoneActiveB.setTag("D7D7D7D5");
                     NoneActive= "false";
                 }
+
+
+
 
             }
 
@@ -162,6 +171,14 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     NoneInactiveB.setBackgroundColor(ContextCompat.getColor(NoneInactiveB.getContext(), R.color.colorPrimary));
                     NoneInactiveB.setTag("#FFE600");
                     NoneInactive = "true";
+                    //set everything to false
+                    FerryInactive = "false";
+                    DefenseInactive = "false";
+                    FerryInactiveB.setBackgroundColor(ContextCompat.getColor(FerryInactiveB.getContext(), R.color.grey_button));
+                    FerryInactiveB.setTag("D7D7D7D5");
+                    DefenseInactiveB.setBackgroundColor(ContextCompat.getColor(DefenseInactiveB.getContext(), R.color.grey_button));
+                    DefenseInactiveB.setTag("D7D7D7D5");
+
 
 
                 }
@@ -183,6 +200,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     FerryActiveB.setBackgroundColor(ContextCompat.getColor(FerryActiveB.getContext(), R.color.colorPrimary));
                     FerryActiveB.setTag("#FFE600");
                     FerryActive = "true";
+                    NoneActiveB.setBackgroundColor(ContextCompat.getColor(NoneActiveB.getContext(), R.color.grey_button));
+                    NoneActiveB.setTag("D7D7D7D5");
+                    NoneActive= "false";
 
 
                 }
@@ -206,6 +226,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     FerryInactiveB.setBackgroundColor(ContextCompat.getColor(FerryInactiveB.getContext(), R.color.colorPrimary));
                     FerryInactiveB.setTag("#FFE600");
                     FerryInactive = "true";
+                    NoneInactiveB.setBackgroundColor(ContextCompat.getColor(NoneInactiveB.getContext(), R.color.grey_button));
+                    NoneInactiveB.setTag("D7D7D7D5");
+                    NoneInactive= "false";
 
 
                 }
@@ -227,6 +250,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     DefenceActiveB.setBackgroundColor(ContextCompat.getColor(DefenceActiveB.getContext(), R.color.colorPrimary));
                     DefenceActiveB.setTag("#FFE600");
                     DefenseActive = "true";
+                    NoneActiveB.setBackgroundColor(ContextCompat.getColor(NoneActiveB.getContext(), R.color.grey_button));
+                    NoneActiveB.setTag("D7D7D7D5");
+                    NoneActive= "false";
+
 
 
                 }
@@ -290,6 +317,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     DefenseInactiveB.setBackgroundColor(ContextCompat.getColor(DefenseInactiveB.getContext(), R.color.colorPrimary));
                     DefenseInactiveB.setTag("#FFE600");
                     DefenseInactive = "true";
+                    NoneInactiveB.setBackgroundColor(ContextCompat.getColor(NoneInactiveB.getContext(), R.color.grey_button));
+                    NoneInactiveB.setTag("D7D7D7D5");
+                    NoneInactive= "false";
 
 
                 }
@@ -331,7 +361,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                FuelText.setText( "Fuel: " + String.valueOf((i + 1)));
                 FuelTeleNum = (i + 1);
             }
 
@@ -351,27 +380,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
-
                 Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
                 teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
-                startActivity (teamnumintent);
+                startActivity(teamnumintent);
             }
 
         });
     }}
-
-
-//        To_EndGame.setOnClickListener(new View.OnClickListener()
-//        { //Makes onclick listener for button
-//           @Override
-//           public void onClick(View v) {
-//
-//
-//
-//
-////                    Intent teamnumintent = new Intent(data_collection_TeleOP.this, data_collection_end_game.class);
-////                    teamnumintent.putExtra(Team_Num_Display, teleopteamnumstring);
-////                    startActivity (teamnumintent);
-//                    //Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-//                    //startActivity(startintent);
-//                }

@@ -18,11 +18,13 @@
         android:layout_width="40dp"
         android:layout_height="600dp"
         android:orientation="vertical"
+        android:scaleX="2"
+        android:scaleY="2"
         android:scrollbarSize="100dp"
         android:scrollbarStyle="outsideInset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.475"
@@ -31,7 +33,7 @@
         <SeekBar
             android:id="@+id/SeekBarFuelTele"
             style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="600dp"
+            android:layout_width="321.25dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
@@ -39,7 +41,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:max="4"
-            android:progress="1"
+            android:progress="0"
             android:rotation="270"
             android:scrollbarSize="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -58,10 +60,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintHorizontal_bias="0.900"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <TextView
         android:id="@+id/Auto_Fuel1130_TV"
@@ -72,10 +74,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.603" />
 
     <TextView
         android:id="@+id/FuelAuto"
@@ -84,10 +86,10 @@
         android:text="Fuel Avg."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.755" />
 
     <TextView
         android:id="@+id/Auto_Fuel010_TV"
@@ -98,10 +100,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias=".72" />
 
     <TextView
         android:id="@+id/Auto_Fuel3150_TV"
@@ -112,7 +114,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.486" />
@@ -126,7 +128,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37" />
@@ -141,7 +143,7 @@
         android:translationZ="1sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.376" />
@@ -243,12 +245,12 @@
 
     <TextView
         android:id="@+id/AutoAvgCycleScoredQ_TV"
-        android:layout_width="265dp"
-        android:layout_height="152dp"
+        android:layout_width="257dp"
+        android:layout_height="156dp"
         android:text="Average fuel scored per cycle?"
         android:textAlignment="center"
         android:textColor="@color/ic_launcher_background"
-        android:textSize="40sp"
+        android:textSize="37.5sp"
         android:textStyle="bold"
         android:translationY="-25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -315,10 +317,10 @@
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias=".265"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.25525" />
 
     <Button
         android:id="@+id/AutoCyclesMinus_GB"
@@ -364,10 +366,10 @@
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintVertical_bias="0.645" />
 
     <Button
         android:id="@+id/AutoNeutralZone_B"
@@ -380,7 +382,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.474" />
@@ -396,7 +398,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56" />
@@ -418,6 +420,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73" />
 
+    <TextView
+        android:id="@+id/AutoHangQ_TV"
+        android:layout_width="500dp"
+        android:layout_height="82dp"
+        android:text="Did they hang L1?"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+
     <RadioGroup
 
         android:id="@+id/AutoHangL1_RG"
@@ -427,9 +444,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87">
+        app:layout_constraintVertical_bias="0.883">
 
         <RadioButton
             android:id="@+id/AutoHangL1Yes_RB"
@@ -459,21 +477,6 @@
             android:textStyle="bold" />
 
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/AutoHangQ_TV"
-        android:layout_width="500dp"
-        android:layout_height="82dp"
-        android:text="Did they hang L1?"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
 
     <android.support.constraint.Barrier
         android:id="@+id/leftBorder"

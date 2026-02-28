@@ -70,8 +70,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         CycleMinus.setOnClickListener(view -> {
+            if (cycles > 0) {
                 cycles -= 1;
                 CyclesText.setText(String.valueOf(cycles));
+            }
         });
 
         DepotButton.setOnClickListener(view -> {
@@ -161,54 +163,22 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 hangAttemptAuto = "True";
             }
 
-//            if (Fuel010AutoRB.isChecked()) {
-//                averageFuelScored = "1";
-//            }
-//            else if (Fuel1130AutoRB.isChecked()) {
-//                averageFuelScored= "2";
-//            }
-//            else if (Fuel3150AutoRB.isChecked()) {
-//                averageFuelScored = "3";
-//            }
-//            else if (Fuel5170AutoRB.isChecked()) {
-//                averageFuelScored = "4";
-//            }
-//            else if (Fuel70PlusAutoRB.isChecked()) {
-//                averageFuelScored = "5";
-//            }
-//
-//            if (averageFuelScored.equals("Empty"))
-//            {
-//                Toast.makeText(data_Collection_sandstorm.this, "Please Choose Avg. Fuel Scored Per Cycle!!!!!", Toast.LENGTH_LONG).show();
-//            }
-//            else
-//            {
-//                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-//                startActivity(teamnumintent);
-//            }
 
             if (hangedYes.equals("False") && hangedNo.equals("False") && hangAttemptAuto.equals("False"))
             {
-                Toast.makeText(data_Collection_sandstorm.this, "Please select an ending position!", Toast.LENGTH_LONG).show();
+                Toast.makeText(data_Collection_sandstorm.this, "Please select an ending position! Let's not give up", Toast.LENGTH_LONG).show();
             }
             else
             {
-                Intent teamnumintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-                startActivity(teamnumintent);
+                Intent teamnumintent1 = new Intent(getApplicationContext(), data_collection_TeleOP.class);
+                teamnumintent1.putExtra(Team_Num_Display, sandstormteamnumstring);
+                startActivity(teamnumintent1);
             }
 
-            //add in data collection pieces from checkboxes
-            Intent teamnumintent1 = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-            teamnumintent1.putExtra(Team_Num_Display, sandstormteamnumstring);
-            startActivity(teamnumintent1);
-            //Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-            //startActivity(startintent);
+
         };
 
 
-
-                //Ending position variables
-                //Because these are radio buttons, they may need to be changed to isChecked
     });
 
         };

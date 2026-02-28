@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#000001"
     tools:context=".Start_Page">
 
     <TextView
@@ -63,6 +63,8 @@
         android:text="Blue 3 Robot"
         android:textColor="@color/button_yes_blue"
         android:textSize="80sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="2sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -74,12 +76,14 @@
         android:id="@+id/robotLabel_B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/ic_launcher_background"
         android:text="shhhh"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.001"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
