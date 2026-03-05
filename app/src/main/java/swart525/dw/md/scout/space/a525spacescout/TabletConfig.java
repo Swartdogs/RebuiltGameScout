@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 public class TabletConfig {
 
     public static String allianceColor = "red";
-    public static int teamNumber = 1;
+     public static int teamNumber = 1;
 
     public static void loadConfig() {
 
@@ -48,5 +48,4 @@ public class TabletConfig {
             e.printStackTrace();
         }
     }
-
 }

@@ -52,10 +52,10 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/Auto_Fuel70Plus_TV"
+        android:id="@+id/Auto_Fuel40Plus_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 70+"
+        android:text="Fuel 40+"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,10 +66,10 @@
         app:layout_constraintVertical_bias="0.253" />
 
     <TextView
-        android:id="@+id/Auto_Fuel1130_TV"
+        android:id="@+id/Auto_Fuel1120_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 11-30"
+        android:text="Fuel 11-20"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,10 +106,10 @@
         app:layout_constraintVertical_bias=".72" />
 
     <TextView
-        android:id="@+id/Auto_Fuel3150_TV"
+        android:id="@+id/Auto_Fuel2130_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 31-50"
+        android:text="Fuel 21-30"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,10 +120,10 @@
         app:layout_constraintVertical_bias="0.486" />
 
     <TextView
-        android:id="@+id/Auto_Fuel5170_TV"
+        android:id="@+id/Auto_Fuel3140_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 51-70"
+        android:text="Fuel 31-40"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

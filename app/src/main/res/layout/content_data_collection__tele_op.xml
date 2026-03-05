@@ -13,10 +13,10 @@
     tools:showIn="@layout/activity_data_collection__tele_op">
 
     <TextView
-        android:id="@+id/fuel70Plus"
+        android:id="@+id/Tele_Fuel40Plus_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 70+"
+        android:text="Fuel 40+"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,13 +24,13 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26999998" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <TextView
-        android:id="@+id/fuel4"
+        android:id="@+id/Tele_Fuel3140_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 51-70"
+        android:text="Fuel 31-40"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,10 +41,10 @@
         app:layout_constraintVertical_bias="0.384" />
 
     <TextView
-        android:id="@+id/Fuel1130"
+        android:id="@+id/Tele_Fuel1120_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 11-30"
+        android:text="Fuel 11-20"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,10 +55,10 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/fuel3150"
+        android:id="@+id/Tele_Fuel2130_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuel 31-50"
+        android:text="Fuel 21-30"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Fuel010"
+        android:id="@+id/Tele_Fuel010_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fuel 0-10"
@@ -109,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
+        app:layout_constraintVertical_bias="0.13999999"
         tools:textAlignment="center" />
 
 <!--    <RadioGroup-->
