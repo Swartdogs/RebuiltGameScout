@@ -82,10 +82,8 @@ public class data_collection_TeleOP extends AppCompatActivity {
         NoneActiveB.setBackgroundColor(ContextCompat.getColor(NoneActiveB.getContext(), R.color.grey_button));
         ScoreFuelB.setBackgroundColor(ContextCompat.getColor(ScoreFuelB.getContext(), R.color.grey_button));
 
-
         TextView CyclesText = (TextView) findViewById(R.id.TeleCyclesScored_TV);
         CyclesText.setText(String.valueOf(cyclesTele));
-
 
 
         CyclePlus.setOnClickListener(view -> {
