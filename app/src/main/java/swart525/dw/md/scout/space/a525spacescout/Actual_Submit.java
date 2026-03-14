@@ -28,36 +28,58 @@ public class Actual_Submit extends AppCompatActivity {
                 Data_Collection_Page_1.Match_Num + ","+
                 Data_Collection_Page_1.Initials + "," +
                 Data_Collection_Page_1.NoShow + "," +
-                data_Collection_sandstorm.cycles + "," +
-                data_Collection_sandstorm.FuelNumAuto + "," +
-                data_Collection_sandstorm.depot + "," +
                 data_Collection_sandstorm.neutral_zone + "," +
                 data_Collection_sandstorm.outpost + "," +
+                data_Collection_sandstorm.depot + "," +
+                data_Collection_sandstorm.EndDepot + "," +
+                data_Collection_sandstorm.EndOutpost + "," +
+                data_Collection_sandstorm.EndNeutralZone + "," +
+                data_Collection_sandstorm.EndBump + "," +
+                data_Collection_sandstorm.EndTrench + "," +
+                data_Collection_sandstorm.EndTowerHubandTower + "," +
                 data_Collection_sandstorm.hangedYes + "," +
                 data_Collection_sandstorm.hangedNo + "," +
                 data_Collection_sandstorm.hangAttemptAuto + "," +
-                data_collection_TeleOP.cyclesTele + "," +
-                data_collection_end_game.PercentValue + "," +
-                data_collection_TeleOP.FuelTeleNum + "," +
-                data_collection_TeleOP.ScoreFuel + "," +
-                data_collection_TeleOP.FerryActive + "," +
-                data_collection_TeleOP.DefenseActive + "," +
-                data_collection_TeleOP.NoneActive + "," +
-                data_collection_TeleOP.FerryInactive + "," +
-                data_collection_TeleOP.DefenseInactive + "," +
-                data_collection_TeleOP.NoneInactive + "," +
-                data_collection_end_game.hangL1 + "," +
-                data_collection_end_game.hangL2 + "," +
+//                data_collection_TeleOP.cyclesTele + "," +
+//                data_collection_end_game.PercentValue + "," +
+                data_collection_TeleOP.TeleInactiveScoring + "," +
+                data_collection_TeleOP.TeleActivePush + "," +
+                data_collection_TeleOP.TeleActiveShoot + "," +
+                data_collection_TeleOP.TeleActiveDefense + "," +
+                data_collection_TeleOP.TeleActiveOutpost + "," +
+                data_collection_TeleOP.TeleActiveDepot + "," +
+                data_collection_TeleOP.TeleActiveStoring + "," +
+                data_collection_TeleOP.TeleActiveScoring + "," +
+                data_collection_TeleOP.TeleInactivePush + "," +
+                data_collection_TeleOP.TeleInactiveShoot + "," +
+                data_collection_TeleOP.TeleInactiveDefense + "," +
+                data_collection_TeleOP.TeleInactiveOutpost + "," +
+                data_collection_TeleOP.TeleInactiveDepot + "," +
+                data_collection_TeleOP.TeleInactiveStoring + "," +
+//                data_collection_TeleOP.FuelTeleNum + "," +
+//                data_collection_TeleOP.ScoreFuel + "," +
+//                data_collection_TeleOP.FerryActive + "," +
+//                data_collection_TeleOP.DefenseActive + "," +
+//                data_collection_TeleOP.NoneActive + "," +
+//                data_collection_TeleOP.FerryInactive + "," +
+//                data_collection_TeleOP.DefenseInactive + "," +
+//                data_collection_TeleOP.NoneInactive + "," +
                 data_collection_end_game.hangL3 + "," +
-                data_collection_end_game.hangNone + "," +
+                data_collection_end_game.hangL2 + "," +
+                data_collection_end_game.hangL1 + "," +
                 data_collection_end_game.hangAttempt + ","+
-                data_collection_end_game.scoreFuelEnd + "," +
-                data_collection_end_game.ferryEnd + "," +
-                data_collection_end_game.Defense + "," +
-                data_collection_end_game.noneEnd + "," +
-                data_collection_end_game.fouledEnd + "," +
-                data_collection_end_game.tippedEnd + "," +
-                data_collection_end_game.stalledEnd;
+                data_collection_end_game.hangNone + "," +
+                data_collection_TeleOP.Fouls + "," +
+                data_collection_TeleOP.Tipped + "," +
+                data_collection_TeleOP.Beach + "," +
+                data_collection_TeleOP.Stall + "," ;
+//                data_collection_end_game.scoreFuelEnd + "," +
+//                data_collection_end_game.ferryEnd + "," +
+//                data_collection_end_game.Defense + "," +
+//                data_collection_end_game.noneEnd + "," +
+//                data_collection_end_game.fouledEnd + "," +
+//                data_collection_end_game.tippedEnd + "," +
+//                data_collection_end_game.stalledEnd;
     }
 
     private boolean isExternalStorageWritable() {

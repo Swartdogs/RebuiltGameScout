@@ -14,139 +14,142 @@
     tools:showIn="@layout/activity_data__collection_sandstorm">
 
 
-    <FrameLayout
-        android:layout_width="40dp"
-        android:layout_height="600dp"
-        android:orientation="vertical"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:scrollbarSize="100dp"
-        android:scrollbarStyle="outsideInset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475"
-        tools:ignore="MissingConstraints">
-
-        <SeekBar
-            android:id="@+id/SeekBarFuelTele"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="321.25dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:max="4"
-            android:progress="0"
-            android:rotation="270"
-            android:scrollbarSize="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </FrameLayout>
-
     <TextView
-        android:id="@+id/Auto_Fuel40Plus_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 40+"
-        android:textSize="30dp"
+        android:id="@+id/AutoPosition_TV"
+        android:layout_width="378dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="Position"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.900"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintVertical_bias="0.404" />
 
-    <TextView
-        android:id="@+id/Auto_Fuel1120_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 11-20"
-        android:textSize="30dp"
+    <Button
+        android:id="@+id/AutoEndDepot_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Depot"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <Button
+        android:id="@+id/AutoEndBump_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Bump"
+        android:textAllCaps="false"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.6" />
 
-    <TextView
-        android:id="@+id/FuelAuto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel Avg."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755" />
-
-    <TextView
-        android:id="@+id/Auto_Fuel010_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 0-10"
-        android:textSize="30dp"
+    <Button
+        android:id="@+id/AutoEndTrench_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Trench"
+        android:textAllCaps="false"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".72" />
+        app:layout_constraintVertical_bias="0.66999996" />
 
-    <TextView
-        android:id="@+id/Auto_Fuel2130_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 21-30"
-        android:textSize="30dp"
+    <Button
+        android:id="@+id/AutoEndTowerHub_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hub/Tower"
+        android:textAllCaps="false"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486" />
+        app:layout_constraintVertical_bias="0.67" />
 
-    <TextView
-        android:id="@+id/Auto_Fuel3140_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 31-40"
-        android:textSize="30dp"
+    <Button
+        android:id="@+id/AutoEndNeutralZone_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Neutral Zone"
+        android:textAllCaps="false"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.6" />
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="5dp"
-        android:layout_height="600dp"
-        android:background="#000000"
-        android:backgroundTint="#000000"
-        android:foregroundTint="#000000"
-        android:translationZ="1sp"
+    <Button
+        android:id="@+id/AutoEndOutpost_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Outpost"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintVertical_bias="0.526" />
+
+    <TextView
+        android:id="@+id/autoReefLabelL2_TV"
+        android:layout_width="712dp"
+        android:layout_height="70dp"
+        android:elevation="2dp"
+        android:text="Where Does The Robot End?"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
 
     <View
         android:id="@+id/divider17"
@@ -162,6 +165,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.098" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="708dp"
+        android:layout_height="3dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        android:translationZ="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="708dp"
+        android:layout_height="3dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        android:translationZ="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
 
     <TextView
         android:id="@+id/Autonomous_TV"
@@ -240,108 +273,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
-
-
-    <TextView
-        android:id="@+id/AutoAvgCycleScoredQ_TV"
-        android:layout_width="257dp"
-        android:layout_height="156dp"
-        android:text="Average fuel scored per cycle?"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="37.5sp"
-        android:textStyle="bold"
-        android:translationY="-25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.988"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162"
-        tools:textAlignment="center" />
-
-    <View
-        android:id="@+id/divider5"
-        android:layout_width="320dp"
-        android:layout_height="75dp"
-        android:background="@android:color/holo_orange_light"
-        android:translationY="-5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <Button
-        android:id="@+id/AutoCyclesPlus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="+"
-        android:textSize="34sp"
-        android:translationY="-5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
-
-    <TextView
-        android:id="@+id/AutoCycles_TV"
-        android:layout_width="265dp"
-        android:layout_height="152dp"
-        android:text="Cycles"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201"
-        tools:textAlignment="center" />
-
-    <TextView
-        android:id="@+id/AutoCyclesScored_TV"
-        android:layout_width="74dp"
-        android:layout_height="40dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:translationY="-5dp"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".265"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25525" />
-
-    <Button
-        android:id="@+id/AutoCyclesMinus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        android:translationY="-5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
-
+        app:layout_constraintVertical_bias="0.123" />
 
     <TextView
         android:id="@+id/AutoReefLabelL2_TV"
-        android:layout_width="333dp"
-        android:layout_height="114dp"
+        android:layout_width="519dp"
+        android:layout_height="81dp"
+        android:elevation="2dp"
         android:text="Gathered Extra Fuel:"
         android:textAlignment="center"
         android:textColor="@color/ic_launcher_background"
@@ -349,15 +287,33 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/AutoOutpost_B"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Outpost"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
 
     <Button
         android:id="@+id/AutoDepot_B"
         android:layout_width="300dp"
         android:layout_height="75dp"
+        android:elevation="2dp"
         android:fontFamily="sans-serif-medium"
         android:text="Depot"
         android:textAllCaps="false"
@@ -366,15 +322,15 @@
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.312" />
 
     <Button
         android:id="@+id/AutoNeutralZone_B"
         android:layout_width="300dp"
         android:layout_height="75dp"
+        android:elevation="2dp"
         android:fontFamily="sans-serif-medium"
         android:text="Neutral Zone"
         android:textAllCaps="false"
@@ -382,26 +338,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
-    <Button
-        android:id="@+id/AutoOutpost_B"
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Outpost"
-        android:textAllCaps="false"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.239" />
 
     <TextView
         android:id="@+id/AutoTower_TV"
@@ -418,7 +358,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.748" />
 
     <TextView
         android:id="@+id/AutoHangQ_TV"

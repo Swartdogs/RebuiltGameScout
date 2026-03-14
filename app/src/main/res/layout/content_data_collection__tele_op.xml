@@ -12,161 +12,98 @@
     tools:layout_editor_absoluteY="-20dp"
     tools:showIn="@layout/activity_data_collection__tele_op">
 
-    <TextView
-        android:id="@+id/Tele_Fuel40Plus_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 40+"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <TextView
-        android:id="@+id/Tele_Fuel3140_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 31-40"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/Tele_Fuel1120_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 11-20"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
-
-    <TextView
-        android:id="@+id/Tele_Fuel2130_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 21-30"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Tele_Fuel010_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fuel 0-10"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7325" />
 
     <View
-        android:id="@+id/hDiv"
-        android:layout_width="5dp"
-        android:layout_height="600dp"
-        android:background="#000000"
+        android:id="@+id/hDiv9"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
         android:fadingEdge="none"
         android:fadingEdgeLength="0dp"
+        android:translationY="0dp"
+        android:translationZ="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.45" />
+
+    <View
+        android:id="@+id/hDiv6"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:translationY="0dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <View
+        android:id="@+id/hDiv3"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:translationY="0dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <View
+        android:id="@+id/hDiv5"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:translationY="3dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <View
+        android:id="@+id/hDiv7"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:translationY="-3dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
 
     <TextView
-        android:id="@+id/TeleAvgCycleScoredQ_TV"
-        android:layout_width="217dp"
-        android:layout_height="124dp"
-        android:text="Avg. Fuel Scored Per Cycle?"
+        android:id="@+id/teleStylesInactive_TV"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:text="Inactive"
         android:textAlignment="center"
         android:textColor="@color/ic_launcher_background"
-        android:textSize="34sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
+        app:layout_constraintVertical_bias="0.20999998"
         tools:textAlignment="center" />
-
-<!--    <RadioGroup-->
-<!--        android:id="@+id/TeleCycles_RG"-->
-<!--        android:layout_width="175dp"-->
-<!--        android:layout_height="400dp"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.02"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.0">-->
-
-<!--        <RadioButton-->
-<!--            android:id="@+id/TeleCycles010_RB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="75dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="0-10"-->
-<!--            android:textSize="48sp" />-->
-
-<!--        <RadioButton-->
-<!--            android:id="@+id/TeleCycles1130_RB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="75dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="11-30"-->
-<!--            android:textSize="48sp" />-->
-
-<!--        <RadioButton-->
-<!--            android:id="@+id/TeleCycles3150_RB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="75dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="31-50"-->
-<!--            android:textSize="48sp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent" />-->
-
-<!--        <RadioButton-->
-<!--            android:id="@+id/TeleCycles5170_RB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="75dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="51-70"-->
-<!--            android:textSize="48sp" />-->
-
-<!--        <RadioButton-->
-<!--            android:id="@+id/TeleCyclesto71andbeyond_RB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="75dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="70 +"-->
-<!--            android:textSize="48sp"-->
-<!--            android:translationX="30dp" />-->
-
-<!--    </RadioGroup>-->
 
     <TextView
         android:id="@+id/TeleStyles_TV"
@@ -179,174 +116,13 @@
         android:textColor="#000000"
         android:textSize="48sp"
         android:textStyle="bold"
+        android:translationZ="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
-
-    <TextView
-        android:id="@+id/teleStylesInactive_TV"
-        android:layout_width="217dp"
-        android:layout_height="124dp"
-        android:text="Inactive"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        tools:textAlignment="center" />
-
-    <Button
-        android:id="@+id/TeleScoreFuelActive_B"
-        android:layout_width="275dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Score Fuel"
-        android:textAllCaps="false"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
-
-    <View
-        android:id="@+id/hDiv3"
-        android:layout_width="4dp"
-        android:layout_height="425dp"
-        android:background="#000000"
-        android:fadingEdge="none"
-        android:fadingEdgeLength="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5075" />
-
-    <Button
-        android:id="@+id/teleNoneActive_B"
-        android:layout_width="275dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="None"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
-
-    <Button
-        android:id="@+id/teleDefenseInactive_B"
-        android:layout_width="250dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Defense"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41000003" />
-
-    <Button
-        android:id="@+id/TeleNoneInactive_B"
-        android:layout_width="250dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="None"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59000003" />
-
-    <Button
-        android:id="@+id/TeleFerryActive_B"
-        android:layout_width="275dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Ferry"
-        android:textAllCaps="false"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
-
-    <Button
-        android:id="@+id/teleFerryInactive_B"
-        android:layout_width="250dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Ferry"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/TeleStylesActive_TV"
-        android:layout_width="217dp"
-        android:layout_height="124dp"
-        android:text="Active"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        tools:textAlignment="center" />
-
-    <Button
-        android:id="@+id/TeleDefenseActive_B"
-        android:layout_width="275dp"
-        android:layout_height="75dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Defense"
-        android:textAllCaps="false"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/TeleOther_TV"
@@ -361,150 +137,74 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".75" />
+        app:layout_constraintVertical_bias="0.755" />
+
+    <Button
+        android:id="@+id/TeleBeached_B"
+        android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Beach"
+        android:textAllCaps="false"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".6525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/TeleStalled_B"
-        android:layout_width="225dp"
+        android:layout_width="175dp"
         android:layout_height="80dp"
         android:fontFamily="sans-serif-medium"
         android:text="Stalled"
         android:textAllCaps="false"
-        android:textSize="48sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".95"
+        app:layout_constraintHorizontal_bias=".975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.830" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/TeleTipped_B"
-        android:layout_width="225dp"
+        android:layout_width="175dp"
         android:layout_height="80dp"
         android:fontFamily="sans-serif-medium"
         android:text="Tipped"
         android:textAllCaps="false"
-        android:textSize="48sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.3425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.830" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/TeleFouled_B"
-        android:layout_width="225dp"
+        android:layout_width="175dp"
         android:layout_height="80dp"
         android:fontFamily="sans-serif-medium"
         android:text="Fouled"
         android:textAllCaps="false"
-        android:textSize="48sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".05"
+        app:layout_constraintHorizontal_bias=".025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.830" />
-
-    <TextView
-        android:id="@+id/TeleFuel_TV"
-        android:layout_width="378dp"
-        android:layout_height="58dp"
-        android:fontFamily="@font/bolt_regular"
-        android:gravity="center"
-        android:text="Fuel"
-        android:textAllCaps="true"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
-
-    <TextView
-        android:id="@+id/teleCycles_TV"
-        android:layout_width="217dp"
-        android:layout_height="124dp"
-        android:text="Cycles"
-        android:textAlignment="center"
-        android:textColor="@color/ic_launcher_background"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192"
-        tools:textAlignment="center" />
-
-    <Button
-        android:id="@+id/TeleCyclesPlus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="+"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
-
-    <Button
-        android:id="@+id/TeleCyclesMinus_GB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bolt_regular"
-        android:text="-"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
-
-    <TextView
-        android:id="@+id/TeleCyclesScored_TV"
-        android:layout_width="89dp"
-        android:layout_height="44dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="320dp"
-        android:layout_height="75dp"
-        android:background="@android:color/holo_orange_light"
-        android:translationY="-1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/toSubmission"
@@ -617,42 +317,291 @@
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
 
-    <FrameLayout
-        android:layout_width="40dp"
+    <TableLayout
+
+        android:id="@+id/tableLayout"
+        android:layout_width="600dp"
         android:layout_height="600dp"
-        android:orientation="vertical"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:scrollbarSize="100dp"
-        android:scrollbarStyle="outsideInset"
+        android:gravity="center"
+        android:stretchColumns="0,1,2"
+        android:translationY="-70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintVertical_bias="0.6">
 
-        <SeekBar
-            android:id="@+id/SeekBarFuelTele"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="321.25dp"
-            android:layout_height="37dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:max="4"
-            android:progress="0"
-            android:rotation="270"
-            android:scrollbarSize="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/TeleActiveScoring_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Scoring"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveScoring_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActivePush_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Push Ferry"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactivePush_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActiveShoot_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Shoot Ferry"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveShoot_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActiveDefense_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Defense"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveDefense_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActiveOutpost_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Fuel - Outpost"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveOutpost_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActiveDepot_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Fuel - Depot"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveDepot_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/TeleActiveStoring_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Fuel - Storing"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TeleInactiveStoring_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TeleStylesActive_TV"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:text="Active"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20999998"
+        tools:textAlignment="center" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="600dp"
+        android:layout_height="575dp"
+        android:background="#000000"
+        android:translationY="5dp"
+        android:translationZ="-3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45999998" />
+
+    <View
+        android:id="@+id/hDiv"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:translationY="-9dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
 
 </android.support.constraint.ConstraintLayout>
 

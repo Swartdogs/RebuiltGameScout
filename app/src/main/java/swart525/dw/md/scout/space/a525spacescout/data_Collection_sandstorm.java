@@ -18,14 +18,20 @@ import org.w3c.dom.Text;
 public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for use
-    public static int cycles = 0;
-    public static String depot = "False";
     public static String neutral_zone = "False";
     public static String outpost = "False";
+    public static String depot = "False";
+
+    public static String EndDepot = "False";
+    public static String EndOutpost = "False";
+    public static String EndNeutralZone = "False";
+    public static String EndBump = "False";
+    public static String EndTrench = "False";
+    public static String EndTowerHubandTower = "False";
+
     public static String hangedYes = "False";
     public static String hangedNo = "False";
     public static String hangAttemptAuto = "False";
-    public static int FuelNumAuto = 0;
     //public static List<String> others = new ArrayList<>();
 
     public static String Team_Num_Display = "0000";
@@ -41,16 +47,18 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         String sandstormteamnumstring = teamnumintent.getStringExtra(Data_Collection_Page_1.Team_Num_Display);
         TeamNumSandy.setText(sandstormteamnumstring);
 
-        // int Team_Num_Real = bundle.getInt("code");
-        final SeekBar Auto_FuelSeekBar = (SeekBar) findViewById(R.id.SeekBarFuelTele);
-        final TextView FuelTxtAuto = (TextView) findViewById(R.id.FuelAuto);
-
         //Defines and implements Button to continue along with variable savings
-        Button CyclePlus = findViewById(R.id.AutoCyclesPlus_GB);
-        Button CycleMinus = findViewById(R.id.AutoCyclesMinus_GB);
         Button DepotButton = findViewById(R.id.AutoDepot_B);
         Button OutpostButton = findViewById(R.id.AutoOutpost_B);
         Button NeutralZoneButton = findViewById(R.id.AutoNeutralZone_B);
+
+        Button AutoEndDepot = findViewById(R.id.AutoEndDepot_B);
+        Button AutoEndOutpost = findViewById(R.id.AutoEndOutpost_B);
+        Button AutoEndNeutralZone = findViewById(R.id.AutoEndNeutralZone_B);
+        Button AutoEndBump = findViewById(R.id.AutoEndBump_B);
+        Button AutoEndTrench = findViewById(R.id.AutoEndTrench_B);
+        Button AutoEndTowerHub = findViewById(R.id.AutoEndTowerHub_B);
+
 
         //RadioButton Instantiation
         RadioButton AutoHangL1YesRB = findViewById(R.id.AutoHangL1Yes_RB);
@@ -60,20 +68,21 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         //Button to move to next page
         Button To_TeleOp = findViewById(R.id.To_Teleop_B);
 
-        TextView CyclesText = findViewById(R.id.AutoCyclesScored_TV);
+        NeutralZoneButton.setOnClickListener(view -> {
+            String colorCode = (String) NeutralZoneButton.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                NeutralZoneButton.setBackgroundColor(ContextCompat.getColor(NeutralZoneButton.getContext(), R.color.colorPrimary));
+                NeutralZoneButton.setTag("#FFE600");
+                neutral_zone = "true";
 
 
-        CyclePlus.setOnClickListener(view -> {
-            cycles += 1;
-            CyclesText.setText(String.valueOf(cycles));
-        });
-
-
-        CycleMinus.setOnClickListener(view -> {
-            if (cycles > 0) {
-                cycles -= 1;
-                CyclesText.setText(String.valueOf(cycles));
             }
+            else if("#FFE600".equals(colorCode)){
+                NeutralZoneButton.setBackgroundColor(ContextCompat.getColor(NeutralZoneButton.getContext(), R.color.grey_button));
+                NeutralZoneButton.setTag("D7D7D7D5");
+                neutral_zone = "false";
+            }
+
         });
 
         DepotButton.setOnClickListener(view -> {
@@ -109,42 +118,127 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
         });
 
-        Auto_FuelSeekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
-
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                FuelTxtAuto.setText( "Fuel: " + String.valueOf((i + 1)));
-                FuelNumAuto = (i + 1);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        NeutralZoneButton.setOnClickListener(view -> {
-            String colorCode = (String) NeutralZoneButton.getTag();
+        AutoEndOutpost.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndOutpost.getTag();
             if (!"#FFE600".equals(colorCode)){
-                NeutralZoneButton.setBackgroundColor(ContextCompat.getColor(NeutralZoneButton.getContext(), R.color.colorPrimary));
-                NeutralZoneButton.setTag("#FFE600");
-                neutral_zone = "true";
+                AutoEndOutpost.setBackgroundColor(ContextCompat.getColor(AutoEndOutpost.getContext(), R.color.colorPrimary));
+                AutoEndOutpost.setTag("#FFE600");
+                EndOutpost = "true";
 
 
             }
             else if("#FFE600".equals(colorCode)){
-                NeutralZoneButton.setBackgroundColor(ContextCompat.getColor(NeutralZoneButton.getContext(), R.color.grey_button));
-                NeutralZoneButton.setTag("D7D7D7D5");
-                neutral_zone = "false";
+                AutoEndOutpost.setBackgroundColor(ContextCompat.getColor(AutoEndOutpost.getContext(), R.color.grey_button));
+                AutoEndOutpost.setTag("D7D7D7D5");
+                EndOutpost = "false";
             }
 
         });
+        AutoEndDepot.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndDepot.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                AutoEndDepot.setBackgroundColor(ContextCompat.getColor(AutoEndDepot.getContext(), R.color.colorPrimary));
+                AutoEndDepot.setTag("#FFE600");
+                EndDepot = "true";
+
+
+            }
+            else if("#FFE600".equals(colorCode)){
+                AutoEndDepot.setBackgroundColor(ContextCompat.getColor(AutoEndDepot.getContext(), R.color.grey_button));
+                AutoEndDepot.setTag("D7D7D7D5");
+                EndDepot = "false";
+            }
+
+        });
+
+
+        AutoEndBump.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndBump.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                AutoEndBump.setBackgroundColor(ContextCompat.getColor(AutoEndBump.getContext(), R.color.colorPrimary));
+                AutoEndBump.setTag("#FFE600");
+                EndBump = "true";
+
+
+            }
+            else if("#FFE600".equals(colorCode)){
+                AutoEndBump.setBackgroundColor(ContextCompat.getColor(AutoEndBump.getContext(), R.color.grey_button));
+                AutoEndBump.setTag("D7D7D7D5");
+                EndBump = "false";
+            }
+
+        });
+        AutoEndNeutralZone.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndNeutralZone.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                AutoEndNeutralZone.setBackgroundColor(ContextCompat.getColor(AutoEndNeutralZone.getContext(), R.color.colorPrimary));
+                AutoEndNeutralZone.setTag("#FFE600");
+                EndNeutralZone = "true";
+
+
+            }
+            else if("#FFE600".equals(colorCode)){
+                AutoEndNeutralZone.setBackgroundColor(ContextCompat.getColor(AutoEndNeutralZone.getContext(), R.color.grey_button));
+                AutoEndNeutralZone.setTag("D7D7D7D5");
+                EndNeutralZone = "false";
+            }
+
+        });
+
+        AutoEndTrench.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndTrench.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                AutoEndTrench.setBackgroundColor(ContextCompat.getColor(AutoEndTrench.getContext(), R.color.colorPrimary));
+                AutoEndTrench.setTag("#FFE600");
+                EndTrench = "true";
+
+
+            }
+            else if("#FFE600".equals(colorCode)){
+                AutoEndTrench.setBackgroundColor(ContextCompat.getColor(AutoEndTrench.getContext(), R.color.grey_button));
+                AutoEndTrench.setTag("D7D7D7D5");
+                EndTrench = "false";
+            }
+
+        });
+        AutoEndTowerHub.setOnClickListener(view -> {
+            String colorCode = (String) AutoEndTowerHub.getTag();
+            if (!"#FFE600".equals(colorCode)){
+                AutoEndTowerHub.setBackgroundColor(ContextCompat.getColor(AutoEndTowerHub.getContext(), R.color.colorPrimary));
+                AutoEndTowerHub.setTag("#FFE600");
+                EndTowerHubandTower = "true";
+
+
+            }
+            else if("#FFE600".equals(colorCode)){
+                AutoEndTowerHub.setBackgroundColor(ContextCompat.getColor(AutoEndTowerHub.getContext(), R.color.grey_button));
+                AutoEndTowerHub.setTag("D7D7D7D5");
+                EndTowerHubandTower = "false";
+            }
+
+        });
+//
+//        Auto_FuelSeekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+//
+//
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+//                FuelTxtAuto.setText( "Fuel: " + String.valueOf((i + 1)));
+//                FuelNumAuto = (i + 1);
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
+
+
 
 
         //Makes onclick listener for button
