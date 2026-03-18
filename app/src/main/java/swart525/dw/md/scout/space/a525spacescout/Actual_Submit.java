@@ -42,14 +42,14 @@ public class Actual_Submit extends AppCompatActivity {
                 data_Collection_sandstorm.hangAttemptAuto + "," +
 //                data_collection_TeleOP.cyclesTele + "," +
 //                data_collection_end_game.PercentValue + "," +
-                data_collection_TeleOP.TeleInactiveScoring + "," +
+                data_collection_TeleOP.TeleActiveScoring + "," +
                 data_collection_TeleOP.TeleActivePush + "," +
                 data_collection_TeleOP.TeleActiveShoot + "," +
                 data_collection_TeleOP.TeleActiveDefense + "," +
                 data_collection_TeleOP.TeleActiveOutpost + "," +
                 data_collection_TeleOP.TeleActiveDepot + "," +
                 data_collection_TeleOP.TeleActiveStoring + "," +
-                data_collection_TeleOP.TeleActiveScoring + "," +
+                data_collection_TeleOP.TeleInactiveScoring + "," +
                 data_collection_TeleOP.TeleInactivePush + "," +
                 data_collection_TeleOP.TeleInactiveShoot + "," +
                 data_collection_TeleOP.TeleInactiveDefense + "," +

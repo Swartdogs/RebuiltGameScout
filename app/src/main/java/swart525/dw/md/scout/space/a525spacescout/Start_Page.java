@@ -67,14 +67,14 @@ public class Start_Page extends AppCompatActivity {
 //                data_collection_TeleOP.FerryActive = "False";
 //                data_collection_TeleOP.NoneInactive = "False";
 //                data_collection_TeleOP.NoneActive = "False";
-                data_collection_TeleOP.TeleInactiveScoring = "False";
+                data_collection_TeleOP.TeleActiveScoring = "False";
                 data_collection_TeleOP.TeleActivePush = "False";
                 data_collection_TeleOP.TeleActiveShoot = "False";
                 data_collection_TeleOP.TeleActiveDefense = "False";
                 data_collection_TeleOP.TeleActiveOutpost = "False";
                 data_collection_TeleOP.TeleActiveDepot = "False";
                 data_collection_TeleOP.TeleActiveStoring = "False";
-                data_collection_TeleOP.TeleActiveScoring = "False";
+                data_collection_TeleOP.TeleInactiveScoring = "False";
                 data_collection_TeleOP.TeleInactivePush = "False";
                 data_collection_TeleOP.TeleInactiveShoot = "False";
                 data_collection_TeleOP.TeleInactiveDefense = "False";

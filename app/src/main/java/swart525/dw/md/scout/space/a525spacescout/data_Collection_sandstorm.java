@@ -11,6 +11,9 @@ import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.w3c.dom.Text;
 
@@ -36,6 +39,43 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
     public static String Team_Num_Display = "0000";
 
+    // Reset all buttons + all variables
+    void resetAll (List<Button> buttons) {
+        for (Button b : buttons) {
+            b.setBackgroundColor(ContextCompat.getColor(b.getContext(), R.color.grey_button));
+            b.setTag("D7D7D7D5");
+        }
+
+        EndOutpost = "false";
+        EndDepot = "false";
+        EndBump = "false";
+        EndNeutralZone = "false";
+        EndTrench = "false";
+        EndTowerHubandTower = "false";
+    }
+
+    // Handle a click on any button
+    void handleClick(Button btn, String varName, List<Button> listofterror) {
+
+        // Turn everything off
+        resetAll(listofterror);
+
+        // Turn this one on
+        btn.setBackgroundColor(ContextCompat.getColor(btn.getContext(), R.color.colorPrimary));
+        btn.setTag("#FFE600");
+
+        // Set the correct variable to true
+        switch (varName) {
+            case "EndOutpost": EndOutpost = "true"; break;
+            case "EndDepot": EndDepot = "true"; break;
+            case "EndBump": EndBump = "true"; break;
+            case "EndNeutralZone": EndNeutralZone = "true"; break;
+            case "EndTrench": EndTrench = "true"; break;
+            case "EndTowerHubandTower": EndTowerHubandTower = "true"; break;
+        }
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +99,14 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         Button AutoEndTrench = findViewById(R.id.AutoEndTrench_B);
         Button AutoEndTowerHub = findViewById(R.id.AutoEndTowerHub_B);
 
+        List<Button> allButtons = new ArrayList<>();
+        allButtons.add(AutoEndDepot);
+        allButtons.add(AutoEndOutpost);
+        allButtons.add(AutoEndNeutralZone);
+        allButtons.add(AutoEndBump);
+        allButtons.add(AutoEndTrench);
+        allButtons.add(AutoEndTowerHub);
+
 
         //RadioButton Instantiation
         RadioButton AutoHangL1YesRB = findViewById(R.id.AutoHangL1Yes_RB);
@@ -74,7 +122,6 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 NeutralZoneButton.setBackgroundColor(ContextCompat.getColor(NeutralZoneButton.getContext(), R.color.colorPrimary));
                 NeutralZoneButton.setTag("#FFE600");
                 neutral_zone = "true";
-
 
             }
             else if("#FFE600".equals(colorCode)){
@@ -124,7 +171,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoEndOutpost.setBackgroundColor(ContextCompat.getColor(AutoEndOutpost.getContext(), R.color.colorPrimary));
                 AutoEndOutpost.setTag("#FFE600");
                 EndOutpost = "true";
-
+                handleClick(AutoEndOutpost, "EndOutpost", allButtons);
 
             }
             else if("#FFE600".equals(colorCode)){
@@ -140,7 +187,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoEndDepot.setBackgroundColor(ContextCompat.getColor(AutoEndDepot.getContext(), R.color.colorPrimary));
                 AutoEndDepot.setTag("#FFE600");
                 EndDepot = "true";
-
+                handleClick(AutoEndDepot, "EndDepot", allButtons);
 
             }
             else if("#FFE600".equals(colorCode)){
@@ -158,6 +205,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoEndBump.setBackgroundColor(ContextCompat.getColor(AutoEndBump.getContext(), R.color.colorPrimary));
                 AutoEndBump.setTag("#FFE600");
                 EndBump = "true";
+                handleClick(AutoEndBump, "EndBump", allButtons);
 
 
             }
@@ -174,6 +222,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoEndNeutralZone.setBackgroundColor(ContextCompat.getColor(AutoEndNeutralZone.getContext(), R.color.colorPrimary));
                 AutoEndNeutralZone.setTag("#FFE600");
                 EndNeutralZone = "true";
+                handleClick(AutoEndNeutralZone, "EndNeutralZone", allButtons);
 
 
             }
@@ -191,7 +240,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 AutoEndTrench.setBackgroundColor(ContextCompat.getColor(AutoEndTrench.getContext(), R.color.colorPrimary));
                 AutoEndTrench.setTag("#FFE600");
                 EndTrench = "true";
-
+                handleClick(AutoEndTrench, "EndTrench", allButtons);
 
             }
             else if("#FFE600".equals(colorCode)){
@@ -201,13 +250,15 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             }
 
         });
+
+
         AutoEndTowerHub.setOnClickListener(view -> {
             String colorCode = (String) AutoEndTowerHub.getTag();
             if (!"#FFE600".equals(colorCode)){
                 AutoEndTowerHub.setBackgroundColor(ContextCompat.getColor(AutoEndTowerHub.getContext(), R.color.colorPrimary));
                 AutoEndTowerHub.setTag("#FFE600");
                 EndTowerHubandTower = "true";
-
+                handleClick(AutoEndTowerHub, "EndTowerHubandTower", allButtons);
 
             }
             else if("#FFE600".equals(colorCode)){
@@ -217,7 +268,12 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             }
 
         });
-//
+
+
+
+
+
+
 //        Auto_FuelSeekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
 //
 //
@@ -258,16 +314,17 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             }
 
 
-            if (hangedYes.equals("False") && hangedNo.equals("False") && hangAttemptAuto.equals("False"))
-            {
-                Toast.makeText(data_Collection_sandstorm.this, "Please select an ending position! Let's not give up", Toast.LENGTH_LONG).show();
-            }
-            else
-            {
+
+//            if (EndDepot.equals("True") && EndOutpost.equals("True") && EndNeutralZone.equals("True") && EndBump.equals("True") && EndTrench.equals("True") && EndTowerHubandTower.equals("True"))
+//            {
+//                Toast.makeText(data_Collection_sandstorm.this, "Please select one end position, they cant split into two!!!", Toast.LENGTH_LONG).show();
+//            }
+//            else
+//            {
                 Intent teamnumintent1 = new Intent(getApplicationContext(), data_collection_TeleOP.class);
                 teamnumintent1.putExtra(Team_Num_Display, sandstormteamnumstring);
                 startActivity(teamnumintent1);
-            }
+            //}
 
 
         };
